@@ -1,17 +1,18 @@
-a{
+a {
     color: #1d7293;
+    text-decoration: none;
 }
 
-a:hover{
-    color: #2593be;
-    transition: 100ms;
-}
-
-a:active{
+a:active {
     color: #18627f;
-    transition: 100ms;
 }
 
-a:visited{
-    color: #1d7293;
+a:visited {
+    color: #1d5e93;
+}
+
+a:hover {
+    color: #28a0d0;
+    cursor: pointer;
+    text-decoration: underline;
 }
