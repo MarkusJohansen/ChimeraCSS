@@ -1,6 +1,9 @@
 blockquote {
     border-left: 4px solid #2593be;
     background-color: rgb(244, 243, 243);
-    padding: 20px 30px;
+    padding: 20px;
     line-height: 28px;
+    max-width: 100%;
+    margin: 0px;
+    border-radius: 0px 8px 8px 0px;
 }

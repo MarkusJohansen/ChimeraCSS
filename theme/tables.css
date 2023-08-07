@@ -4,12 +4,10 @@ table{
 }
 
 th{
-    padding: 10px 0px;
-    border-bottom: 2px solid #2593be;
-    border-right: 2px solid #2593be;
-
+    border-bottom: 2px solid #2593be8d;
+    font-weight: bold;
 }
 
 td{
-    border-right: 2px solid #2593be;
+    border-bottom: 1px solid #2593be;
 }
