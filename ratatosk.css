@@ -1,0 +1,13 @@
+@import url(/theme/button.css);
+@import url(/theme/blockquote.css);
+@import url(/theme/headings.css);
+@import url(/theme/links.css);
+@import url(/theme/lists.css);
+@import url(/theme/paragraphs.css);
+@import url(/theme/tables.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;;    
+}
