@@ -1,0 +1,8 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 50%;
+}
