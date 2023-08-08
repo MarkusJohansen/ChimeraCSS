@@ -1,0 +1,36 @@
+input, textarea {
+    border-radius: 8px;
+    background-color: rgb(244, 243, 243);
+    border: 0;
+    padding: 12px;
+    width: 100%;
+    display: flex;
+    margin: 5px 0px 15px 0px;
+    font-size: medium;
+}
+
+label {
+    font-weight: 600;
+}
+
+input[type="submit"] {
+    padding: 7px 16px;
+    font-size: medium;
+    border-radius: 8px;
+    border: 0px;
+    background-color: #2593be;
+    color: rgb(255, 255, 255);
+    width: fit-content;
+}
+
+
+input[type="submit"]:hover {
+    background-color: #51a9cb;
+    transition: 100ms;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    background-color: #1e7698;
+    transition: 100ms;
+}
