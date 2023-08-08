@@ -40,4 +40,4 @@ To give yourself administrator permissions on the chat, you will have to type `/
 ## License
 >You can check out the full license [here](https://github.com/J0hans1/Chimera/blob/master/LICENSE)
 
-This project is licensed under the terms of the **MIT** license.
+This project is licensed under the terms of the **Apache License 2.0** license.
