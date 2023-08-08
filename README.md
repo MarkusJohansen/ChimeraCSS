@@ -1,5 +1,4 @@
 # Chimera
-============
 [![GitHub Stars](https://img.shields.io/github/stars/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/stargazers) 
 [![GitHub Issues](https://img.shields.io/github/issues/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/issues) 
 [![Current Version](https://img.shields.io/badge/version-1.0.7-green.svg)](https://github.com/J0hans1/Chimera)
