@@ -6,7 +6,7 @@ pre{
     width: 100%;
 }
 
-code, kbd{
+code, kbd, var, samp{
     background-color: rgb(244, 243, 243);
     border-radius: 8px;
     padding: 4px 8px;
