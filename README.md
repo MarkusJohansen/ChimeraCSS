@@ -12,13 +12,13 @@ Classless css frameworks is great for building beautiful UI, without worrying ab
 
 ---
 
-## Features
+## Goal
+What we want to achieve for the framework is as following:
+- Easy to implement into private projects
 - Clean, soft and modern design
-- TODO: Responsive
-- TODO: Acessible
-- TODO: CSS-Reset
-- Tailwind and vanilla css overrideable for custom styling.
-- Imported by single stylesheet link tag in HTML header
+- Responsive by default
+- Acessible elements
+- Compatibility with classbased css-frameworks
 
 ___
 
