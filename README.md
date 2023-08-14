@@ -1,7 +1,7 @@
 # Chimera
 [![GitHub Stars](https://img.shields.io/github/stars/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/stargazers) 
 [![GitHub Issues](https://img.shields.io/github/issues/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/issues) 
-[![Current Version](https://img.shields.io/badge/version-0.0.0-green.svg)](https://github.com/J0hans1/Chimera)
+[![npm version](https://badge.fury.io/js/chimeracss.svg)](//npmjs.com/package/chimeracss)
 
 Classless CSS framework with a Clean, soft and modern design inspired By SakuraCSS and Marx. The Framework is prelease.
 
