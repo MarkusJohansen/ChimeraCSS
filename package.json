@@ -1,0 +1,26 @@
+{
+  "name": "chimeracss",
+  "version": "0.0.1",
+  "description": "A classless CSS-framework for clean, soft and modern design!",
+  "main": "Chimera.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChimeraCSS/ChimeraCSS.git"
+  },
+  "keywords": [
+    "CSS",
+    "Classless",
+    "Styling",
+    "Design-system",
+    "Responsive"
+  ],
+  "author": "Markus Johansen",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ChimeraCSS/ChimeraCSS/issues"
+  },
+  "homepage": "https://github.com/ChimeraCSS/ChimeraCSS#readme"
+}
