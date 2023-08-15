@@ -38,7 +38,13 @@
             <h2>Section Title</h2>
             <p>This is a paragraph of text.</p>
             <a href="#">Link</a>
+            <div id="slider">
+                <figure>
             <img src="https://i.imgur.com/jqmnLne.jpeg" alt="Image">
+            <img src="https://cdn.pixabay.com/photo/2016/01/20/13/05/cat-1151519_1280.jpg" alt="Image" width="643" height ="610">
+            <img src="https://cdn.pixabay.com/photo/2014/03/29/09/17/cat-300572_1280.jpg" alt="Image" width="643" height="600">
+        </figure>
+        </div>
             <ul>
                 <li>List item 1</li>
                 <li>List item 2</li>
@@ -145,5 +151,53 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+    <style>
+        #slider{
+            overflow: hidden;
+        }
+        #slider figure{
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            animation: 20s slider infinite;
+        }
+        #slider figure img{
+            float: left;
+            width: 20%;
+        }
+        @keyframes slider{
+            0%{
+                left: 0;
+            }
+            20%{
+                left: 0;
+            }
+            25%{
+                left: -100%;
+            }
+            45%{
+                left: -100%;
+            }
+            50%{
+                left: -200%;
+            }
+            70%{
+                left: -200%;
+            }
+            75%{
+                left: -300;
+            }
+            95%{
+                left: -300;
+            }
+            100%{
+                left: -400;
+            }
+
+        }
+    </style>
+   
+
 </body>
 </html>
