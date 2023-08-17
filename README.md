@@ -24,10 +24,16 @@ What we want to achieve for the framework is as following:
 
 ## How?
 
-You can implement chimera into your private project by including this tag in your HTML header.
+You can implement chimera into your private project by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@0.0.1/Chimera.css" />
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/chimera.css"/>
 ```
+if you want the darkmode version of chimera, import this tag
+
+```html
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/chimera-dark.css"/>
+```
+
 You can also download the ChimeraCSS package and directly link to the Chimera.css file:
 ```bash
 npm install chimeracss
@@ -36,6 +42,7 @@ or
 ```bash
 yarn add chimeracss
 ```
+
 ___
 
 ## License
