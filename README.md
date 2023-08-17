@@ -1,7 +1,7 @@
 # Chimera
 [![GitHub Stars](https://img.shields.io/github/stars/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/stargazers) 
 [![GitHub Issues](https://img.shields.io/github/issues/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/issues) 
-[![npm version](https://badge.fury.io/js/chimeracss.svg)](//npmjs.com/package/chimeracss)
+[![npm version](https://badge.fury.io/js/chimeracss.svg)](https://badge.fury.io/js/chimeracss)
 
 Classless CSS framework with a Clean, soft and modern design inspired By SakuraCSS and Marx. The Framework is prelease.
 
@@ -25,9 +25,11 @@ What we want to achieve for the framework is as following:
 ## How?
 
 You can implement chimera into your private project by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
+
 ```html
 <link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/chimera.css"/>
 ```
+
 if you want the darkmode version of chimera, import this tag
 
 ```html
