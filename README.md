@@ -2,7 +2,9 @@
     <img  align="center" src="./logo.png" alt="Chimera"width="315" />
 </div>
 
-<br><br>
+<br>
+
+<br>
 
 
 [![GitHub Stars](https://img.shields.io/github/stars/J0hans1/Chimera.svg)](https://github.com/J0hans1/Chimera/stargazers) 
@@ -22,6 +24,7 @@ Classless css frameworks is great for building beautiful UI, without worrying ab
 
 ## Goals
 What we want to achieve for the framework is as following:
+
 - Easy to implement into private projects
 - Clean, soft and modern design
 - Responsive by default
@@ -35,20 +38,23 @@ What we want to achieve for the framework is as following:
 You can implement chimera into your private project by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/chimera.css"/>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/css/chimera.css"/>
 ```
 
 if you want the darkmode version of chimera, import this tag
 
 ```html
-<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/chimera-dark.css"/>
+<link rel="stylesheet" type="text/css" href="https://unpkg.com/chimeracss@:version/css/chimera-dark.css"/>
 ```
 
 You can also download the ChimeraCSS package and directly link to the Chimera.css file:
+
 ```bash
 npm install chimeracss
 ```
+
 or
+
 ```bash
 yarn add chimeracss
 ```
