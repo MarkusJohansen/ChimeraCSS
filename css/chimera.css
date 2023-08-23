@@ -147,12 +147,17 @@ td{
     font-weight: lighter;
 }
 
+/*------------------------------Lists----------------------------*/
+
 ul, ol {
     margin: 0 0 1.5em 1.5em;
     padding: 0;
     line-height: 2;
 }
 
+ul {
+    list-style: disc;
+}
 /*-----------------------------Formatted text----------------------------*/
 
 pre{
