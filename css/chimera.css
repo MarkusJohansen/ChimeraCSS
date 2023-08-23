@@ -36,6 +36,7 @@ hr {
     background-color: var(--Chimera-primary);
     width: 100%;
     border: 0;
+    margin: 1em 0px;
 }
 
 /*------------------------------Images-----------------------------*/
@@ -150,13 +151,17 @@ td{
 /*------------------------------Lists----------------------------*/
 
 ul, ol {
-    margin: 0 0 1.5em 1.5em;
+    margin-left: 1.5em;
     padding: 0;
-    line-height: 2;
+    line-height: 2em;
 }
 
 ul {
     list-style: disc;
+}
+
+li {
+    list-style: inherit;
 }
 /*-----------------------------Formatted text----------------------------*/
 
