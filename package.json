@@ -1,6 +1,6 @@
 {
   "name": "chimeracss",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A classless CSS-framework for clean, soft and modern design!",
   "main": "Chimera.css",
   "scripts": {
