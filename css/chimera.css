@@ -12,6 +12,16 @@
     --Chimera-text: hsl(0, 0%, 25%);
     --Chimera-background: hsl(40, 30%, 95%);
     --Chimera-background-secondary: hsl(40, 20%, 90%);
+    /*Dark mode*/
+    --Chimera-dark-primary: hsl(183, 67%, 40%);
+    --Chimera-dark-secondary: hsl(183, 54%, 50%);
+    --Chimera-dark-accent: hsl(183, 67%, 45%); /* Same as primary ATM */
+    --Chimera-dark-accent-hover: hsl(183, 67%, 45%);
+    --Chimera-dark-accent-visited: hsl(183, 67%, 40%);
+    --Chimera-dark-accent-active: hsl(183, 67%, 35%);
+    --Chimera-dark-text: hsl(0, 0%, 85%);
+    --Chimera-dark-background: hsl(214, 15%, 16%);
+    --Chimera-dark-background-secondary: hsl(214, 13%, 20%);
 }
 
 /*------------------------------General----------------------------*/
@@ -203,3 +213,64 @@ label {
     font-weight: 600;
 }
 
+
+/*------------------------------darkmode----------------------------*/
+.chimera-dark {
+    color: var(--Chimera-dark-text);
+    background: var(--Chimera-dark-background);
+}
+
+.chimera-dark > blockquote {
+    border-color: var(--Chimera-dark-primary);
+    background-color: var(--Chimera-dark-background-secondary);
+}
+
+.chimera-dark > hr {
+    background-color: var(--Chimera-dark-primary);
+}
+
+.chimera-dark > button {
+    background-color: var(--Chimera-dark-primary);
+}
+
+.chimera-dark > button:hover {
+    background-color: var(--Chimera-dark-accent-hover);
+}
+
+.chimera-dark > button:active {
+    background-color: var(--Chimera-dark-accent-active);
+}
+
+.chimera-dark > a {
+    color: var(--Chimera-dark-accent);
+}
+
+.chimera-dark > a:active {
+    color: var(--Chimera-dark-accent-hover);
+}
+
+.chimera-dark > a:visited {
+    color: var(--Chimera-dark-accent-visited);
+}
+
+.chimera-dark > a:hover {
+    color: var(--Chimera-dark-accent-hover);
+    text-decoration-color: var(--Chimera-dark-accent-hover);
+}
+
+.chimera-dark > td, th {
+    border-color: var(--Chimera-dark-secondary);
+}
+
+.chimera-dark > pre{
+    background-color: var(--Chimera-dark-background-secondary);
+}
+
+.chimera-dark > code, kbd, var, samp{
+    background-color: var(--Chimera-dark-background-secondary);
+}
+
+.chimera-dark > input, textarea {
+    background-color: var(--Chimera-dark-background-secondary);
+    color: var(--Chimera-dark-text);
+}
