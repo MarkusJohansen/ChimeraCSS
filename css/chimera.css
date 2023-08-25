@@ -4,6 +4,8 @@
 /*------------------------------Variables----------------------------*/
 :root{
     --Chimera-primary: hsl(183, 67%, 40%);
+    --Chimera-brighter: hsl(183, 67%, 60%);
+    --Chimera-darker: hsl(183, 67%, 30%);
     --Chimera-secondary: hsl(183, 54%, 56%);
     --Chimera-accent: hsl(183, 67%, 40%); /* Same as primary ATM */
     --Chimera-accent-hover: hsl(183, 67%, 35%);
@@ -12,6 +14,7 @@
     --Chimera-text: hsl(0, 0%, 25%);
     --Chimera-background: hsl(40, 30%, 95%);
     --Chimera-background-secondary: hsl(40, 20%, 90%);
+    --Chimera-transparent: hsla(183, 67%, 40%, 0.30);
     /*Dark mode*/
     --Chimera-dark-primary: hsl(183, 67%, 40%);
     --Chimera-dark-secondary: hsl(183, 54%, 50%);
@@ -63,18 +66,22 @@ button {
     border: 0px;
     background-color: var(--Chimera-primary);
     color: #ffff;
+    border: 2px solid var(--Chimera-primary);
+    transition: 150ms  ease-in-out;
 }
 
 button:hover {
     background-color: var(--Chimera-accent-hover);
-    transition: 100ms;
+    border-color: var(--Chimera-accent-hover);
     cursor: pointer;
 }
 
 button:active {
+    border-color: var(--Chimera-accent-active);
     background-color: var(--Chimera-accent-active);
-    transition: 100ms;
 }
+
+
 
 /*------------------------------Headings----------------------------*/
 
@@ -229,18 +236,6 @@ label {
     background-color: var(--Chimera-dark-primary);
 }
 
-.chimera-dark > button {
-    background-color: var(--Chimera-dark-primary);
-}
-
-.chimera-dark > button:hover {
-    background-color: var(--Chimera-dark-accent-hover);
-}
-
-.chimera-dark > button:active {
-    background-color: var(--Chimera-dark-accent-active);
-}
-
 .chimera-dark > a {
     color: var(--Chimera-dark-accent);
 }
@@ -273,4 +268,14 @@ label {
 .chimera-dark > input, textarea {
     background-color: var(--Chimera-dark-background-secondary);
     color: var(--Chimera-dark-text);
+}
+
+.chimera-dark > button:hover {
+    background-color: var(--Chimera-transparent);
+    color: var(--Chimera-primary);
+}
+
+.chimera-dark > button:active {
+    color: var(--Chimera-brighter);
+    border-color: var(--Chimera-brighter);
 }
