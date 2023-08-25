@@ -273,11 +273,8 @@ pre code{
 }
 
 
-
-
-
 /*------------------------------Forms----------------------------*/
-input, textarea {
+textarea, input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"] {
     border-radius: 8px;
     background-color: var(--Chimera-bg-secondary);
     color: var(--Chimera-text); 
@@ -290,11 +287,88 @@ input, textarea {
     outline: none;
 }
 
-.chimera-dark > input, textarea {
+.chimera-dark > textarea {
+    background-color: var(--Chimera-dark-bg-secondary);
+    color: var(--Chimera-dark-text);
+}
+
+.chimera-dark > input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"] {
     background-color: var(--Chimera-dark-bg-secondary);
     color: var(--Chimera-dark-text);
 }
 
 label {
     font-weight: 600;
+}
+
+/*------------------------------Radio buttons----------------------------*/
+input[type="radio"] {
+    /* reset */
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--Chimera-background-secondary);
+    margin: 0;
+    border: 2px solid var(--Chimera-input-border);
+    width: 1em;
+    height: 1em;
+    padding: 0%;
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]:hover {
+    border: 2px solid var(--Chimera-accent);
+}
+
+input[type="radio"]::before {
+    transition: 200ms transform ease-in-out;
+    transform: scale(0);
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--Chimera-accent);
+    content: "";
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+/*------------------------------Checkboxes----------------------------*/
+input[type="checkbox"] {
+    /* reset */
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: var(--Chimera-background-secondary);
+    margin: 0;
+    padding: 0%;
+
+    /*style*/
+    border: 2px solid var(--Chimera-input-border);
+    width: 1em;
+    height: 1em;
+    border-radius: 0.2em;
+
+    /*center*/
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]:hover {
+    border: 2px solid var(--Chimera-accent);
+}
+
+input[type="checkbox"]::before {
+    transition: 200ms transform ease-in-out;
+    transform: scale(0);
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--Chimera-accent);
+    content: "";
+    border-radius: 0.05em;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
 }
