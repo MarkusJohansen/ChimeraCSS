@@ -13,7 +13,7 @@
 
 # ChimeraCSS
 
-Classless CSS framework with a Clean, soft and modern design inspired By SakuraCSS and Marx. The Framework is prelease.
+Classless CSS framework with a Clean, soft and modern design inspired By SakuraCSS and Marx. 
 
 ---
 
