@@ -9,6 +9,7 @@
     --Chimera-darker: hsl(183, 67%, 30%);
     --Chimera-darkest: hsl(183, 67%, 25%);
     --Chimera-transparent: hsla(183, 67%, 40%, 0.30);
+    --Chimera-input-border: hsl(0, 0%, 51%);
     --Chimera-text: hsl(0, 0%, 25%);
     --Chimera-dark-text: hsl(0, 0%, 85%);
     --Chimera-bg: hsl(40, 30%, 95%);
@@ -273,11 +274,8 @@ pre code{
 }
 
 
-
-
-
 /*------------------------------Forms----------------------------*/
-input, textarea {
+textarea, input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"] {
     border-radius: 8px;
     background-color: var(--Chimera-bg-secondary);
     color: var(--Chimera-text); 
@@ -290,11 +288,101 @@ input, textarea {
     outline: none;
 }
 
-.chimera-dark > input, textarea {
+.chimera-dark > textarea {
+    background-color: var(--Chimera-dark-bg-secondary);
+    color: var(--Chimera-dark-text);
+}
+
+.chimera-dark > input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"] {
     background-color: var(--Chimera-dark-bg-secondary);
     color: var(--Chimera-dark-text);
 }
 
 label {
     font-weight: 600;
+}
+
+/*------------------------------Radio and Checkbox groups-----------------*/
+radio, checkbox {
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    align-items: center;
+    margin: 1em 0em;
+}
+
+/*------------------------------Radio buttons----------------------------*/
+input[type="radio"]{
+    /*remove default radio-buttons, and reset style*/
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Chimera-bg-secondary);
+
+    /*style*/
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    border: 2px solid var(--Chimera-input-border);
+
+    /*Place fill*/
+    display: grid;
+    place-content: center;
+}
+
+input[type="radio"]:hover {
+    border: 2px solid var(--Chimera);
+}
+
+input[type="radio"]::before {
+    transition: 200ms transform ease-in-out;
+    transform: scale(0);
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--Chimera);
+    content: "";
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+/*------------------------------Checkboxes----------------------------*/
+input[type="checkbox"] {
+    /*remove default checkboxes, and reset style*/
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Chimera-bg-secondary);
+
+    /*style*/
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    border: 2px solid var(--Chimera-input-border);
+    border-radius: 0.2em;
+
+    display: grid;
+    place-content: center;
+}
+
+
+input[type="checkbox"]:hover {
+    border: 2px solid var(--Chimera);
+}
+
+input[type="checkbox"]::before {
+    transition: 200ms transform ease-in-out;
+    transform: scale(0);
+    width: 0.5em;
+    height: 0.5em;
+    background-color: var(--Chimera);
+    content: "";
+    border-radius: 0.05em;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1);
 }
