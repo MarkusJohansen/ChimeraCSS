@@ -3,40 +3,37 @@
 
 /*------------------------------Variables----------------------------*/
 :root{
-    --Chimera-primary: hsl(183, 67%, 40%);
+    --Chimera: hsl(183, 67%, 40%);
     --Chimera-brighter: hsl(183, 67%, 60%);
+    --Chimera-dark: hsl(183, 67%, 35%);
     --Chimera-darker: hsl(183, 67%, 30%);
-    --Chimera-secondary: hsl(183, 54%, 56%);
-    --Chimera-accent: hsl(183, 67%, 40%); /* Same as primary ATM */
-    --Chimera-accent-hover: hsl(183, 67%, 35%);
-    --Chimera-accent-visited: hsl(183, 67%, 25%);
-    --Chimera-accent-active: hsl(183, 67%, 30%);
-    --Chimera-text: hsl(0, 0%, 25%);
-    --Chimera-background: hsl(40, 30%, 95%);
-    --Chimera-background-secondary: hsl(40, 20%, 90%);
+    --Chimera-darkest: hsl(183, 67%, 25%);
     --Chimera-transparent: hsla(183, 67%, 40%, 0.30);
-    /*Dark mode*/
-    --Chimera-dark-primary: hsl(183, 67%, 40%);
-    --Chimera-dark-secondary: hsl(183, 54%, 50%);
-    --Chimera-dark-accent: hsl(183, 67%, 45%); /* Same as primary ATM */
-    --Chimera-dark-accent-hover: hsl(183, 67%, 45%);
-    --Chimera-dark-accent-visited: hsl(183, 67%, 40%);
-    --Chimera-dark-accent-active: hsl(183, 67%, 35%);
+    --Chimera-text: hsl(0, 0%, 25%);
     --Chimera-dark-text: hsl(0, 0%, 85%);
-    --Chimera-dark-background: hsl(214, 15%, 16%);
-    --Chimera-dark-background-secondary: hsl(214, 13%, 20%);
+    --Chimera-bg: hsl(40, 30%, 95%);
+    --Chimera-bg-secondary: hsl(40, 20%, 90%);
+    --Chimera-dark-bg: hsl(214, 15%, 16%);
+    --Chimera-dark-bg-secondary: hsl(214, 13%, 20%);
 }
 
-/*------------------------------General----------------------------*/
+/*------------------------------body----------------------------*/
 body {
     font-family: 'Inter', sans-serif;
     color: var(--Chimera-text);
-    background: var(--Chimera-background);
+    background: var(--Chimera-bg);
 }
 
+.chimera-dark {
+    color: var(--Chimera-dark-text);
+    background: var(--Chimera-dark-bg);
+}
+
+
+/*------------------------------Blockquotes----------------------------*/
 blockquote {
-    border-left: 4px solid var(--Chimera-primary);
-    background-color: var(--Chimera-background-secondary);
+    border-left: 4px solid var(--Chimera);
+    background-color: var(--Chimera-bg-secondary);
     padding: 20px;
     line-height: 28px;
     max-width: 100%;
@@ -44,13 +41,30 @@ blockquote {
     border-radius: 0px 8px 8px 0px;
 }
 
+.chimera-dark > blockquote {
+    border-color: var(--Chimera-brighter);
+    background-color: var(--Chimera-dark-bg-secondary);
+}
+
+
+
+
+
+/*------------------------------Horisontal Rule----------------------------*/
 hr {
     height: 2px;
-    background-color: var(--Chimera-primary);
+    background-color: var(--Chimera);
     width: 100%;
     border: 0;
     margin: 1em 0px;
 }
+
+.chimera-dark > hr {
+    background-color: var(--Chimera);
+}
+
+
+
 
 /*------------------------------Images-----------------------------*/
 img {
@@ -58,28 +72,44 @@ img {
     height: auto;
 }
 
+
+
+
 /*------------------------------Buttons----------------------------*/
 button {
     padding: 7px 16px;
     font-size: medium;
     border-radius: 8px;
     border: 0px;
-    background-color: var(--Chimera-primary);
+    background-color: var(--Chimera);
     color: #ffff;
-    border: 2px solid var(--Chimera-primary);
-    transition: 150ms  ease-in-out;
+    border: 2px solid var(--Chimera);
+    transition: 200ms  ease-in-out;
 }
 
 button:hover {
-    background-color: var(--Chimera-accent-hover);
-    border-color: var(--Chimera-accent-hover);
+    background-color: var(--Chimera-dark);
+    border-color: var(--Chimera-dark);
     cursor: pointer;
 }
 
 button:active {
-    border-color: var(--Chimera-accent-active);
-    background-color: var(--Chimera-accent-active);
+    border-color: var(--Chimera-darker);
+    background-color: var(--Chimera-darker);
 }
+
+.chimera-dark > button:hover {
+    background-color: var(--Chimera-transparent);
+    color: var(--Chimera);
+    border-color: var(--Chimera);
+}
+
+.chimera-dark > button:active {
+    color: var(--Chimera-brighter);
+    border-color: var(--Chimera-brighter);
+}
+
+
 
 
 
@@ -115,6 +145,9 @@ h6 {
     font-size: 1em;
 }
 
+
+
+
 /*------------------------------Paragraphs----------------------------*/
 
 p {
@@ -122,39 +155,58 @@ p {
     font-weight: 300;
 }
 
+
+
+
+
 /*------------------------------Links----------------------------*/
 
 a {
-    color: var(--Chimera-accent);
+    color: var(--Chimera);
     text-decoration: none;
     font-weight: 300;
 }
 
-a:active {
-    color: var(--Chimera-accent-hover);
+a:visited {
+    color: var(--Chimera-darkest);
 }
 
-a:visited {
-    color: var(--Chimera-accent-visited);
+.chimera-dark > a:visited {
+    color: var(--Chimera-dark);
 }
 
 a:hover {
-    color: var(--Chimera-accent-hover);
+    color: var(--Chimera-dark);
     cursor: pointer;
-    text-decoration: underline var(--Chimera-accent-hover);
+    text-decoration: underline var(--Chimera-dark);
+} 
+
+.chimera-dark > a:hover {
+    color: var(--Chimera-brighter);
+    text-decoration-color: var(--Chimera-brighter);
 }
 
-/*------------------------------Tables----------------------------*/
+a:active {
+    color: var(--Chimera-darker);
+    text-decoration-color: var(--Chimera-darker);
+}
 
+.chimera-dark > a:active {
+    color: var(--Chimera);
+    text-decoration-color: var(--Chimera);
+}
+
+
+
+
+
+
+
+
+/*------------------------------Tables----------------------------*/
 table{
     width: 100%;
     border-collapse: collapse;
-}
-
-td, th {
-    border-bottom: 1px solid var(--Chimera-secondary);
-    padding: 10px;
-    text-align: left;
 }
 
 th{
@@ -165,8 +217,15 @@ td{
     font-weight: lighter;
 }
 
-/*------------------------------Lists----------------------------*/
+td, th {
+    border-bottom: 2px solid var(--Chimera);
+    padding: 10px;
+    text-align: left;
+}
 
+
+
+/*------------------------------Lists----------------------------*/
 ul, ol {
     margin-left: 1.5em;
     padding: 0;
@@ -180,10 +239,15 @@ ul {
 li {
     list-style: inherit;
 }
-/*-----------------------------Formatted text----------------------------*/
 
+
+
+
+
+
+/*-----------------------------Formatted text----------------------------*/
 pre{
-    background-color: var(--Chimera-background-secondary);
+    background-color: var(--Chimera-bg-secondary);
     padding: 10px;
     border-radius: 8px;
     overflow-x: auto;
@@ -191,7 +255,7 @@ pre{
 }
 
 code, kbd, var, samp{
-    background-color: var(--Chimera-background-secondary);
+    background-color: var(--Chimera-bg-secondary);
     border-radius: 8px;
     padding: 4px 8px;
 }
@@ -200,11 +264,22 @@ pre code{
     font-family: 'Fira Code', monospace;
 }
 
-/*------------------------------Forms----------------------------*/
+.chimera-dark > pre{
+    background-color: var(--Chimera-dark-bg-secondary);
+}
 
+.chimera-dark > code, kbd, var, samp{
+    background-color: var(--Chimera-dark-bg-secondary);
+}
+
+
+
+
+
+/*------------------------------Forms----------------------------*/
 input, textarea {
     border-radius: 8px;
-    background-color: var(--Chimera-background-secondary);
+    background-color: var(--Chimera-bg-secondary);
     color: var(--Chimera-text); 
     border: 0;
     padding: 12px;
@@ -215,67 +290,11 @@ input, textarea {
     outline: none;
 }
 
+.chimera-dark > input, textarea {
+    background-color: var(--Chimera-dark-bg-secondary);
+    color: var(--Chimera-dark-text);
+}
 
 label {
     font-weight: 600;
-}
-
-
-/*------------------------------darkmode----------------------------*/
-.chimera-dark {
-    color: var(--Chimera-dark-text);
-    background: var(--Chimera-dark-background);
-}
-
-.chimera-dark > blockquote {
-    border-color: var(--Chimera-dark-primary);
-    background-color: var(--Chimera-dark-background-secondary);
-}
-
-.chimera-dark > hr {
-    background-color: var(--Chimera-dark-primary);
-}
-
-.chimera-dark > a {
-    color: var(--Chimera-dark-accent);
-}
-
-.chimera-dark > a:active {
-    color: var(--Chimera-dark-accent-hover);
-}
-
-.chimera-dark > a:visited {
-    color: var(--Chimera-dark-accent-visited);
-}
-
-.chimera-dark > a:hover {
-    color: var(--Chimera-dark-accent-hover);
-    text-decoration-color: var(--Chimera-dark-accent-hover);
-}
-
-.chimera-dark > td, th {
-    border-color: var(--Chimera-dark-secondary);
-}
-
-.chimera-dark > pre{
-    background-color: var(--Chimera-dark-background-secondary);
-}
-
-.chimera-dark > code, kbd, var, samp{
-    background-color: var(--Chimera-dark-background-secondary);
-}
-
-.chimera-dark > input, textarea {
-    background-color: var(--Chimera-dark-background-secondary);
-    color: var(--Chimera-dark-text);
-}
-
-.chimera-dark > button:hover {
-    background-color: var(--Chimera-transparent);
-    color: var(--Chimera-primary);
-}
-
-.chimera-dark > button:active {
-    color: var(--Chimera-brighter);
-    border-color: var(--Chimera-brighter);
 }
