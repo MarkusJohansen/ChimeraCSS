@@ -1,388 +1,378 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 /*------------------------------Variables----------------------------*/
-:root{
-    --Chimera: hsl(183, 67%, 40%);
-    --Chimera-brighter: hsl(183, 67%, 60%);
-    --Chimera-dark: hsl(183, 67%, 35%);
-    --Chimera-darker: hsl(183, 67%, 30%);
-    --Chimera-darkest: hsl(183, 67%, 25%);
-    --Chimera-transparent: hsla(183, 67%, 40%, 0.30);
-    --Chimera-input-border: hsl(0, 0%, 51%);
-    --Chimera-text: hsl(0, 0%, 25%);
-    --Chimera-dark-text: hsl(0, 0%, 85%);
-    --Chimera-bg: hsl(40, 30%, 95%);
-    --Chimera-bg-secondary: hsl(40, 20%, 90%);
-    --Chimera-dark-bg: hsl(214, 15%, 16%);
-    --Chimera-dark-bg-secondary: hsl(214, 13%, 20%);
+:root {
+  --Chimera: hsl(183, 67%, 40%);
+  --Chimera-brighter: hsl(183, 67%, 60%);
+  --Chimera-dark: hsl(183, 67%, 35%);
+  --Chimera-darker: hsl(183, 67%, 30%);
+  --Chimera-darkest: hsl(183, 67%, 25%);
+  --Chimera-transparent: hsla(183, 67%, 40%, 0.3);
+  --Chimera-input-border: hsl(0, 0%, 51%);
+  --Chimera-text: hsl(0, 0%, 25%);
+  --Chimera-dark-text: hsl(0, 0%, 85%);
+  --Chimera-bg: hsl(40, 30%, 95%);
+  --Chimera-bg-secondary: hsl(40, 20%, 90%);
+  --Chimera-dark-bg: hsl(214, 15%, 16%);
+  --Chimera-dark-bg-secondary: hsl(214, 13%, 20%);
 }
 
 /*------------------------------body----------------------------*/
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--Chimera-text);
-    background: var(--Chimera-bg);
+  font-family: "Inter", sans-serif;
+  color: var(--Chimera-text);
+  background: var(--Chimera-bg);
 }
 
 .chimera-dark {
-    color: var(--Chimera-dark-text);
-    background: var(--Chimera-dark-bg);
+  color: var(--Chimera-dark-text);
+  background: var(--Chimera-dark-bg);
 }
-
 
 /*------------------------------Blockquotes----------------------------*/
 blockquote {
-    border-left: 4px solid var(--Chimera);
-    background-color: var(--Chimera-bg-secondary);
-    padding: 20px;
-    line-height: 28px;
-    max-width: 100%;
-    margin: 0px;
-    border-radius: 0px 8px 8px 0px;
+  border-left: 4px solid var(--Chimera);
+  background-color: var(--Chimera-bg-secondary);
+  padding: 20px;
+  line-height: 28px;
+  max-width: 100%;
+  margin: 0px;
+  border-radius: 0px 8px 8px 0px;
 }
 
 .chimera-dark > blockquote {
-    border-color: var(--Chimera-brighter);
-    background-color: var(--Chimera-dark-bg-secondary);
+  border-color: var(--Chimera-brighter);
+  background-color: var(--Chimera-dark-bg-secondary);
 }
-
-
-
-
 
 /*------------------------------Horisontal Rule----------------------------*/
 hr {
-    height: 2px;
-    background-color: var(--Chimera);
-    width: 100%;
-    border: 0;
-    margin: 1em 0px;
+  height: 2px;
+  background-color: var(--Chimera);
+  width: 100%;
+  border: 0;
+  margin: 1em 0px;
 }
 
 .chimera-dark > hr {
-    background-color: var(--Chimera);
+  background-color: var(--Chimera);
 }
-
-
-
 
 /*------------------------------Images-----------------------------*/
 img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
-
-
-
 /*------------------------------Buttons----------------------------*/
-button {
-    padding: 7px 16px;
-    font-size: medium;
-    border-radius: 8px;
-    border: 0px;
-    background-color: var(--Chimera);
-    color: #ffff;
-    border: 2px solid var(--Chimera);
-    transition: 200ms  ease-in-out;
+button,
+input[type="button"],
+input[type="submit"] {
+  padding: 7px 16px;
+  font-size: medium;
+  border-radius: 8px;
+  border: 0px;
+  background-color: var(--Chimera);
+  color: #ffff;
+  border: 2px solid var(--Chimera);
+  transition: 200ms ease-in-out;
 }
 
 button:hover {
-    background-color: var(--Chimera-dark);
-    border-color: var(--Chimera-dark);
-    cursor: pointer;
+  background-color: var(--Chimera-dark);
+  border-color: var(--Chimera-dark);
+  cursor: pointer;
 }
 
 button:active {
-    border-color: var(--Chimera-darker);
-    background-color: var(--Chimera-darker);
+  border-color: var(--Chimera-darker);
+  background-color: var(--Chimera-darker);
 }
 
 .chimera-dark > button:hover {
-    background-color: var(--Chimera-transparent);
-    color: var(--Chimera);
-    border-color: var(--Chimera);
+  background-color: var(--Chimera-transparent);
+  color: var(--Chimera-brighter);
+  border-color: var(--Chimera);
 }
 
 .chimera-dark > button:active {
-    color: var(--Chimera-brighter);
-    border-color: var(--Chimera-brighter);
+  color: var(--Chimera-brighter);
+  border-color: var(--Chimera-brighter);
 }
-
-
-
-
 
 /*------------------------------Headings----------------------------*/
 
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 h1 {
-    font-size: 3em;
+  font-size: 3em;
 }
 
 h2 {
-    font-size: 2.5em;
+  font-size: 2.5em;
 }
 
 h3 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h4 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h5 {
-    font-size: 1.25em;
+  font-size: 1.25em;
 }
 
 h6 {
-    font-size: 1em;
+  font-size: 1em;
 }
-
-
-
 
 /*------------------------------Paragraphs----------------------------*/
 
 p {
-    line-height: 1.5;
-    font-weight: 300;
+  line-height: 1.5;
+  font-weight: 300;
 }
-
-
-
-
 
 /*------------------------------Links----------------------------*/
 
 a {
-    color: var(--Chimera);
-    text-decoration: none;
-    font-weight: 300;
+  color: var(--Chimera);
+  text-decoration: none;
+  font-weight: 300;
 }
 
 a:visited {
-    color: var(--Chimera-darkest);
+  color: var(--Chimera-darkest);
 }
 
 .chimera-dark > a:visited {
-    color: var(--Chimera-dark);
+  color: var(--Chimera-dark);
 }
 
 a:hover {
-    color: var(--Chimera-dark);
-    cursor: pointer;
-    text-decoration: underline var(--Chimera-dark);
-} 
+  color: var(--Chimera-dark);
+  cursor: pointer;
+  text-decoration: underline var(--Chimera-dark);
+}
 
 .chimera-dark > a:hover {
-    color: var(--Chimera-brighter);
-    text-decoration-color: var(--Chimera-brighter);
+  color: var(--Chimera-brighter);
+  text-decoration-color: var(--Chimera-brighter);
 }
 
 a:active {
-    color: var(--Chimera-darker);
-    text-decoration-color: var(--Chimera-darker);
+  color: var(--Chimera-darker);
+  text-decoration-color: var(--Chimera-darker);
 }
 
 .chimera-dark > a:active {
-    color: var(--Chimera);
-    text-decoration-color: var(--Chimera);
+  color: var(--Chimera);
+  text-decoration-color: var(--Chimera);
 }
-
-
-
-
-
-
-
 
 /*------------------------------Tables----------------------------*/
-table{
-    width: 100%;
-    border-collapse: collapse;
+table {
+  width: 100%;
+  border-collapse: collapse;
 }
 
-th{
-    font-weight: 800;
+th {
+  font-weight: 800;
 }
 
-td{
-    font-weight: lighter;
+td {
+  font-weight: lighter;
 }
 
-td, th {
-    border-bottom: 2px solid var(--Chimera);
-    padding: 10px;
-    text-align: left;
+td,
+th {
+  border-bottom: 2px solid var(--Chimera);
+  padding: 10px;
+  text-align: left;
 }
-
-
 
 /*------------------------------Lists----------------------------*/
-ul, ol {
-    margin-left: 1.5em;
-    padding: 0;
-    line-height: 2em;
+ul,
+ol {
+  margin-left: 1.5em;
+  padding: 0;
+  line-height: 2em;
 }
 
 ul {
-    list-style: disc;
+  list-style: disc;
 }
 
 li {
-    list-style: inherit;
+  list-style: inherit;
 }
-
-
-
-
-
 
 /*-----------------------------Formatted text----------------------------*/
-pre{
-    background-color: var(--Chimera-bg-secondary);
-    padding: 10px;
-    border-radius: 8px;
-    overflow-x: auto;
-    width: 100%;
+pre {
+  background-color: var(--Chimera-bg-secondary);
+  padding: 10px;
+  border-radius: 8px;
+  overflow-x: auto;
+  width: 100%;
 }
 
-code, kbd, var, samp{
-    background-color: var(--Chimera-bg-secondary);
-    border-radius: 8px;
-    padding: 4px 8px;
+code,
+kbd,
+var,
+samp {
+  background-color: var(--Chimera-bg-secondary);
+  border-radius: 8px;
+  padding: 4px 8px;
 }
 
-pre code{
-    font-family: 'Fira Code', monospace;
+pre code {
+  font-family: "Fira Code", monospace;
 }
 
-.chimera-dark > pre{
-    background-color: var(--Chimera-dark-bg-secondary);
+.chimera-dark > pre {
+  background-color: var(--Chimera-dark-bg-secondary);
 }
 
-.chimera-dark > code, kbd, var, samp{
-    background-color: var(--Chimera-dark-bg-secondary);
+.chimera-dark > code,
+kbd,
+var,
+samp {
+  background-color: var(--Chimera-dark-bg-secondary);
 }
-
 
 /*------------------------------Forms----------------------------*/
-textarea, input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"] {
-    border-radius: 8px;
-    background-color: var(--Chimera-bg-secondary);
-    color: var(--Chimera-text); 
-    border: 0;
-    padding: 12px;
-    width: 100%;
-    display: flex;
-    margin: 5px 0px 15px 0px;
-    font-size: medium;
-    outline: none;
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"] {
+  border-radius: 8px;
+  background-color: var(--Chimera-bg-secondary);
+  color: var(--Chimera-text);
+  border: 0;
+  padding: 12px;
+  width: 100%;
+  display: flex;
+  margin: 1em 0;
+  font-size: medium;
+  outline: none;
 }
 
 .chimera-dark > textarea {
-    background-color: var(--Chimera-dark-bg-secondary);
-    color: var(--Chimera-dark-text);
+  background-color: var(--Chimera-dark-bg-secondary);
+  color: var(--Chimera-dark-text);
 }
 
-.chimera-dark > input[type="text"], input[type="email"], input[type="password"], input[type="number"], input[type="tel"], input[type="url"] {
-    background-color: var(--Chimera-dark-bg-secondary);
-    color: var(--Chimera-dark-text);
+.chimera-dark > input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"] {
+  background-color: var(--Chimera-dark-bg-secondary);
+  color: var(--Chimera-dark-text);
 }
 
 label {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 /*------------------------------Radio and Checkbox groups-----------------*/
-radio, checkbox {
-    line-height: 1.1;
-    display: grid;
-    grid-template-columns: 1em auto;
-    gap: 0.5em;
-    align-items: center;
-    margin: 1em 0em;
+radio,
+checkbox {
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  align-items: center;
+  margin: 1em 0em;
 }
 
 /*------------------------------Radio buttons----------------------------*/
-input[type="radio"]{
-    /*remove default radio-buttons, and reset style*/
-    appearance: none;
-    margin: 0;
-    padding: 0;
-    background-color: var(--Chimera-bg-secondary);
+input[type="radio"] {
+  /*remove default radio-buttons, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Chimera-bg-secondary);
 
-    /*style*/
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
-    border: 2px solid var(--Chimera-input-border);
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid var(--Chimera-input-border);
 
-    /*Place fill*/
-    display: grid;
-    place-content: center;
+  /*Place fill*/
+  display: grid;
+  place-content: center;
 }
 
 input[type="radio"]:hover {
-    border: 2px solid var(--Chimera);
+  border: 2px solid var(--Chimera);
 }
 
 input[type="radio"]::before {
-    transition: 200ms transform ease-in-out;
-    transform: scale(0);
-    width: 0.5em;
-    height: 0.5em;
-    background-color: var(--Chimera);
-    content: "";
-    border-radius: 50%;
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--Chimera);
+  content: "";
+  border-radius: 50%;
 }
 
 input[type="radio"]:checked::before {
-    transform: scale(1);
+  transform: scale(1);
 }
 
 /*------------------------------Checkboxes----------------------------*/
 input[type="checkbox"] {
-    /*remove default checkboxes, and reset style*/
-    appearance: none;
-    margin: 0;
-    padding: 0;
-    background-color: var(--Chimera-bg-secondary);
+  /*remove default checkboxes, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: var(--Chimera-bg-secondary);
 
-    /*style*/
-    width: 1em;
-    height: 1em;
-    border-radius: 1em;
-    border: 2px solid var(--Chimera-input-border);
-    border-radius: 0.2em;
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid var(--Chimera-input-border);
+  border-radius: 0.2em;
 
-    display: grid;
-    place-content: center;
+  display: grid;
+  place-content: center;
 }
 
-
 input[type="checkbox"]:hover {
-    border: 2px solid var(--Chimera);
+  border: 2px solid var(--Chimera);
 }
 
 input[type="checkbox"]::before {
-    transition: 200ms transform ease-in-out;
-    transform: scale(0);
-    width: 0.5em;
-    height: 0.5em;
-    background-color: var(--Chimera);
-    content: "";
-    border-radius: 0.05em;
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: var(--Chimera);
+  content: "";
+  border-radius: 0.05em;
 }
 
 input[type="checkbox"]:checked::before {
-    transform: scale(1);
+  transform: scale(1);
 }
