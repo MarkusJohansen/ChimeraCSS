@@ -1,5 +1,10 @@
 <div align="center">
-    <img  align="center" src="./logo.png" alt="Chimera"width="215" />
+    <img  
+        align="center" 
+        src="./public/assets/logo.png"
+        alt="Chimera"
+        width="215" 
+    />
 </div>
 
 <br>
