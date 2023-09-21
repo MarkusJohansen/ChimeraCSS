@@ -68,13 +68,12 @@ img {
 button,
 input[type="button"],
 input[type="submit"] {
-  padding: 7px 16px;
+  padding: 0.5em 0.75em;
   font-size: medium;
-  border-radius: 8px;
-  border: 0px;
+  border-radius: 0.5em;
+  border: 0;
   background-color: var(--Chimera);
   color: #ffff;
-  border: 2px solid var(--Chimera);
   transition: 200ms ease-in-out;
 }
 
@@ -256,13 +255,14 @@ input[type="search"] {
   background-color: var(--Chimera-bg-secondary);
   color: var(--Chimera-text);
   font-size: medium;
-  border-radius: 8px;
+  border-radius: 0.5em;
   border: 0;
   outline: none;
   width: 100%;
   box-sizing: border-box;
   margin: 0.5em 0;
   padding: 1em 0 1em 1em;
+  resize: none;
 }
 
 textarea {
