@@ -78,13 +78,17 @@ input[type="submit"] {
   transition: 200ms ease-in-out;
 }
 
-button:hover {
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
   background-color: var(--Chimera-dark);
   border-color: var(--Chimera-dark);
   cursor: pointer;
 }
 
-button:active {
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
   border-color: var(--Chimera-darker);
   background-color: var(--Chimera-darker);
 }
