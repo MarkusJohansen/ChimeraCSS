@@ -2,14 +2,14 @@
 
 /*------------------------------Variables----------------------------*/
 :root {
-  --Chimera: hsl(183, 67%, 40%);
-  --Chimera-dark: hsl(183, 67%, 35%);
-  --Chimera-darker: hsl(183, 67%, 30%);
-  --Chimera-darkest: hsl(183, 67%, 25%);
+  --Chimera: hsl(183, 40%, 50%);
+  --Chimera-dark: hsl(183, 40%, 45%);
+  --Chimera-darker: hsl(183, 40%, 40%);
+  --Chimera-darkest: hsl(183, 40%, 25%);
   --Chimera-input-border: hsl(0, 0%, 51%);
   --Chimera-text: hsl(0, 0%, 25%);
   --Chimera-bg: hsl(40, 30%, 100%);
-  --Chimera-bg-secondary: hsl(40, 10%, 94%);
+  --Chimera-bg-secondary: hsl(60, 5%, 95%);
 }
 
 /*------------------------------body----------------------------*/
