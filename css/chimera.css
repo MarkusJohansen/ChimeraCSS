@@ -2,19 +2,14 @@
 
 /*------------------------------Variables----------------------------*/
 :root {
-  --Chimera: hsl(183, 67%, 40%);
-  --Chimera-brighter: hsl(183, 67%, 60%);
-  --Chimera-dark: hsl(183, 67%, 35%);
-  --Chimera-darker: hsl(183, 67%, 30%);
-  --Chimera-darkest: hsl(183, 67%, 25%);
-  --Chimera-transparent: hsla(183, 67%, 40%, 0.3);
+  --Chimera: hsl(183, 40%, 55%);
+  --Chimera-dark: hsl(183, 40%, 50%);
+  --Chimera-darker: hsl(183, 40%, 45%);
+  --Chimera-darkest: hsl(183, 40%, 25%);
   --Chimera-input-border: hsl(0, 0%, 51%);
   --Chimera-text: hsl(0, 0%, 25%);
-  --Chimera-dark-text: hsl(0, 0%, 85%);
-  --Chimera-bg: hsl(40, 30%, 95%);
-  --Chimera-bg-secondary: hsl(40, 20%, 90%);
-  --Chimera-dark-bg: hsl(214, 15%, 16%);
-  --Chimera-dark-bg-secondary: hsl(214, 13%, 20%);
+  --Chimera-bg: hsl(40, 30%, 100%);
+  --Chimera-bg-secondary: hsl(60, 5%, 95%);
 }
 
 /*------------------------------body----------------------------*/
@@ -24,38 +19,25 @@ body {
   background: var(--Chimera-bg);
 }
 
-.chimera-dark {
-  color: var(--Chimera-dark-text);
-  background: var(--Chimera-dark-bg);
-}
-
 /*------------------------------Blockquotes----------------------------*/
 blockquote {
-  border-left: 4px solid var(--Chimera);
+  line-height: 2em;
   background-color: var(--Chimera-bg-secondary);
-  padding: 20px;
-  line-height: 28px;
-  max-width: 100%;
-  margin: 0px;
-  border-radius: 0px 8px 8px 0px;
-}
-
-.chimera-dark > blockquote {
-  border-color: var(--Chimera-brighter);
-  background-color: var(--Chimera-dark-bg-secondary);
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 0.25em solid var(--Chimera);
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 1em;
+  margin: 0;
 }
 
 /*------------------------------Horisontal Rule----------------------------*/
 hr {
-  height: 2px;
   background-color: var(--Chimera);
+  height: 0.2em;
   width: 100%;
   border: 0;
-  margin: 1em 0px;
-}
-
-.chimera-dark > hr {
-  background-color: var(--Chimera);
+  margin: 1em 0;
 }
 
 /*------------------------------Images-----------------------------*/
@@ -68,12 +50,12 @@ img {
 button,
 input[type="button"],
 input[type="submit"] {
-  padding: 0.5em 0.75em;
-  font-size: medium;
-  border-radius: 0.5em;
-  border: 0;
   background-color: var(--Chimera);
   color: #ffff;
+  font-size: medium;
+  padding: 0.5em 0.75em;
+  border: 0;
+  border-radius: 0.5em;
   transition: 200ms ease-in-out;
 }
 
@@ -148,29 +130,15 @@ a:visited {
   color: var(--Chimera-darkest);
 }
 
-.chimera-dark > a:visited {
-  color: var(--Chimera-dark);
-}
-
 a:hover {
   color: var(--Chimera-dark);
   cursor: pointer;
   text-decoration: underline var(--Chimera-dark);
 }
 
-.chimera-dark > a:hover {
-  color: var(--Chimera-brighter);
-  text-decoration-color: var(--Chimera-brighter);
-}
-
 a:active {
   color: var(--Chimera-darker);
   text-decoration-color: var(--Chimera-darker);
-}
-
-.chimera-dark > a:active {
-  color: var(--Chimera);
-  text-decoration-color: var(--Chimera);
 }
 
 /*------------------------------Tables----------------------------*/
@@ -189,8 +157,8 @@ td {
 
 td,
 th {
-  border-bottom: 2px solid var(--Chimera);
-  padding: 10px;
+  border-bottom: 0.1em solid var(--Chimera);
+  padding: 0.5em;
   text-align: left;
 }
 
@@ -228,19 +196,9 @@ samp {
   padding: 4px 8px;
 }
 
-pre code {
+pre,
+code {
   font-family: "Fira Code", monospace;
-}
-
-.chimera-dark > pre {
-  background-color: var(--Chimera-dark-bg-secondary);
-}
-
-.chimera-dark > code,
-kbd,
-var,
-samp {
-  background-color: var(--Chimera-dark-bg-secondary);
 }
 
 /*------------------------------Forms----------------------------*/
