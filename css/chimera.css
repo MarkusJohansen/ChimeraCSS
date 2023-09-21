@@ -264,16 +264,20 @@ input[type="number"],
 input[type="tel"],
 input[type="url"],
 input[type="search"] {
-  border-radius: 8px;
   background-color: var(--Chimera-bg-secondary);
   color: var(--Chimera-text);
-  border: 0;
-  padding: 12px;
-  width: 100%;
-  display: flex;
-  margin: 1em 0;
   font-size: medium;
+  border-radius: 8px;
+  border: 0;
   outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 1em 0 1em 1em;
+}
+
+textarea {
+  font-family: "Inter", sans-serif;
 }
 
 .chimera-dark > textarea {
