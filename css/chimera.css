@@ -3,18 +3,13 @@
 /*------------------------------Variables----------------------------*/
 :root {
   --Chimera: hsl(183, 67%, 40%);
-  --Chimera-brighter: hsl(183, 67%, 60%);
   --Chimera-dark: hsl(183, 67%, 35%);
   --Chimera-darker: hsl(183, 67%, 30%);
   --Chimera-darkest: hsl(183, 67%, 25%);
-  --Chimera-transparent: hsla(183, 67%, 40%, 0.3);
   --Chimera-input-border: hsl(0, 0%, 51%);
   --Chimera-text: hsl(0, 0%, 25%);
-  --Chimera-dark-text: hsl(0, 0%, 85%);
   --Chimera-bg: hsl(40, 30%, 100%);
   --Chimera-bg-secondary: hsl(40, 10%, 94%);
-  --Chimera-dark-bg: hsl(214, 15%, 16%);
-  --Chimera-dark-bg-secondary: hsl(214, 13%, 20%);
 }
 
 /*------------------------------body----------------------------*/
