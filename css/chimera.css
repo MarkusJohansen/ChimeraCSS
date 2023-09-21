@@ -2,9 +2,9 @@
 
 /*------------------------------Variables----------------------------*/
 :root {
-  --Chimera: hsl(183, 40%, 50%);
-  --Chimera-dark: hsl(183, 40%, 45%);
-  --Chimera-darker: hsl(183, 40%, 40%);
+  --Chimera: hsl(183, 40%, 55%);
+  --Chimera-dark: hsl(183, 40%, 50%);
+  --Chimera-darker: hsl(183, 40%, 45%);
   --Chimera-darkest: hsl(183, 40%, 25%);
   --Chimera-input-border: hsl(0, 0%, 51%);
   --Chimera-text: hsl(0, 0%, 25%);
