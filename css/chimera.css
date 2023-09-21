@@ -93,17 +93,6 @@ input[type="submit"]:active {
   background-color: var(--Chimera-darker);
 }
 
-.chimera-dark > button:hover {
-  background-color: var(--Chimera-transparent);
-  color: var(--Chimera-brighter);
-  border-color: var(--Chimera);
-}
-
-.chimera-dark > button:active {
-  color: var(--Chimera-brighter);
-  border-color: var(--Chimera-brighter);
-}
-
 /*------------------------------Headings----------------------------*/
 
 h1,
@@ -278,22 +267,6 @@ input[type="search"] {
 
 textarea {
   font-family: "Inter", sans-serif;
-}
-
-.chimera-dark > textarea {
-  background-color: var(--Chimera-dark-bg-secondary);
-  color: var(--Chimera-dark-text);
-}
-
-.chimera-dark > input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-input[type="url"],
-input[type="search"] {
-  background-color: var(--Chimera-dark-bg-secondary);
-  color: var(--Chimera-dark-text);
 }
 
 label {
