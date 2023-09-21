@@ -11,8 +11,8 @@
   --Chimera-input-border: hsl(0, 0%, 51%);
   --Chimera-text: hsl(0, 0%, 25%);
   --Chimera-dark-text: hsl(0, 0%, 85%);
-  --Chimera-bg: hsl(40, 30%, 95%);
-  --Chimera-bg-secondary: hsl(40, 20%, 90%);
+  --Chimera-bg: hsl(40, 30%, 100%);
+  --Chimera-bg-secondary: hsl(40, 10%, 94%);
   --Chimera-dark-bg: hsl(214, 15%, 16%);
   --Chimera-dark-bg-secondary: hsl(214, 13%, 20%);
 }
@@ -22,11 +22,6 @@ body {
   font-family: "Inter", sans-serif;
   color: var(--Chimera-text);
   background: var(--Chimera-bg);
-}
-
-.chimera-dark {
-  color: var(--Chimera-dark-text);
-  background: var(--Chimera-dark-bg);
 }
 
 /*------------------------------Blockquotes----------------------------*/
@@ -40,11 +35,6 @@ blockquote {
   border-radius: 0px 8px 8px 0px;
 }
 
-.chimera-dark > blockquote {
-  border-color: var(--Chimera-brighter);
-  background-color: var(--Chimera-dark-bg-secondary);
-}
-
 /*------------------------------Horisontal Rule----------------------------*/
 hr {
   height: 2px;
@@ -52,10 +42,6 @@ hr {
   width: 100%;
   border: 0;
   margin: 1em 0px;
-}
-
-.chimera-dark > hr {
-  background-color: var(--Chimera);
 }
 
 /*------------------------------Images-----------------------------*/
@@ -148,29 +134,15 @@ a:visited {
   color: var(--Chimera-darkest);
 }
 
-.chimera-dark > a:visited {
-  color: var(--Chimera-dark);
-}
-
 a:hover {
   color: var(--Chimera-dark);
   cursor: pointer;
   text-decoration: underline var(--Chimera-dark);
 }
 
-.chimera-dark > a:hover {
-  color: var(--Chimera-brighter);
-  text-decoration-color: var(--Chimera-brighter);
-}
-
 a:active {
   color: var(--Chimera-darker);
   text-decoration-color: var(--Chimera-darker);
-}
-
-.chimera-dark > a:active {
-  color: var(--Chimera);
-  text-decoration-color: var(--Chimera);
 }
 
 /*------------------------------Tables----------------------------*/
@@ -230,17 +202,6 @@ samp {
 
 pre code {
   font-family: "Fira Code", monospace;
-}
-
-.chimera-dark > pre {
-  background-color: var(--Chimera-dark-bg-secondary);
-}
-
-.chimera-dark > code,
-kbd,
-var,
-samp {
-  background-color: var(--Chimera-dark-bg-secondary);
 }
 
 /*------------------------------Forms----------------------------*/
