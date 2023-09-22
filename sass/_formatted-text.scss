@@ -1,5 +1,7 @@
+@use "variables";
+
 pre {
-  background-color: var(--Chimera-bg-secondary);
+  background-color: variables.$Chimera-bg-secondary;
   padding: 10px;
   border-radius: 8px;
   overflow-x: auto;
@@ -10,7 +12,7 @@ code,
 kbd,
 var,
 samp {
-  background-color: var(--Chimera-bg-secondary);
+  background-color: variables.$Chimera-bg-secondary;
   border-radius: 8px;
   padding: 4px 8px;
 }

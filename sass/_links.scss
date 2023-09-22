@@ -1,20 +1,22 @@
+@use "variables";
+
 a {
-  color: var(--Chimera);
+  color: variables.$Chimera;
   text-decoration: none;
   font-weight: 300;
 }
 
 a:visited {
-  color: var(--Chimera-darkest);
+  color: variables.$Chimera-darkest;
 }
 
 a:hover {
-  color: var(--Chimera-dark);
+  color: variables.$Chimera-dark;
   cursor: pointer;
-  text-decoration: underline var(--Chimera-dark);
+  text-decoration: underline variables.$Chimera-dark;
 }
 
 a:active {
-  color: var(--Chimera-darker);
-  text-decoration-color: var(--Chimera-darker);
+  color: variables.$Chimera-darker;
+  text-decoration-color: variables.$Chimera-darker;
 }

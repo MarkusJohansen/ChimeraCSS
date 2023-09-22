@@ -1,5 +1,7 @@
+@use "variables";
+
 hr {
-  background-color: var(--Chimera);
+  background-color: variables.$Chimera;
   height: 0.2em;
   width: 100%;
   border: 0;

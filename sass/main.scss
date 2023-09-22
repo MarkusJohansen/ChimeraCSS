@@ -12,10 +12,3 @@
 @use "tables";
 @use "text";
 @use "textfields";
-@use "variables";
-
-body {
-  font-family: $font-stack;
-  color: var($Chimera-text);
-  background: var($Chimera-bg);
-}

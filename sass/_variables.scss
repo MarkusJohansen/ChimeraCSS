@@ -1,6 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+// @font-face {
+//   font-family: "Inter";
+//   src: url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+// }
 
-$font-stack: "Inter", sans-serif;
+// $font-stack: "Inter";
+
+$font-stack: "Courier New", Courier, monospace;
 
 //Color palette
 $Chimera: hsl(183, 40%, 50%);
@@ -11,5 +16,9 @@ $Chimera-input-border: hsl(0, 0%, 51%);
 $Chimera-text: hsl(0, 0%, 25%);
 $Chimera-bg: hsl(40, 30%, 100%);
 $Chimera-bg-secondary: hsl(60, 5%, 95%);
+
+body {
+  font-family: Arial, sans-serif;
+}
 
 //TODO: use sass variables
