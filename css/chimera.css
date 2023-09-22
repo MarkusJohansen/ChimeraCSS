@@ -40,10 +40,17 @@ blockquote {
   margin: 0;
 }
 
-pre {
+code,
+kbd,
+var,
+samp, pre {
   background-color: hsl(60, 5%, 95%);
-  padding: 10px;
   border-radius: 8px;
+  font-family: "Fira Code", monospace;
+}
+
+pre {
+  padding: 10px;
   overflow-x: auto;
   width: 100%;
 }
@@ -52,14 +59,7 @@ code,
 kbd,
 var,
 samp {
-  background-color: hsl(60, 5%, 95%);
-  border-radius: 8px;
   padding: 4px 8px;
-}
-
-pre,
-code {
-  font-family: "Fira Code", monospace;
 }
 
 hr {
@@ -100,8 +100,7 @@ a:active {
   text-decoration-color: hsl(183, 40%, 30%);
 }
 
-ul,
-ol {
+li, ul {
   margin-left: 1.5em;
   padding: 0;
   line-height: 2em;
@@ -193,6 +192,12 @@ checkbox {
   margin: 1em 0em;
 }
 
+td, th {
+  border-bottom: 0.1em solid hsl(183, 40%, 50%);
+  padding: 0.5em;
+  text-align: left;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
@@ -206,19 +211,7 @@ td {
   font-weight: lighter;
 }
 
-td,
-th {
-  border-bottom: 0.1em solid hsl(183, 40%, 50%);
-  padding: 0.5em;
-  text-align: left;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h6, h5, h4, h3, h2, h1 {
   font-weight: 400;
   margin-top: 0.5em;
   margin-bottom: 0.5em;

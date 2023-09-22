@@ -1,9 +1,14 @@
 @use "variables";
 
-pre {
+%formatted-text {
   background-color: variables.$Chimera-bg-secondary;
-  padding: 10px;
   border-radius: 8px;
+  font-family: "Fira Code", monospace;
+}
+
+pre {
+  @extend %formatted-text;
+  padding: 10px;
   overflow-x: auto;
   width: 100%;
 }
@@ -12,12 +17,6 @@ code,
 kbd,
 var,
 samp {
-  background-color: variables.$Chimera-bg-secondary;
-  border-radius: 8px;
+  @extend %formatted-text;
   padding: 4px 8px;
-}
-
-pre,
-code {
-  font-family: "Fira Code", monospace;
 }

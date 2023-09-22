@@ -1,21 +1,22 @@
 @use "variables";
 
+%tablerow {
+  border-bottom: 0.1em solid variables.$Chimera;
+  padding: 0.5em;
+  text-align: left;
+}
+
 table {
   width: 100%;
   border-collapse: collapse;
 }
 
 th {
+  @extend %tablerow;
   font-weight: 800;
 }
 
 td {
+  @extend %tablerow;
   font-weight: lighter;
-}
-
-td,
-th {
-  border-bottom: 0.1em solid variables.$Chimera;
-  padding: 0.5em;
-  text-align: left;
 }
