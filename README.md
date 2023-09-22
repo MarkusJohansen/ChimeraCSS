@@ -1,7 +1,7 @@
 <div align="center">
     <img  
         align="center" 
-        src="./public/logo.png"
+        src="./public/chimeracss.svg"
         alt="Chimera"
         width="215" 
     />
