@@ -1,0 +1,20 @@
+a {
+  color: var(--Chimera);
+  text-decoration: none;
+  font-weight: 300;
+}
+
+a:visited {
+  color: var(--Chimera-darkest);
+}
+
+a:hover {
+  color: var(--Chimera-dark);
+  cursor: pointer;
+  text-decoration: underline var(--Chimera-dark);
+}
+
+a:active {
+  color: var(--Chimera-darker);
+  text-decoration-color: var(--Chimera-darker);
+}

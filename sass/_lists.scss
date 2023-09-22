@@ -1,0 +1,14 @@
+ul,
+ol {
+  margin-left: 1.5em;
+  padding: 0;
+  line-height: 2em;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  list-style: inherit;
+}

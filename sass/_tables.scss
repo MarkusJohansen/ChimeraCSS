@@ -1,0 +1,19 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 800;
+}
+
+td {
+  font-weight: lighter;
+}
+
+td,
+th {
+  border-bottom: 0.1em solid var(--Chimera);
+  padding: 0.5em;
+  text-align: left;
+}

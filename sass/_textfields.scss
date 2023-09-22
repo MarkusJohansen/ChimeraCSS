@@ -1,0 +1,21 @@
+textarea,
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+input[type="url"],
+input[type="search"] {
+  font-family: "Inter", sans-serif;
+  background-color: var(--Chimera-bg-secondary);
+  color: var(--Chimera-text);
+  font-size: medium;
+  border-radius: 0.5em;
+  border: 0;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 1em 0 1em 1em;
+  resize: none;
+}

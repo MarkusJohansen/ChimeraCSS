@@ -1,0 +1,26 @@
+button,
+input[type="button"],
+input[type="submit"] {
+  background-color: var(--Chimera);
+  color: #ffff;
+  font-size: medium;
+  padding: 0.5em 0.75em;
+  border: 0;
+  border-radius: 0.5em;
+  transition: 200ms ease-in-out;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover {
+  background-color: var(--Chimera-dark);
+  border-color: var(--Chimera-dark);
+  cursor: pointer;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active {
+  border-color: var(--Chimera-darker);
+  background-color: var(--Chimera-darker);
+}

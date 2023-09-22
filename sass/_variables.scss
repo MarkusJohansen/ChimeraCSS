@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+
+:root {
+  --Chimera: hsl(183, 40%, 55%);
+  --Chimera-dark: hsl(183, 40%, 50%);
+  --Chimera-darker: hsl(183, 40%, 45%);
+  --Chimera-darkest: hsl(183, 40%, 25%);
+  --Chimera-input-border: hsl(0, 0%, 51%);
+  --Chimera-text: hsl(0, 0%, 25%);
+  --Chimera-bg: hsl(40, 30%, 100%);
+  --Chimera-bg-secondary: hsl(60, 5%, 95%);
+}
+
+//TODO: use sass variables
