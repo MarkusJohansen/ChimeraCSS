@@ -1,7 +1,3 @@
-body {
-  font-family: Arial, sans-serif;
-}
-
 button,
 input[type=button],
 input[type=submit] {
@@ -82,7 +78,7 @@ label {
 a {
   color: hsl(183, 40%, 50%);
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a:visited {
@@ -204,7 +200,7 @@ table {
 }
 
 th {
-  font-weight: 800;
+  font-weight: 600;
 }
 
 td {
@@ -254,7 +250,7 @@ input[type=number],
 input[type=tel],
 input[type=url],
 input[type=search] {
-  font-family: "Inter", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   background-color: hsl(60, 5%, 95%);
   color: hsl(0, 0%, 25%);
   font-size: medium;
@@ -266,6 +262,12 @@ input[type=search] {
   margin: 0.5em 0;
   padding: 1em 0 1em 1em;
   resize: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(0, 0%, 25%);
+  background: hsl(40, 30%, 100%);
 }
 
 /*# sourceMappingURL=chimera.css.map */
