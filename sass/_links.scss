@@ -6,10 +6,6 @@ a {
   font-weight: 400;
 }
 
-a:visited {
-  color: variables.$Chimera-darkest;
-}
-
 a:hover {
   color: variables.$Chimera-dark;
   cursor: pointer;
