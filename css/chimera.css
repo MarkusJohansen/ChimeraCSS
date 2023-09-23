@@ -1,57 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-
-/*------------------------------Variables----------------------------*/
-:root {
-  --Chimera: hsl(183, 40%, 55%);
-  --Chimera-dark: hsl(183, 40%, 50%);
-  --Chimera-darker: hsl(183, 40%, 45%);
-  --Chimera-darkest: hsl(183, 40%, 25%);
-  --Chimera-input-border: hsl(0, 0%, 51%);
-  --Chimera-text: hsl(0, 0%, 25%);
-  --Chimera-bg: hsl(40, 30%, 100%);
-  --Chimera-bg-secondary: hsl(60, 5%, 95%);
-}
-
-/*------------------------------body----------------------------*/
-body {
-  font-family: "Inter", sans-serif;
-  color: var(--Chimera-text);
-  background: var(--Chimera-bg);
-}
-
-/*------------------------------Blockquotes----------------------------*/
-blockquote {
-  line-height: 2em;
-  background-color: var(--Chimera-bg-secondary);
-  width: 100%;
-  box-sizing: border-box;
-  border-left: 0.25em solid var(--Chimera);
-  border-radius: 0 0.5em 0.5em 0;
-  padding: 1em;
-  margin: 0;
-}
-
-/*------------------------------Horisontal Rule----------------------------*/
-hr {
-  background-color: var(--Chimera);
-  height: 0.2em;
-  width: 100%;
-  border: 0;
-  margin: 1em 0;
-}
-
-/*------------------------------Images-----------------------------*/
-img {
-  width: 100%;
-  height: auto;
-}
-
-/*------------------------------Buttons----------------------------*/
 button,
-input[type="button"],
-input[type="submit"] {
-  background-color: var(--Chimera);
-  color: #ffff;
+input[type=button],
+input[type=submit] {
+  background-color: hsl(183, 40%, 50%);
+  color: white;
   font-size: medium;
   padding: 0.5em 0.75em;
   border: 0;
@@ -60,28 +11,203 @@ input[type="submit"] {
 }
 
 button:hover,
-input[type="button"]:hover,
-input[type="submit"]:hover {
-  background-color: var(--Chimera-dark);
-  border-color: var(--Chimera-dark);
+input[type=button]:hover,
+input[type=submit]:hover {
+  background-color: hsl(183, 40%, 40%);
+  border-color: hsl(183, 40%, 40%);
   cursor: pointer;
 }
 
 button:active,
-input[type="button"]:active,
-input[type="submit"]:active {
-  border-color: var(--Chimera-darker);
-  background-color: var(--Chimera-darker);
+input[type=button]:active,
+input[type=submit]:active {
+  border-color: hsl(183, 40%, 30%);
+  background-color: hsl(183, 40%, 30%);
 }
 
-/*------------------------------Headings----------------------------*/
+blockquote {
+  line-height: 2em;
+  background-color: hsl(60, 5%, 95%);
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 0.25em solid hsl(183, 40%, 50%);
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 1em;
+  margin: 0;
+}
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+code,
+kbd,
+var,
+samp, pre {
+  background-color: hsl(60, 5%, 95%);
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+}
+
+pre {
+  padding: 10px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+code,
+kbd,
+var,
+samp {
+  padding: 4px 8px;
+}
+
+hr {
+  background-color: hsl(183, 40%, 50%);
+  height: 0.2em;
+  width: 100%;
+  border: 0;
+  margin: 1em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  font-weight: 600;
+}
+
+a {
+  color: hsl(183, 40%, 50%);
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:visited {
+  color: hsl(183, 40%, 20%);
+}
+
+a:hover {
+  color: hsl(183, 40%, 40%);
+  cursor: pointer;
+  text-decoration: underline hsl(183, 40%, 40%);
+}
+
+a:active {
+  color: hsl(183, 40%, 30%);
+  text-decoration-color: hsl(183, 40%, 30%);
+}
+
+li, ul {
+  margin-left: 1.5em;
+  padding: 0;
+  line-height: 2em;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  list-style: inherit;
+}
+
+input[type=checkbox] {
+  /*remove default checkboxes, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(60, 5%, 95%);
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid hsl(0, 0%, 51%);
+  border-radius: 0.2em;
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox]:hover {
+  border: 2px solid hsl(183, 40%, 50%);
+}
+
+input[type=checkbox]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(183, 40%, 50%);
+  content: "";
+  border-radius: 0.05em;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=radio] {
+  /*remove default radio-buttons, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(60, 5%, 95%);
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid hsl(0, 0%, 51%);
+  /*Place fill*/
+  display: grid;
+  place-content: center;
+}
+
+input[type=radio]:hover {
+  border: 2px solid hsl(183, 40%, 50%);
+}
+
+input[type=radio]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(183, 40%, 50%);
+  content: "";
+  border-radius: 50%;
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+
+radio,
+checkbox {
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+td, th {
+  border-bottom: 0.1em solid hsl(183, 40%, 50%);
+  padding: 0.5em;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 600;
+}
+
+td {
+  font-weight: lighter;
+}
+
+h6, h5, h4, h3, h2, h1 {
   font-weight: 400;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
@@ -111,107 +237,22 @@ h6 {
   font-size: 1em;
 }
 
-/*------------------------------Paragraphs----------------------------*/
-
 p {
   line-height: 1.5;
   font-weight: 300;
 }
 
-/*------------------------------Links----------------------------*/
-
-a {
-  color: var(--Chimera);
-  text-decoration: none;
-  font-weight: 300;
-}
-
-a:visited {
-  color: var(--Chimera-darkest);
-}
-
-a:hover {
-  color: var(--Chimera-dark);
-  cursor: pointer;
-  text-decoration: underline var(--Chimera-dark);
-}
-
-a:active {
-  color: var(--Chimera-darker);
-  text-decoration-color: var(--Chimera-darker);
-}
-
-/*------------------------------Tables----------------------------*/
-table {
-  width: 100%;
-  border-collapse: collapse;
-}
-
-th {
-  font-weight: 800;
-}
-
-td {
-  font-weight: lighter;
-}
-
-td,
-th {
-  border-bottom: 0.1em solid var(--Chimera);
-  padding: 0.5em;
-  text-align: left;
-}
-
-/*------------------------------Lists----------------------------*/
-ul,
-ol {
-  margin-left: 1.5em;
-  padding: 0;
-  line-height: 2em;
-}
-
-ul {
-  list-style: disc;
-}
-
-li {
-  list-style: inherit;
-}
-
-/*-----------------------------Formatted text----------------------------*/
-pre {
-  background-color: var(--Chimera-bg-secondary);
-  padding: 10px;
-  border-radius: 8px;
-  overflow-x: auto;
-  width: 100%;
-}
-
-code,
-kbd,
-var,
-samp {
-  background-color: var(--Chimera-bg-secondary);
-  border-radius: 8px;
-  padding: 4px 8px;
-}
-
-pre,
-code {
-  font-family: "Fira Code", monospace;
-}
-
-/*------------------------------Forms----------------------------*/
 textarea,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-input[type="url"],
-input[type="search"] {
-  background-color: var(--Chimera-bg-secondary);
-  color: var(--Chimera-text);
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel],
+input[type=url],
+input[type=search] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: hsl(60, 5%, 95%);
+  color: hsl(0, 0%, 25%);
   font-size: medium;
   border-radius: 0.5em;
   border: 0;
@@ -223,95 +264,10 @@ input[type="search"] {
   resize: none;
 }
 
-textarea {
-  font-family: "Inter", sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(0, 0%, 25%);
+  background: hsl(40, 30%, 100%);
 }
 
-label {
-  font-weight: 600;
-}
-
-/*------------------------------Radio and Checkbox groups-----------------*/
-radio,
-checkbox {
-  line-height: 1.1;
-  display: grid;
-  grid-template-columns: 1em auto;
-  gap: 0.5em;
-  align-items: center;
-  margin: 1em 0em;
-}
-
-/*------------------------------Radio buttons----------------------------*/
-input[type="radio"] {
-  /*remove default radio-buttons, and reset style*/
-  appearance: none;
-  margin: 0;
-  padding: 0;
-  background-color: var(--Chimera-bg-secondary);
-
-  /*style*/
-  width: 1em;
-  height: 1em;
-  border-radius: 1em;
-  border: 2px solid var(--Chimera-input-border);
-
-  /*Place fill*/
-  display: grid;
-  place-content: center;
-}
-
-input[type="radio"]:hover {
-  border: 2px solid var(--Chimera);
-}
-
-input[type="radio"]::before {
-  transition: 200ms transform ease-in-out;
-  transform: scale(0);
-  width: 0.5em;
-  height: 0.5em;
-  background-color: var(--Chimera);
-  content: "";
-  border-radius: 50%;
-}
-
-input[type="radio"]:checked::before {
-  transform: scale(1);
-}
-
-/*------------------------------Checkboxes----------------------------*/
-input[type="checkbox"] {
-  /*remove default checkboxes, and reset style*/
-  appearance: none;
-  margin: 0;
-  padding: 0;
-  background-color: var(--Chimera-bg-secondary);
-
-  /*style*/
-  width: 1em;
-  height: 1em;
-  border-radius: 1em;
-  border: 2px solid var(--Chimera-input-border);
-  border-radius: 0.2em;
-
-  display: grid;
-  place-content: center;
-}
-
-input[type="checkbox"]:hover {
-  border: 2px solid var(--Chimera);
-}
-
-input[type="checkbox"]::before {
-  transition: 200ms transform ease-in-out;
-  transform: scale(0);
-  width: 0.5em;
-  height: 0.5em;
-  background-color: var(--Chimera);
-  content: "";
-  border-radius: 0.05em;
-}
-
-input[type="checkbox"]:checked::before {
-  transform: scale(1);
-}
+/*# sourceMappingURL=chimera.css.map */

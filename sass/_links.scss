@@ -1,0 +1,22 @@
+@use "variables";
+
+a {
+  color: variables.$Chimera;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+a:visited {
+  color: variables.$Chimera-darkest;
+}
+
+a:hover {
+  color: variables.$Chimera-dark;
+  cursor: pointer;
+  text-decoration: underline variables.$Chimera-dark;
+}
+
+a:active {
+  color: variables.$Chimera-darker;
+  text-decoration-color: variables.$Chimera-darker;
+}

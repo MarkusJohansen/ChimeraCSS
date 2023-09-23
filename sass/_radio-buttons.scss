@@ -1,0 +1,37 @@
+@use "variables";
+
+input[type="radio"] {
+  /*remove default radio-buttons, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: variables.$Chimera-bg-secondary;
+
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid variables.$Chimera-input-border;
+
+  /*Place fill*/
+  display: grid;
+  place-content: center;
+}
+
+input[type="radio"]:hover {
+  border: 2px solid variables.$Chimera;
+}
+
+input[type="radio"]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: variables.$Chimera;
+  content: "";
+  border-radius: 50%;
+}
+
+input[type="radio"]:checked::before {
+  transform: scale(1);
+}

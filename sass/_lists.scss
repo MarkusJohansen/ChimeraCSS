@@ -1,0 +1,15 @@
+%lists {
+  margin-left: 1.5em;
+  padding: 0;
+  line-height: 2em;
+}
+
+ul {
+  @extend %lists;
+  list-style: disc;
+}
+
+li {
+  @extend %lists;
+  list-style: inherit;
+}
