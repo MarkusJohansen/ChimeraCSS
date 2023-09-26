@@ -81,10 +81,6 @@ a {
   font-weight: 400;
 }
 
-a:visited {
-  color: hsl(183, 40%, 20%);
-}
-
 a:hover {
   color: hsl(183, 40%, 40%);
   cursor: pointer;
