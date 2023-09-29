@@ -1,17 +1,15 @@
-@use "variables";
-
 input[type="checkbox"] {
   /*remove default checkboxes, and reset style*/
   appearance: none;
   margin: 0;
   padding: 0;
-  background-color: variables.$Chimera-bg-secondary;
+  background-color: $Chimera-bg-secondary;
 
   /*style*/
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid variables.$Chimera-input-border;
+  border: 2px solid $Chimera-input-border;
   border-radius: 0.2em;
 
   display: grid;
@@ -19,7 +17,7 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:hover {
-  border: 2px solid variables.$Chimera;
+  border: 2px solid $Chimera;
 }
 
 input[type="checkbox"]::before {
@@ -27,7 +25,7 @@ input[type="checkbox"]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: variables.$Chimera;
+  background-color: $Chimera;
   content: "";
   border-radius: 0.05em;
 }

@@ -1,7 +1,5 @@
-@use "variables";
-
 body {
-  font-family: variables.$font-stack;
-  color: variables.$Chimera-text;
-  background: variables.$Chimera-bg;
+  font-family: $font-stack;
+  color: $Chimera-text;
+  background: $Chimera-bg;
 }

@@ -1,11 +1,9 @@
-@use "variables";
-
 blockquote {
   line-height: 2em;
-  background-color: variables.$Chimera-bg-secondary;
+  background-color: $Chimera-bg-secondary;
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid variables.$Chimera;
+  border-left: 0.25em solid $Chimera;
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;

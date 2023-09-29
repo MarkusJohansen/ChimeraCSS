@@ -1,7 +1,5 @@
-@use "variables";
-
 %tablerow {
-  border-bottom: 0.1em solid variables.$Chimera;
+  border-bottom: 0.1em solid $Chimera;
   padding: 0.5em;
   text-align: left;
 }

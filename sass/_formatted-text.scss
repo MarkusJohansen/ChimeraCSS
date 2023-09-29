@@ -1,7 +1,5 @@
-@use "variables";
-
 %formatted-text {
-  background-color: variables.$Chimera-bg-secondary;
+  background-color: $Chimera-bg-secondary;
   border-radius: 8px;
   font-family: "Fira Code", monospace;
 }

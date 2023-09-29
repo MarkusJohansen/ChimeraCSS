@@ -1,17 +1,15 @@
-@use "variables";
-
 a {
-  color: variables.$Chimera;
+  color: $Chimera-link;
   text-decoration: none;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 a:hover {
-  color: variables.$Chimera-dark;
+  color: $Chimera-dark;
   cursor: pointer;
 }
 
 a:active {
-  color: variables.$Chimera-darker;
-  text-decoration-color: variables.$Chimera-darker;
+  color: $Chimera-darker;
+  text-decoration-color: $Chimera-darker;
 }

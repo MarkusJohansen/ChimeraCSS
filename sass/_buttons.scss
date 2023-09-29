@@ -1,10 +1,8 @@
-@use "variables";
-
 button,
 input[type="button"],
 input[type="submit"] {
-  background-color: variables.$Chimera;
-  color: #ffff;
+  background-color: $Chimera;
+  color: $Chimera-text-secondary;
   font-size: medium;
   padding: 0.5em 0.75em;
   border: 0;
@@ -15,14 +13,14 @@ input[type="submit"] {
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
-  background-color: variables.$Chimera-dark;
-  border-color: variables.$Chimera-dark;
+  background-color: $Chimera-dark;
+  border-color: $Chimera-dark;
   cursor: pointer;
 }
 
 button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
-  border-color: variables.$Chimera-darker;
-  background-color: variables.$Chimera-darker;
+  border-color: $Chimera-darker;
+  background-color: $Chimera-darker;
 }
