@@ -8,15 +8,15 @@ on:
     types: [created]
 
 jobs:
-  # lint:
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - uses: actions/checkout@v3
-  #     - uses: actions/setup-node@v3
-  #       with:
-  #         node-version: 16
-  #     - run: npm ci
-  #     - run: npx eslint --fix sass
+  format-prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - run: npm ci
+      - run: npx prettier . --write
 
   compile-sass:
     runs-on: ubuntu-latest
@@ -29,7 +29,7 @@ jobs:
       - run: sass sass/main.scss css/chimera.css
 
   publish-npm:
-    needs: [compile-sass]
+    needs: [format-prettier, compile-sass]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3

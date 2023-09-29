@@ -25,5 +25,8 @@
   "homepage": "https://github.com/ChimeraCSS/ChimeraCSS#readme",
   "dependencies": {
     "sass": "^1.68.0"
+  },
+  "devDependencies": {
+    "prettier": "3.0.3"
   }
 }
