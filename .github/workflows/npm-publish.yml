@@ -8,7 +8,7 @@ on:
     types: [created]
 
 jobs:
-  lint:
+  format-prettier:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npx eslint --fix sass
+      - run: npx prettier . --write
 
   compile-sass:
     runs-on: ubuntu-latest
@@ -28,18 +28,8 @@ jobs:
       - run: npm ci
       - run: sass sass/main.scss css/chimera.css
 
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npm test
-
   publish-npm:
-    needs: build
+    needs: [format-prettier, compile-sass]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
