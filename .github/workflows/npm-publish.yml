@@ -26,8 +26,14 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
-      - run: npm install -g sass
-      - run: sass sass/main.scss css/chimera.css
+      - name: install sass dependency
+        run: npm install -g sass
+      - name: compile chimera theme
+        run: sass sass/chimera.scss css/chimera.css
+      - name: compile chimera-dark theme
+        run: sass sass/chimera-dark.scss css/chimera-dark.css
+      - name: compile chimera-golden theme
+        run: sass sass/chimera-golden.scss css/chimera-golden.css
 
   publish-npm:
     needs: [format-prettier, compile-sass]

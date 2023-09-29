@@ -15,7 +15,7 @@
 
 # ChimeraCSS
 
-Classless CSS framework with a Clean, soft and modern design inspired By SakuraCSS and Marx.
+Classless CSS framework with a clean, soft and modern design inspired By SakuraCSS and Marx.
 
 ## Why?
 
@@ -54,6 +54,64 @@ or
 ```bash
 yarn add chimeracss
 ```
+
+### Themes
+
+Chimera has three themes: chimera, chimera-dark, chimera-golden. to use an alternative theme, change the filename in the import to the same as the theme:
+
+Chimera-dark
+
+```html
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://unpkg.com/chimeracss@:version/css/chimera-dark.css"
+/>
+```
+
+Chimera-golden
+
+```html
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://unpkg.com/chimeracss@:version/css/chimera-golden.css"
+/>
+```
+
+### Theme comparisons
+
+<div>
+    <p>No css/HTML only</p>
+    <img  
+      align="center" 
+      src="./public/img/no-css.png"
+      alt="Chimera"
+      width="50%" 
+    />
+    <p>Chimera:</p>
+    <img  
+      align="center" 
+      src="./public/img/chimera.png"
+      alt="Chimera"
+      width="50%" 
+    />
+    <p>Chimera-dark:</p>
+    <img  
+      align="center" 
+      src="./public/img/chimera-dark.png"
+      alt="Chimera"
+      width="50%" 
+    />
+    <p>Chimera-golden:</p>
+    <img  
+      align="center" 
+      src="./public/img/chimera-golden.png"
+      alt="Chimera"
+      width="50%" 
+    />
+    
+</div>
 
 ## License
 
