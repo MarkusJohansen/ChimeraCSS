@@ -1,0 +1,18 @@
+// fonts
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+
+//Color palette
+$Chimera: #fae0d1;
+$Chimera-dark: hsl(22, 80%, 70%);
+$Chimera-darker: hsl(22, 80%, 60%);
+$Chimera-input-border: hsl(0, 0%, 51%);
+$Chimera-text: #fae0d1;
+$Chimera-text-secondary: #333333;
+$Chimera-bg: hsl(0, 0%, 0%);
+$Chimera-bg-secondary: hsl(60, 5%, 10%);
+$Chimera-link: hsl(22, 80%, 70%);
+
+// @use "main";
+
+@import "elements/main";

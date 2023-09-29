@@ -1,5 +1,3 @@
-@use "variables";
-
 textarea,
 input[type="text"],
 input[type="email"],
@@ -8,9 +6,9 @@ input[type="number"],
 input[type="tel"],
 input[type="url"],
 input[type="search"] {
-  font-family: variables.$font-stack;
-  background-color: variables.$Chimera-bg-secondary;
-  color: variables.$Chimera-text;
+  font-family: $font-stack;
+  background-color: $Chimera-bg-secondary;
+  color: $Chimera-text;
   font-size: medium;
   border-radius: 0.5em;
   border: 0;

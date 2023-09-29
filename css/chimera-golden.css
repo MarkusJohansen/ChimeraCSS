@@ -1,0 +1,268 @@
+button,
+input[type=button],
+input[type=submit] {
+  background-color: #fae0d1;
+  color: #333333;
+  font-size: medium;
+  padding: 0.5em 0.75em;
+  border: 0;
+  border-radius: 0.5em;
+  transition: 200ms ease-in-out;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+  background-color: hsl(22, 80%, 70%);
+  border-color: hsl(22, 80%, 70%);
+  cursor: pointer;
+}
+
+button:active,
+input[type=button]:active,
+input[type=submit]:active {
+  border-color: hsl(22, 80%, 60%);
+  background-color: hsl(22, 80%, 60%);
+}
+
+blockquote {
+  line-height: 2em;
+  background-color: hsl(60, 5%, 10%);
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 0.25em solid #fae0d1;
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 1em;
+  margin: 0;
+}
+
+code,
+kbd,
+var,
+samp, pre {
+  background-color: hsl(60, 5%, 10%);
+  border-radius: 8px;
+  font-family: "Fira Code", monospace;
+}
+
+pre {
+  padding: 10px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+code,
+kbd,
+var,
+samp {
+  padding: 4px 8px;
+}
+
+hr {
+  background-color: #fae0d1;
+  height: 0.2em;
+  width: 100%;
+  border: 0;
+  margin: 1em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  font-weight: 600;
+}
+
+a {
+  color: hsl(22, 80%, 70%);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  color: hsl(22, 80%, 70%);
+  cursor: pointer;
+}
+
+a:active {
+  color: hsl(22, 80%, 60%);
+  text-decoration-color: hsl(22, 80%, 60%);
+}
+
+li, ul {
+  margin-left: 1.5em;
+  padding: 0;
+  line-height: 2em;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  list-style: inherit;
+}
+
+input[type=checkbox] {
+  /*remove default checkboxes, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(60, 5%, 10%);
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid hsl(0, 0%, 51%);
+  border-radius: 0.2em;
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox]:hover {
+  border: 2px solid #fae0d1;
+}
+
+input[type=checkbox]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #fae0d1;
+  content: "";
+  border-radius: 0.05em;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=radio] {
+  /*remove default radio-buttons, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(60, 5%, 10%);
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid hsl(0, 0%, 51%);
+  /*Place fill*/
+  display: grid;
+  place-content: center;
+}
+
+input[type=radio]:hover {
+  border: 2px solid #fae0d1;
+}
+
+input[type=radio]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: #fae0d1;
+  content: "";
+  border-radius: 50%;
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+
+radio,
+checkbox {
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+td, th {
+  border-bottom: 0.1em solid #fae0d1;
+  padding: 0.5em;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 600;
+}
+
+td {
+  font-weight: lighter;
+}
+
+h6, h5, h4, h3, h2, h1 {
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+textarea,
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=number],
+input[type=tel],
+input[type=url],
+input[type=search] {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  background-color: hsl(60, 5%, 10%);
+  color: #fae0d1;
+  font-size: medium;
+  border-radius: 0.5em;
+  border: 0;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 1em 0 1em 1em;
+  resize: none;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: #fae0d1;
+  background: hsl(0, 0%, 0%);
+}
+
+/*# sourceMappingURL=chimera-golden.css.map */
