@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/ChimeraCSS/ChimeraCSS/issues"
   },
-  "homepage": "https://github.com/ChimeraCSS/ChimeraCSS#readme"
+  "homepage": "https://github.com/ChimeraCSS/ChimeraCSS#readme",
+  "dependencies": {
+    "sass": "^1.68.0"
+  }
 }
