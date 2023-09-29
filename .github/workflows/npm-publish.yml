@@ -26,6 +26,7 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+      - run: npm install -g sass
       - run: sass sass/main.scss css/chimera.css
 
   publish-npm:
