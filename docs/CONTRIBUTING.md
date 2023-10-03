@@ -32,8 +32,7 @@ We use GitHub issues to track public bugs. Report a bug by [opening a new issue]
 
 ## Use a Consistent Coding Style
 
-- 2 spaces for indentation rather than tabs
-- You can try running `npm run lint` for style unification
+- we use prettier formatting
 
 ## License
 
