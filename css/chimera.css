@@ -1,3 +1,37 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(0, 0%, 25%);
+  background: hsl(40, 30%, 100%);
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+html{
+  scroll-behavior: smooth;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  }
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
 button,
 input[type=button],
 input[type=submit] {
@@ -66,9 +100,25 @@ hr {
   margin: 1em 0;
 }
 
-img {
+img, picture {
   width: 100%;
   height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
 }
 
 label {
@@ -260,10 +310,6 @@ input[type=search] {
   resize: none;
 }
 
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(0, 0%, 25%);
-  background: hsl(40, 30%, 100%);
-}
+
 
 /*# sourceMappingURL=chimera.css.map */
