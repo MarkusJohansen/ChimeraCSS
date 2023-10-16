@@ -266,4 +266,12 @@ body {
   background: hsl(40, 30%, 100%);
 }
 
+main {
+  width: 960px;
+  margin: 0 auto
+}
+
+::selection {
+  background-color: lavender
+}
 /*# sourceMappingURL=chimera.css.map */
