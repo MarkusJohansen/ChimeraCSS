@@ -7,10 +7,12 @@ $Chimera: #fae0d1;
 $Chimera-dark: hsl(22, 80%, 70%);
 $Chimera-darker: hsl(22, 80%, 60%);
 $Chimera-input-border: hsl(0, 0%, 51%);
-$Chimera-text: #fae0d1;
+$Chimera-text: hsl(22, 80%, 90%);
 $Chimera-text-secondary: #333333;
+$Chimera-text-disabled:  hsl(0, 0%, 30%);
 $Chimera-bg: hsl(0, 0%, 0%);
-$Chimera-bg-secondary: hsl(60, 5%, 10%);
+$Chimera-bg-secondary: hsl(0, 0%, 10%);
+$Chimera-bg-disabled: hsl(0, 0%, 30%);
 $Chimera-link: hsl(22, 80%, 70%);
 
 // @use "main";

@@ -25,6 +25,13 @@ input[type=submit]:active {
   background-color: hsl(183, 40%, 30%);
 }
 
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled {
+  border-color: hsl(183, 40%, 30%);
+  background-color: hsl(183, 40%, 30%);
+}
+
 blockquote {
   line-height: 2em;
   background-color: hsl(0, 0%, 20%);
@@ -42,7 +49,7 @@ var,
 samp, pre {
   background-color: hsl(0, 0%, 20%);
   border-radius: 8px;
-  font-family: "Fira Code", monospace;
+  font-family: monospace;
 }
 
 pre {
@@ -257,6 +264,17 @@ input[type=search] {
   margin: 0.5em 0;
   padding: 1em 0 1em 1em;
   resize: none;
+}
+
+textarea:disabled,
+input[type=text]:disabled,
+input[type=email]:disabled,
+input[type=password]:disabled,
+input[type=number]:disabled,
+input[type=tel]:disabled,
+input[type=url]:disabled,
+input[type=search]:disabled {
+  color: hsl(0, 0%, 60%);
 }
 
 body {
