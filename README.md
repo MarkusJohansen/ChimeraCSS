@@ -41,7 +41,7 @@ You can implement chimera into your private project by including this tag in you
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/chimeracss@:version/css/chimera.css"
+  href="https://unpkg.com/chimeracss@:version/build/chimera.css"
 />
 ```
 
@@ -67,7 +67,7 @@ Chimera-dark
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/chimeracss@:version/css/chimera-dark.css"
+  href="https://unpkg.com/chimeracss@:version/build/chimera-dark.css"
 />
 ```
 
@@ -77,7 +77,7 @@ Chimera-golden
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/chimeracss@:version/css/chimera-golden.css"
+  href="https://unpkg.com/chimeracss@:version/build/chimera-golden.css"
 />
 ```
 
