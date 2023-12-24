@@ -29,11 +29,11 @@ jobs:
       - name: install sass dependency
         run: npm install -g sass
       - name: compile chimera theme
-        run: sass sass/chimera.scss css/chimera.css
+        run: sass src/chimera.scss build/chimera.css
       - name: compile chimera-dark theme
-        run: sass sass/chimera-dark.scss css/chimera-dark.css
+        run: sass src/chimera-dark.scss build/chimera-dark.css
       - name: compile chimera-golden theme
-        run: sass sass/chimera-golden.scss css/chimera-golden.css
+        run: sass src/chimera-golden.scss build/chimera-golden.css
 
   publish-npm:
     needs: [format-prettier, compile-sass]

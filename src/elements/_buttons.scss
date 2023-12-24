@@ -24,3 +24,11 @@ input[type="submit"]:active {
   border-color: $Chimera-darker;
   background-color: $Chimera-darker;
 }
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled {
+  border-color: $Chimera-darker;
+  background-color: $Chimera-darker;
+}
+
