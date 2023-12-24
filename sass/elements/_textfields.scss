@@ -19,3 +19,14 @@ input[type="search"] {
   padding: 1em 0 1em 1em;
   resize: none;
 }
+
+textarea:disabled,
+input[type="text"]:disabled,
+input[type="email"]:disabled,
+input[type="password"]:disabled,
+input[type="number"]:disabled,
+input[type="tel"]:disabled,
+input[type="url"]:disabled,
+input[type="search"]:disabled {
+  color: $Chimera-text-disabled;
+}
