@@ -43,7 +43,7 @@ yarn add chimeracss
 pnpm add chimeracss
 ```
 ```javascript
-import "~/node_modules/chimeracss/css/chimera.css";
+import "~/node_modules/chimeracss/build/chimera.css";
 ```
 or by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
 
