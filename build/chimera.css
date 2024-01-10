@@ -7,7 +7,6 @@ input[type=submit] {
   padding: 0.5em 0.75em;
   border: 0;
   border-radius: 0.5em;
-  transition: 200ms ease-in-out;
 }
 
 button:hover,
@@ -16,6 +15,7 @@ input[type=submit]:hover {
   background-color: hsl(173, 100%, 23%);
   border-color: hsl(173, 100%, 23%);
   cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
 button:active,
@@ -23,6 +23,7 @@ input[type=button]:active,
 input[type=submit]:active {
   border-color: hsl(173, 100%, 13%);
   background-color: hsl(173, 100%, 13%);
+  transition: 200ms ease-in-out;
 }
 
 button:disabled,
@@ -30,6 +31,12 @@ input[type=button]:disabled,
 input[type=submit]:disabled {
   border-color: hsl(173, 100%, 13%);
   background-color: hsl(173, 100%, 13%);
+}
+
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus {
+  outline: hsl(267, 60%, 60%) 1px solid;
 }
 
 blockquote {
@@ -94,7 +101,10 @@ a:hover {
 
 a:active {
   color: hsl(173, 100%, 13%);
-  text-decoration-color: hsl(173, 100%, 13%);
+}
+
+a:focus {
+  color: hsl(267, 60%, 60%);
 }
 
 li, ul {
@@ -260,6 +270,11 @@ input {
 textarea:disabled,
 input:disabled {
   color: hsl(0, 0%, 65%);
+}
+
+textarea:focus,
+input:focus {
+  border: solid 2px hsl(267, 60%, 60%);
 }
 
 body {

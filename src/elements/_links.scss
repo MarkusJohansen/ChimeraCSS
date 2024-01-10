@@ -10,5 +10,8 @@ a:hover {
 
 a:active {
   color: $Chimera-darker;
-  text-decoration-color: $Chimera-darker;
+}
+
+a:focus {
+  color: $Chimera-focus;
 }

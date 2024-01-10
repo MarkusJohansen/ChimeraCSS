@@ -17,3 +17,8 @@ textarea:disabled,
 input:disabled{
   color: $Chimera-text-disabled;
 }
+
+textarea:focus,
+input:focus {
+  border: solid 2px $Chimera-focus;
+} 
