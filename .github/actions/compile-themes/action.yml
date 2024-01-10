@@ -2,8 +2,7 @@ name: "compile-themes"
 description: "Compile the .scss theme files into .css files in the build directory"
 
 runs:
-  compile:
-    runs-on: ubuntu-latest
+    using: "ubuntu-latest"
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
