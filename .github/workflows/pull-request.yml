@@ -7,7 +7,7 @@ on:
 jobs:
     compile-themes:
         runs-on: ubuntu-latest
-        name: Create Sentry release
+        name: compile themes
         steps:
         - name: Checkout code
           uses: actions/checkout@v4
