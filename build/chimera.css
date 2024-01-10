@@ -121,7 +121,7 @@ input[type=checkbox] {
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 90%);
+  border: 2px solid hsl(0, 0%, 80%);
   border-radius: 0.2em;
   display: grid;
   place-content: center;
@@ -155,7 +155,7 @@ input[type=radio] {
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 90%);
+  border: 2px solid hsl(0, 0%, 80%);
   /*Place fill*/
   display: grid;
   place-content: center;
