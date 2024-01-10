@@ -70,6 +70,7 @@ kbd,
 var,
 samp {
   padding: 4px 8px;
+  line-height: 1.5;
 }
 
 hr {
