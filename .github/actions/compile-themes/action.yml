@@ -1,7 +1,7 @@
 name: "compile-themes"
 description: "Compile the .scss theme files into .css files in the build directory"
 
-jobs:
+runs:
   compile:
     runs-on: ubuntu-latest
     steps:
