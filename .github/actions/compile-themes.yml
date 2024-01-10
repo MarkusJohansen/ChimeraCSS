@@ -17,4 +17,4 @@ jobs:
         - name: compile chimera-dark theme
             run: sass src/themes/chimera-dark.scss build/chimera-dark.css
         - name: compile chimera-golden theme
-            run: sass src/themes/chimera-golden.scss build/chimera-golden.css
+            run: sass src/themes/chimera-golden.scss build/chimera-golden.css 
