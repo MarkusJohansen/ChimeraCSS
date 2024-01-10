@@ -8,35 +8,7 @@ on:
     types: [created]
 
 jobs:
-  format-prettier:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - run: npx prettier . --write
-
-  compile-sass:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - run: npm ci
-      - name: install sass dependency
-        run: npm install -g sass
-      - name: compile chimera theme
-        run: sass src/chimera.scss build/chimera.css
-      - name: compile chimera-dark theme
-        run: sass src/chimera-dark.scss build/chimera-dark.css
-      - name: compile chimera-golden theme
-        run: sass src/chimera-golden.scss build/chimera-golden.css
-
   publish-npm:
-    needs: [format-prettier, compile-sass]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
