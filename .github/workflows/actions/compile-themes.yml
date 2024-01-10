@@ -1,0 +1,20 @@
+name: "compile-themes"
+description: "Compile the .scss theme files into .css files in the build directory"
+
+jobs:
+    compile:
+        runs-on: ubuntu-latest
+        steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+            with:
+            node-version: 16
+        - run: npm ci
+        - name: install sass dependency
+            run: npm install -g sass
+        - name: compile chimera theme
+            run: sass src/themes/chimera.scss build/chimera.css
+        - name: compile chimera-dark theme
+            run: sass src/themes/chimera-dark.scss build/chimera-dark.css
+        - name: compile chimera-golden theme
+            run: sass src/themes/chimera-golden.scss build/chimera-golden.css

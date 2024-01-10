@@ -1,0 +1,16 @@
+
+on:
+    pull_request:
+        branches:
+            - main
+
+jobs:
+    compile-themes:
+        runs-on: ubuntu-latest
+        name: Create Sentry release
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v4
+          
+        - name: compile sass
+          uses: ./.github/actions/compile-themes
