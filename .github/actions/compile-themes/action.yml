@@ -18,5 +18,6 @@ runs:
         run: |
           sass src/themes/chimera.scss build/chimera.css
           sass src/themes/chimera-dark.scss build/chimera-dark.css
-          sass src/themes/chimera-golden.scss build/chimera-golden.css 
+          sass src/themes/chimera-golden.scss build/chimera-golden.css
+          sass src/themes/chimera-autumn.scss build/chimera-autumn.css
         shell: bash
