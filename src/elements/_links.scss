@@ -1,15 +1,17 @@
 a {
   color: $Chimera-link;
   text-decoration: none;
-  font-weight: 500;
 }
 
 a:hover {
-  color: $Chimera-dark;
+  color: $Chimera-focus;
   cursor: pointer;
 }
 
 a:active {
   color: $Chimera-darker;
-  text-decoration-color: $Chimera-darker;
+}
+
+a:focus {
+  color: $Chimera-focus;
 }

@@ -35,7 +35,17 @@ What we want to achieve for the framework is as following:
 
 ## How?
 
-You can implement chimera into your private project by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
+You can implement chimera into your private project by downloading the ChimeraCSS package and directly link to the Chimera.css file:
+
+```bash
+npm install chimeracss
+yarn add chimeracss
+pnpm add chimeracss
+```
+```javascript
+import "~/node_modules/chimeracss/css/chimera.css";
+```
+or by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
 
 ```html
 <link
@@ -45,17 +55,7 @@ You can implement chimera into your private project by including this tag in you
 />
 ```
 
-You can also download the ChimeraCSS package and directly link to the Chimera.css file:
 
-```bash
-npm install chimeracss
-```
-
-or
-
-```bash
-yarn add chimeracss
-```
 
 ### Themes
 
@@ -84,28 +84,28 @@ Chimera-golden
 ### Theme comparisons
 
 <div>
-    <p>No css/HTML only</p>
+    <h4>No css/HTML only</h4>
     <img  
       align="center" 
       src="./public/img/no-css.png"
       alt="Chimera"
       width="50%" 
     />
-    <p>Chimera:</p>
+    <h4>Chimera:</h4>
     <img  
       align="center" 
       src="./public/img/chimera.png"
       alt="Chimera"
       width="50%" 
     />
-    <p>Chimera-dark:</p>
+    <h4>Chimera-dark:</h4>
     <img  
       align="center" 
       src="./public/img/chimera-dark.png"
       alt="Chimera"
       width="50%" 
     />
-    <p>Chimera-golden:</p>
+    <h4>Chimera-golden:</h4>
     <img  
       align="center" 
       src="./public/img/chimera-golden.png"

@@ -1,21 +1,22 @@
 button,
 input[type=button],
 input[type=submit] {
-  background-color: hsl(183, 40%, 50%);
+  background-color: hsl(183, 40%, 70%);
   color: #333333;
   font-size: medium;
   padding: 0.5em 0.75em;
   border: 0;
   border-radius: 0.5em;
-  transition: 200ms ease-in-out;
 }
 
 button:hover,
 input[type=button]:hover,
 input[type=submit]:hover {
-  background-color: hsl(183, 40%, 40%);
-  border-color: hsl(183, 40%, 40%);
+  background-color: hsl(183, 40%, 45%);
+  border-color: hsl(183, 40%, 45%);
+  color: hsl(48, 5%, 90%);
   cursor: pointer;
+  transition: 200ms ease-in-out;
 }
 
 button:active,
@@ -23,6 +24,7 @@ input[type=button]:active,
 input[type=submit]:active {
   border-color: hsl(183, 40%, 30%);
   background-color: hsl(183, 40%, 30%);
+  transition: 200ms ease-in-out;
 }
 
 button:disabled,
@@ -32,12 +34,18 @@ input[type=submit]:disabled {
   background-color: hsl(183, 40%, 30%);
 }
 
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus {
+  outline: hsl(267, 60%, 70%) 1px solid;
+}
+
 blockquote {
   line-height: 2em;
   background-color: hsl(0, 0%, 20%);
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid hsl(183, 40%, 50%);
+  border-left: 0.25em solid hsl(183, 40%, 70%);
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;
@@ -63,10 +71,11 @@ kbd,
 var,
 samp {
   padding: 4px 8px;
+  line-height: 1.5;
 }
 
 hr {
-  background-color: hsl(183, 40%, 50%);
+  background-color: hsl(183, 40%, 70%);
   height: 0.2em;
   width: 100%;
   border: 0;
@@ -83,19 +92,21 @@ label {
 }
 
 a {
-  color: hsl(183, 40%, 50%);
+  color: hsl(183, 40%, 65%);
   text-decoration: none;
-  font-weight: 500;
 }
 
 a:hover {
-  color: hsl(183, 40%, 40%);
+  color: hsl(267, 60%, 70%);
   cursor: pointer;
 }
 
 a:active {
   color: hsl(183, 40%, 30%);
-  text-decoration-color: hsl(183, 40%, 30%);
+}
+
+a:focus {
+  color: hsl(267, 60%, 70%);
 }
 
 li, ul {
@@ -117,19 +128,18 @@ input[type=checkbox] {
   appearance: none;
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 20%);
   /*style*/
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 51%);
+  border: 2px solid hsl(0, 0%, 90%);
   border-radius: 0.2em;
   display: grid;
   place-content: center;
 }
 
 input[type=checkbox]:hover {
-  border: 2px solid hsl(183, 40%, 50%);
+  border: 2px solid hsl(183, 40%, 70%);
 }
 
 input[type=checkbox]::before {
@@ -137,7 +147,7 @@ input[type=checkbox]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: hsl(183, 40%, 50%);
+  background-color: hsl(183, 40%, 70%);
   content: "";
   border-radius: 0.05em;
 }
@@ -151,19 +161,18 @@ input[type=radio] {
   appearance: none;
   margin: 0;
   padding: 0;
-  background-color: hsl(0, 0%, 20%);
   /*style*/
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 51%);
+  border: 2px solid hsl(0, 0%, 90%);
   /*Place fill*/
   display: grid;
   place-content: center;
 }
 
 input[type=radio]:hover {
-  border: 2px solid hsl(183, 40%, 50%);
+  border: 2px solid hsl(183, 40%, 70%);
 }
 
 input[type=radio]::before {
@@ -171,7 +180,7 @@ input[type=radio]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: hsl(183, 40%, 50%);
+  background-color: hsl(183, 40%, 70%);
   content: "";
   border-radius: 50%;
 }
@@ -191,7 +200,7 @@ checkbox {
 }
 
 td, th {
-  border-bottom: 0.1em solid hsl(183, 40%, 50%);
+  border: 0.1em solid hsl(0, 0%, 90%);
   padding: 0.5em;
   text-align: left;
 }
@@ -203,10 +212,11 @@ table {
 
 th {
   font-weight: 600;
+  background-color: hsla(173, 100%, 33%, 0.1);
 }
 
 td {
-  font-weight: lighter;
+  font-weight: 200;
 }
 
 h6, h5, h4, h3, h2, h1 {
@@ -245,41 +255,34 @@ p {
 }
 
 textarea,
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=number],
-input[type=tel],
-input[type=url],
-input[type=search] {
+input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  background-color: hsl(0, 0%, 20%);
-  color: hsl(0, 0%, 100%);
+  color: hsl(48, 5%, 90%);
+  background-color: hsl(0, 0%, 10%);
   font-size: medium;
   border-radius: 0.5em;
-  border: 0;
+  border: solid 2px hsl(0, 0%, 90%);
   outline: none;
   width: 100%;
   box-sizing: border-box;
   margin: 0.5em 0;
-  padding: 1em 0 1em 1em;
+  padding: 0.75em 0 0.75em 0.75em;
   resize: none;
 }
 
 textarea:disabled,
-input[type=text]:disabled,
-input[type=email]:disabled,
-input[type=password]:disabled,
-input[type=number]:disabled,
-input[type=tel]:disabled,
-input[type=url]:disabled,
-input[type=search]:disabled {
-  color: hsl(0, 0%, 60%);
+input:disabled {
+  color: hsl(0, 0%, 50%);
+}
+
+textarea:focus,
+input:focus {
+  border: solid 2px hsl(267, 60%, 70%);
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(0, 0%, 100%);
+  color: hsl(48, 5%, 90%);
   background: hsl(0, 0%, 10%);
 }
 

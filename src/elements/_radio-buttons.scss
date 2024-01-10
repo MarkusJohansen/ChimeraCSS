@@ -3,13 +3,12 @@ input[type="radio"] {
   appearance: none;
   margin: 0;
   padding: 0;
-  background-color: $Chimera-bg-secondary;
 
   /*style*/
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid $Chimera-input-border;
+  border: 2px solid $Chimera-border;
 
   /*Place fill*/
   display: grid;

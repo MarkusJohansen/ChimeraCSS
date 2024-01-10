@@ -1,32 +1,25 @@
 textarea,
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="number"],
-input[type="tel"],
-input[type="url"],
-input[type="search"] {
+input {
   font-family: $font-stack;
-  background-color: $Chimera-bg-secondary;
   color: $Chimera-text;
+  background-color: $Chimera-bg;
   font-size: medium;
   border-radius: 0.5em;
-  border: 0;
+  border: solid 2px $Chimera-border;
   outline: none;
   width: 100%;
   box-sizing: border-box;
   margin: 0.5em 0;
-  padding: 1em 0 1em 1em;
+  padding: 0.75em 0 0.75em 0.75em;
   resize: none;
 }
 
 textarea:disabled,
-input[type="text"]:disabled,
-input[type="email"]:disabled,
-input[type="password"]:disabled,
-input[type="number"]:disabled,
-input[type="tel"]:disabled,
-input[type="url"]:disabled,
-input[type="search"]:disabled {
+input:disabled{
   color: $Chimera-text-disabled;
 }
+
+textarea:focus,
+input:focus {
+  border: solid 2px $Chimera-focus;
+} 

@@ -1,5 +1,5 @@
 %tablerow {
-  border-bottom: 0.1em solid $Chimera;
+  border: 0.1em solid $Chimera-border;
   padding: 0.5em;
   text-align: left;
 }
@@ -12,9 +12,10 @@ table {
 th {
   @extend %tablerow;
   font-weight: 600;
+  background-color: $Chimera-fill;
 }
 
 td {
   @extend %tablerow;
-  font-weight: lighter;
+  font-weight: 200;
 }
