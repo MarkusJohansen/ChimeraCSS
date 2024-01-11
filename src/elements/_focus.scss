@@ -4,5 +4,5 @@
 }
 
 %focus-base-component:focus {
-    box-shadow: 0 0 0 3px transparentize($Chimera-focus, 0.5);
+    box-shadow: 0 0 0 3px transparentize($Chimera-focus, 0.25);
 }
