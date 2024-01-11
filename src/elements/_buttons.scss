@@ -1,6 +1,9 @@
+@import "focus";
+
 button,
 input[type="button"],
 input[type="submit"] {
+  @extend %focus-base-component;
   background-color: $Chimera;
   color: $Chimera-text-secondary;
   font-size: medium;
@@ -14,9 +17,7 @@ input[type="button"]:hover,
 input[type="submit"]:hover {
   background-color: $Chimera-dark;
   border-color: $Chimera-dark;
-  color: $Chimera-text;
   cursor: pointer;
-  transition: 200ms ease-in-out;
 }
 
 button:active,
@@ -24,7 +25,6 @@ input[type="button"]:active,
 input[type="submit"]:active {
   border-color: $Chimera-darker;
   background-color: $Chimera-darker;
-  transition: 200ms ease-in-out;
 }
 
 button:disabled,
@@ -32,10 +32,4 @@ input[type="button"]:disabled,
 input[type="submit"]:disabled {
   border-color: $Chimera-darker;
   background-color: $Chimera-darker;
-}
-
-button:focus,
-input[type="button"]:focus,
-input[type="submit"]:focus {
-  outline: $Chimera-focus 1px solid;
 }
