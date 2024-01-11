@@ -1,0 +1,289 @@
+button,
+input[type=button],
+input[type=submit] {
+  background-color: hsl(25, 80%, 55%);
+  color: #fff;
+  font-size: medium;
+  padding: 0.5em 0.75em;
+  border: 0;
+  border-radius: 0.5em;
+}
+
+button:hover,
+input[type=button]:hover,
+input[type=submit]:hover {
+  background-color: hsl(25, 80%, 40%);
+  border-color: hsl(25, 80%, 40%);
+  color: hsl(25, 50%, 20%);
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+}
+
+button:active,
+input[type=button]:active,
+input[type=submit]:active {
+  border-color: hsl(25, 80%, 25%);
+  background-color: hsl(25, 80%, 25%);
+  transition: 200ms ease-in-out;
+}
+
+button:disabled,
+input[type=button]:disabled,
+input[type=submit]:disabled {
+  border-color: hsl(25, 80%, 25%);
+  background-color: hsl(25, 80%, 25%);
+}
+
+button:focus,
+input[type=button]:focus,
+input[type=submit]:focus {
+  outline: hsl(15, 80%, 50%) 1px solid;
+}
+
+blockquote {
+  line-height: 2em;
+  background-color: hsl(30, 30%, 90%);
+  width: 100%;
+  box-sizing: border-box;
+  border-left: 0.25em solid hsl(25, 80%, 55%);
+  border-radius: 0 0.5em 0.5em 0;
+  padding: 1em;
+  margin: 0;
+}
+
+code,
+kbd,
+var,
+samp, pre {
+  background-color: hsl(30, 30%, 90%);
+  border-radius: 8px;
+  font-family: monospace;
+}
+
+pre {
+  padding: 10px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+code,
+kbd,
+var,
+samp {
+  padding: 4px 8px;
+  line-height: 1.5;
+}
+
+hr {
+  background-color: hsl(25, 80%, 55%);
+  height: 0.2em;
+  width: 100%;
+  border: 0;
+  margin: 1em 0;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+label {
+  font-weight: 600;
+}
+
+a {
+  color: hsl(25, 80%, 55%);
+  text-decoration: none;
+}
+
+a:hover {
+  color: hsl(15, 80%, 50%);
+  cursor: pointer;
+}
+
+a:active {
+  color: hsl(25, 80%, 25%);
+}
+
+a:focus {
+  color: hsl(15, 80%, 50%);
+}
+
+li, ul {
+  margin-left: 1.5em;
+  padding: 0;
+  line-height: 2em;
+}
+
+ul {
+  list-style: disc;
+}
+
+li {
+  list-style: inherit;
+}
+
+input[type=checkbox] {
+  /*remove default checkboxes, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid hsl(25, 25%, 80%);
+  border-radius: 0.2em;
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox]:hover {
+  border: 2px solid hsl(25, 80%, 55%);
+}
+
+input[type=checkbox]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(25, 80%, 55%);
+  content: "";
+  border-radius: 0.05em;
+}
+
+input[type=checkbox]:checked::before {
+  transform: scale(1);
+}
+
+input[type=radio] {
+  /*remove default radio-buttons, and reset style*/
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  /*style*/
+  width: 1em;
+  height: 1em;
+  border-radius: 1em;
+  border: 2px solid hsl(25, 25%, 80%);
+  /*Place fill*/
+  display: grid;
+  place-content: center;
+}
+
+input[type=radio]:hover {
+  border: 2px solid hsl(25, 80%, 55%);
+}
+
+input[type=radio]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(25, 80%, 55%);
+  content: "";
+  border-radius: 50%;
+}
+
+input[type=radio]:checked::before {
+  transform: scale(1);
+}
+
+radio,
+checkbox {
+  line-height: 1.1;
+  display: grid;
+  grid-template-columns: 1em auto;
+  gap: 0.5em;
+  align-items: center;
+  margin: 1em 0em;
+}
+
+td, th {
+  border: 0.1em solid hsl(25, 25%, 80%);
+  padding: 0.5em;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  font-weight: 600;
+  background-color: hsla(25, 80%, 55%, 0.1);
+}
+
+td {
+  font-weight: 200;
+}
+
+h6, h5, h4, h3, h2, h1 {
+  font-weight: 400;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1.25em;
+}
+
+h6 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+textarea,
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(25, 50%, 20%);
+  background-color: hsl(30, 45%, 95%);
+  font-size: medium;
+  border-radius: 0.5em;
+  border: solid 2px hsl(25, 25%, 80%);
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0.5em 0;
+  padding: 0.75em 0 0.75em 0.75em;
+  resize: none;
+}
+
+textarea:disabled,
+input:disabled {
+  color: hsl(25, 50%, 40%);
+}
+
+textarea:focus,
+input:focus {
+  border: solid 2px hsl(15, 80%, 50%);
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(25, 50%, 20%);
+  background: hsl(30, 45%, 95%);
+}
+
+/*# sourceMappingURL=chimera-autumn.css.map */
