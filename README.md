@@ -81,6 +81,16 @@ Chimera-golden
 />
 ```
 
+Chimera-autumn
+
+```html
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://unpkg.com/chimeracss@:version/build/chimera-autumn.css"
+/>
+```
+
 ### Theme comparisons
 
 <div>
@@ -109,6 +119,13 @@ Chimera-golden
     <img  
       align="center" 
       src="./public/img/chimera-golden.png"
+      alt="Chimera"
+      width="50%" 
+    />
+    <h4>Chimera-autumn:</h4>
+    <img  
+      align="center" 
+      src="./public/img/chimera-autumn.png"
       alt="Chimera"
       width="50%" 
     />
