@@ -2,7 +2,7 @@ button,
 input[type=button],
 input[type=submit] {
   background-color: hsl(25, 80%, 55%);
-  color: #333;
+  color: #fff;
   font-size: medium;
   padding: 0.5em 0.75em;
   border: 0;
