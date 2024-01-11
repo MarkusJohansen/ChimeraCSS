@@ -55,6 +55,7 @@ For a theme to be accepted into the repository permanently it has to comply to t
 - It should be accesible
 - It shall base itself on hsl/hsla color format, not hex or rgb
 - You have to use fonts that doesnt need to be downloaded.
+- The ``$Chimera-focus`` color, should have a high contrast towards the ``$Chimera`` color, to ensure accesibility.
 - The filenames (.scss and .css) and theme-name must be equal and on the format: chimera-yourthemename. The theme name should ideally be one word.
 
 Thanks for your contributions <3 
