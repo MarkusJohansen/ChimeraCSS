@@ -1,5 +1,50 @@
 button,
 input[type=button],
+input[type=submit], textarea,
+input {
+  outline: none;
+  transition: 150ms, box-shadow 150ms ease-in-out;
+}
+
+button:focus, textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 3px rgba(147, 92, 214, 0.5);
+}
+
+textarea,
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(0, 0%, 25%);
+  background-color: hsl(40, 30%, 100%);
+  font-size: medium;
+  border-radius: 0.5em;
+  border: solid 2px hsl(0, 0%, 90%);
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.75em 0 0.75em 0.75em;
+  resize: none;
+}
+
+textarea:disabled,
+input:disabled {
+  color: hsl(0, 0%, 65%);
+}
+
+button,
+input[type=button],
+input[type=submit], textarea,
+input {
+  outline: none;
+  transition: 150ms, box-shadow 150ms ease-in-out;
+}
+
+button:focus, textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 3px rgba(147, 92, 214, 0.5);
+}
+
+button,
+input[type=button],
 input[type=submit] {
   background-color: hsl(173, 100%, 33%);
   color: white;
@@ -15,7 +60,6 @@ input[type=submit]:hover {
   background-color: hsl(173, 100%, 23%);
   border-color: hsl(173, 100%, 23%);
   cursor: pointer;
-  transition: 200ms ease-in-out;
 }
 
 button:active,
@@ -23,7 +67,6 @@ input[type=button]:active,
 input[type=submit]:active {
   border-color: hsl(173, 100%, 13%);
   background-color: hsl(173, 100%, 13%);
-  transition: 200ms ease-in-out;
 }
 
 button:disabled,
@@ -31,12 +74,6 @@ input[type=button]:disabled,
 input[type=submit]:disabled {
   border-color: hsl(173, 100%, 13%);
   background-color: hsl(173, 100%, 13%);
-}
-
-button:focus,
-input[type=button]:focus,
-input[type=submit]:focus {
-  outline: hsl(267, 60%, 60%) 1px solid;
 }
 
 blockquote {
@@ -251,31 +288,6 @@ h6 {
 p {
   line-height: 1.5;
   font-weight: 300;
-}
-
-textarea,
-input {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(0, 0%, 25%);
-  font-size: medium;
-  border-radius: 0.5em;
-  border: solid 2px hsl(0, 0%, 90%);
-  outline: none;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0.5em 0;
-  padding: 0.75em 0 0.75em 0.75em;
-  resize: none;
-}
-
-textarea:disabled,
-input:disabled {
-  color: hsl(0, 0%, 65%);
-}
-
-textarea:focus,
-input:focus {
-  border: solid 2px hsl(267, 60%, 60%);
 }
 
 body {

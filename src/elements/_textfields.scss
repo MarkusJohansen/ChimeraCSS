@@ -1,14 +1,15 @@
+@import "focus";
+
 textarea,
 input {
+  @extend %focus-base-component;
   font-family: $font-stack;
   color: $Chimera-text;
   background-color: $Chimera-bg;
   font-size: medium;
   border-radius: 0.5em;
   border: solid 2px $Chimera-border;
-  outline: none;
   width: 100%;
-  box-sizing: border-box;
   margin: 0.5em 0;
   padding: 0.75em 0 0.75em 0.75em;
   resize: none;
@@ -18,8 +19,3 @@ textarea:disabled,
 input:disabled{
   color: $Chimera-text-disabled;
 }
-
-textarea:focus,
-input:focus {
-  border: solid 2px $Chimera-focus;
-} 

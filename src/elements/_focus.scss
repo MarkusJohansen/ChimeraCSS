@@ -1,0 +1,8 @@
+%focus-base-component {
+    outline: none;
+    transition: 150ms, box-shadow 150ms ease-in-out;
+}
+
+%focus-base-component:focus {
+    box-shadow: 0 0 0 3px transparentize($Chimera-focus, 0.5);
+}
