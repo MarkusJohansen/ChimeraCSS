@@ -91,6 +91,16 @@ Chimera-autumn
 />
 ```
 
+Chimera-nightsky
+
+```html
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://unpkg.com/chimeracss@:version/build/chimera-nightsky.css"
+/>
+```
+
 ### Theme comparisons
 
 <div>
@@ -126,6 +136,13 @@ Chimera-autumn
     <img  
       align="center" 
       src="./public/img/chimera-autumn.png"
+      alt="Chimera"
+      width="50%" 
+    />
+    <h4>Chimera-nightsky:</h4>
+    <img  
+      align="center" 
+      src="./public/img/chimera-nightsky.png"
       alt="Chimera"
       width="50%" 
     />
