@@ -110,6 +110,23 @@ samp {
   line-height: 1.5;
 }
 
+mark {
+  background-color: hsla(202, 80%, 55%, 0.1);
+  padding: 0.2em;
+}
+
+underline {
+  text-decoration: underline;
+}
+
+italic {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: underline dotted;
+}
+
 hr {
   background-color: hsl(210, 100%, 55%);
   height: 0.2em;
@@ -232,7 +249,6 @@ checkbox {
   grid-template-columns: 1em auto;
   gap: 0.5em;
   align-items: center;
-  margin: 1em 0em;
 }
 
 td, th {
