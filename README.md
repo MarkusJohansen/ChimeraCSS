@@ -72,6 +72,8 @@ Chimera has multiple themes:
 - chimera-dark
 - chimera-golden
 - chimera-autumn
+- chimera-blues
+- chimera-plain
 
 to use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark:
 
