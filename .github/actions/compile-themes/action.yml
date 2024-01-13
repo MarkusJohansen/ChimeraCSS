@@ -20,4 +20,5 @@ runs:
           sass src/themes/chimera-dark.scss build/chimera-dark.css
           sass src/themes/chimera-golden.scss build/chimera-golden.css
           sass src/themes/chimera-autumn.scss build/chimera-autumn.css
+          sass src/themes/chimera-plain.scss build/chimera-plain.css
         shell: bash
