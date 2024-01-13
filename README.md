@@ -23,6 +23,14 @@ Classless CSS framework with a clean, soft and modern design inspired By SakuraC
 
 Classless css frameworks is great for building beautiful UI, without worrying about unresponsive and unacessible elements. Chimera does the element styling for you, which only leaves the layout to you. For building MVPs fast and building UI without a designsystem; Chimera is a great framework.
 
+### Roadmap
+
+- [Guide to how chimera works and custom themes](./GUIDE.md)
+- [License](./LICENSE)
+- [Code of conduct](./CODE_OF_CONDUCT.md)
+- [Contribution guide](./CONTRIBUTING.md)
+- [Security](./SECURITY.md)
+
 ## Goals
 
 What we want to achieve for the framework is as following:
@@ -59,10 +67,18 @@ or by including this tag in your HTML header. (Remember to declare version where
 
 ### Themes
 
-Chimera has three themes: chimera, chimera-dark, chimera-golden. to use an alternative theme, change the filename in the import to the same as the theme:
+Chimera has multiple themes: 
+- chimera
+- chimera-dark
+- chimera-golden
+- chimera-autumn
 
-Chimera-dark
+to use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark:
 
+```javascript
+import "~/node_modules/chimeracss/build/chimera-dark.css";
+```
+or
 ```html
 <link
   rel="stylesheet"
@@ -70,67 +86,6 @@ Chimera-dark
   href="https://unpkg.com/chimeracss@:version/build/chimera-dark.css"
 />
 ```
-
-Chimera-golden
-
-```html
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://unpkg.com/chimeracss@:version/build/chimera-golden.css"
-/>
-```
-
-Chimera-autumn
-
-```html
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://unpkg.com/chimeracss@:version/build/chimera-autumn.css"
-/>
-```
-
-### Theme comparisons
-
-<div>
-    <h4>No css/HTML only</h4>
-    <img  
-      align="center" 
-      src="./public/img/no-css.png"
-      alt="Chimera"
-      width="50%" 
-    />
-    <h4>Chimera:</h4>
-    <img  
-      align="center" 
-      src="./public/img/chimera.png"
-      alt="Chimera"
-      width="50%" 
-    />
-    <h4>Chimera-dark:</h4>
-    <img  
-      align="center" 
-      src="./public/img/chimera-dark.png"
-      alt="Chimera"
-      width="50%" 
-    />
-    <h4>Chimera-golden:</h4>
-    <img  
-      align="center" 
-      src="./public/img/chimera-golden.png"
-      alt="Chimera"
-      width="50%" 
-    />
-    <h4>Chimera-autumn:</h4>
-    <img  
-      align="center" 
-      src="./public/img/chimera-autumn.png"
-      alt="Chimera"
-      width="50%" 
-    />
-    
-</div>
 
 ## License
 
