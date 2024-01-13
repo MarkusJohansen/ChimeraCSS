@@ -8,7 +8,7 @@ input {
 
 button:focus, textarea:focus,
 input:focus {
-  box-shadow: 0 0 0 3px rgba(147, 92, 214, 0.5);
+  box-shadow: 0 0 0 3px rgba(147, 92, 214, 0.75);
 }
 
 textarea,
@@ -40,7 +40,7 @@ input {
 
 button:focus, textarea:focus,
 input:focus {
-  box-shadow: 0 0 0 3px rgba(147, 92, 214, 0.5);
+  box-shadow: 0 0 0 3px rgba(147, 92, 214, 0.75);
 }
 
 button,
@@ -232,7 +232,6 @@ checkbox {
   grid-template-columns: 1em auto;
   gap: 0.5em;
   align-items: center;
-  margin: 1em 0em;
 }
 
 td, th {
