@@ -15,11 +15,11 @@
 [![downloads badge](https://img.shields.io/npm/dm/chimeracss?color=informational&logo=npm)](https://img.shields.io/npm/dm/chimeracss)
 
 
-# ChimeraCSS
+# 🦁🐍 ChimeraCSS
 
 Classless CSS framework with a clean, soft and modern design inspired By SakuraCSS and Marx.
 
-## Why?
+## 🤓 Why use Chimera?
 
 Classless css frameworks is great for building beautiful UI, without worrying about unresponsive and unacessible elements. Chimera does the element styling for you, which only leaves the layout to you. For building MVPs fast and building UI without a designsystem; Chimera is a great framework.
 
@@ -31,17 +31,19 @@ Classless css frameworks is great for building beautiful UI, without worrying ab
 - [Contribution guide](./CONTRIBUTING.md)
 - [Security](./SECURITY.md)
 
-## Goals
+## ✅ Goals
 
-What we want to achieve for the framework is as following:
+What we want to achieve with this framework is as following:
 
-- Easy to implement into private projects
-- Clean, soft and modern design
-- Responsive by default
-- Acessible elements
-- Compatibility with classbased css-frameworks
+- 🔥 Easy to implement
+- 👨‍🎨 Clean, soft and modern design
+- 📱 Responsive by default
+- ♿️ Acessible elements
+- 🤝 Class overideable styles
+- 🪽 Fast and lightweight
+- 🎨 Theme based - Easy to customize
 
-## How?
+## ➕ Implement Chimera
 
 You can implement chimera into your private project by downloading the ChimeraCSS package and directly link to the Chimera.css file:
 
@@ -53,17 +55,22 @@ pnpm add chimeracss
 ```javascript
 import "~/node_modules/chimeracss/build/chimera.css";
 ```
-or by including this tag in your HTML header. (Remember to declare version where ":version" is, in the URL)
+or by including this tag in your HTML header.
 
 ```html
 <link
   rel="stylesheet"
   type="text/css"
-  href="https://unpkg.com/chimeracss@:version/build/chimera.css"
+  href="https://unpkg.com/chimeracss/build/chimera.css"
 />
 ```
 
+### Responsiveness
+ChimeraCSS is built with responsiveness in mind. All you have to do is to ensure that your application is responsive when using chimera, is to include the ``Responsiveness tag`` in your ``<header>``:
 
+```HTML
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
 ### Themes
 
@@ -75,21 +82,27 @@ Chimera has multiple themes:
 - chimera-blues
 - chimera-plain
 
-to use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark:
+to use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark using the `node_modules` import method:
 
 ```javascript
 import "~/node_modules/chimeracss/build/chimera-dark.css";
 ```
-or
-```html
-<link
-  rel="stylesheet"
-  type="text/css"
-  href="https://unpkg.com/chimeracss@:version/build/chimera-dark.css"
-/>
-```
 
-## License
+## 🧑‍⚖️ License
 
 You can check out the full license [here](https://github.com/J0hans1/Chimera/blob/master/LICENSE)
 This project is licensed under the terms of the **Apache License 2.0** license.
+
+## 🤩 Contribute
+
+You can contribute to the project in multiple ways!
+- You can report issues
+- Create pull requests
+- Review pull requests
+- And much more!
+
+If you are interested in contributing with code to the project you can read more about that [here](./CONTRIBUTING.md), and about how Chimera works [here](./GUIDE.md)
+
+Financial contributions are also very welcome, and can be made through buy me a coffee:
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/markusjohansen)
