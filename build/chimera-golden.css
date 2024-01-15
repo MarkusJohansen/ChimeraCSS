@@ -30,6 +30,10 @@ input:disabled {
   color: hsl(0, 0%, 30%);
 }
 
+textarea {
+  resize: vertical;
+}
+
 button,
 input[type=button],
 input[type=submit], textarea,
