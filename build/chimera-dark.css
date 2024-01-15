@@ -15,7 +15,7 @@ textarea,
 input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(48, 5%, 90%);
-  background-color: hsl(0, 0%, 10%);
+  background-color: #181824;
   font-size: medium;
   border-radius: 0.5em;
   border: solid 2px hsl(0, 0%, 90%);
@@ -78,7 +78,7 @@ input[type=submit]:disabled {
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(0, 0%, 20%);
+  background-color: #232133;
   width: 100%;
   box-sizing: border-box;
   border-left: 0.25em solid hsl(183, 40%, 70%);
@@ -91,7 +91,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(0, 0%, 20%);
+  background-color: #232133;
   border-radius: 8px;
   font-family: monospace;
 }
@@ -310,7 +310,7 @@ p {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(48, 5%, 90%);
-  background: hsl(0, 0%, 10%);
+  background: #181824;
 }
 
 /*# sourceMappingURL=chimera-dark.css.map */
