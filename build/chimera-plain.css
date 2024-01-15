@@ -18,7 +18,7 @@ input {
   background-color: hsl(0, 0%, 100%);
   font-size: medium;
   border-radius: 0.5em;
-  border: solid 2px hsl(0, 0%, 30%);
+  border: solid 2px hsl(0, 0%, 70%);
   width: 100%;
   margin: 0.5em 0;
   padding: 0.75em 0 0.75em 0.75em;
@@ -185,7 +185,7 @@ input[type=checkbox] {
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 30%);
+  border: 2px solid hsl(0, 0%, 70%);
   border-radius: 0.2em;
   display: grid;
   place-content: center;
@@ -218,7 +218,7 @@ input[type=radio] {
   width: 1em;
   height: 1em;
   border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 30%);
+  border: 2px solid hsl(0, 0%, 70%);
   /*Place fill*/
   display: grid;
   place-content: center;
@@ -252,7 +252,7 @@ checkbox {
 }
 
 td, th {
-  border: 0.1em solid hsl(0, 0%, 30%);
+  border: 0.1em solid hsl(0, 0%, 70%);
   padding: 0.5em;
   text-align: left;
 }
