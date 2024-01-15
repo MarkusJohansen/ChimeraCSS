@@ -113,6 +113,7 @@ samp {
 mark {
   background-color: hsla(0, 0%, 0%, 0.1);
   padding: 0.2em;
+  color: hsl(0, 0%, 10%);
 }
 
 underline {
@@ -129,7 +130,7 @@ abbr {
 
 hr {
   background-color: hsl(0, 0%, 10%);
-  height: 0.2em;
+  height: 0.1em;
   width: 100%;
   border: 0;
   margin: 1em 0;
