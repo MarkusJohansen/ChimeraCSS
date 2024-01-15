@@ -1,0 +1,55 @@
+radio,
+checkbox {
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+    align-items: center;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    /*remove default checkboxes, and reset style*/
+    appearance: none;
+    margin: 0;
+    padding: 0;
+    
+    /*style*/
+    width: 1em;
+    height: 1em;
+    border-radius: 1em;
+    border: 2px solid $Chimera-border;
+    
+    display: grid;
+    place-content: center;
+}
+
+input[type="checkbox"]:hover,
+input[type="radio"]:hover  {
+    border: 2px solid $Chimera;
+    cursor: pointer;
+}
+
+%before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: $Chimera;
+  content: "";
+}
+
+input[type="checkbox"]::before {
+@extend %before;
+border-radius: 0.05em;
+}
+
+input[type="radio"]::before {
+@extend %before;
+border-radius: 0.2em;
+}
+
+input[type="checkbox"]:checked::before,
+input[type="radio"]:checked::before {
+transform: scale(1);
+}
