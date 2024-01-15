@@ -32,4 +32,5 @@ input[type="button"]:disabled,
 input[type="submit"]:disabled {
   border-color: $Chimera-darker;
   background-color: $Chimera-darker;
+  cursor: default;
 }
