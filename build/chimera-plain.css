@@ -78,6 +78,7 @@ input[type=button]:disabled,
 input[type=submit]:disabled {
   border-color: hsl(0, 0%, 30%);
   background-color: hsl(0, 0%, 30%);
+  cursor: default;
 }
 
 blockquote {
@@ -181,72 +182,6 @@ li {
   list-style: inherit;
 }
 
-input[type=checkbox] {
-  /*remove default checkboxes, and reset style*/
-  appearance: none;
-  margin: 0;
-  padding: 0;
-  /*style*/
-  width: 1em;
-  height: 1em;
-  border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 70%);
-  border-radius: 0.2em;
-  display: grid;
-  place-content: center;
-}
-
-input[type=checkbox]:hover {
-  border: 2px solid hsl(0, 0%, 10%);
-}
-
-input[type=checkbox]::before {
-  transition: 200ms transform ease-in-out;
-  transform: scale(0);
-  width: 0.5em;
-  height: 0.5em;
-  background-color: hsl(0, 0%, 10%);
-  content: "";
-  border-radius: 0.05em;
-}
-
-input[type=checkbox]:checked::before {
-  transform: scale(1);
-}
-
-input[type=radio] {
-  /*remove default radio-buttons, and reset style*/
-  appearance: none;
-  margin: 0;
-  padding: 0;
-  /*style*/
-  width: 1em;
-  height: 1em;
-  border-radius: 1em;
-  border: 2px solid hsl(0, 0%, 70%);
-  /*Place fill*/
-  display: grid;
-  place-content: center;
-}
-
-input[type=radio]:hover {
-  border: 2px solid hsl(0, 0%, 10%);
-}
-
-input[type=radio]::before {
-  transition: 200ms transform ease-in-out;
-  transform: scale(0);
-  width: 0.5em;
-  height: 0.5em;
-  background-color: hsl(0, 0%, 10%);
-  content: "";
-  border-radius: 50%;
-}
-
-input[type=radio]:checked::before {
-  transform: scale(1);
-}
-
 radio,
 checkbox {
   line-height: 1.1;
@@ -254,6 +189,53 @@ checkbox {
   grid-template-columns: 1em auto;
   gap: 0.5em;
   align-items: center;
+}
+
+input[type=radio], input[type=checkbox] {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 1em;
+  height: 1em;
+  border: 2px solid hsl(0, 0%, 70%);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox] {
+  border-radius: 0.05em;
+}
+
+input[type=radio] {
+  border-radius: 1em;
+}
+
+input[type=checkbox]:hover,
+input[type=radio]:hover {
+  border: 2px solid hsl(0, 0%, 10%);
+  cursor: pointer;
+}
+
+input[type=radio]::before, input[type=checkbox]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(0, 0%, 10%);
+  content: "";
+}
+
+input[type=checkbox]::before {
+  border-radius: 0.05em;
+}
+
+input[type=radio]::before {
+  border-radius: 0.2em;
+}
+
+input[type=checkbox]:checked::before,
+input[type=radio]:checked::before {
+  transform: scale(1);
 }
 
 td, th {
