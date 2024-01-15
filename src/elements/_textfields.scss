@@ -19,3 +19,7 @@ textarea:disabled,
 input:disabled{
   color: $Chimera-text-disabled;
 }
+
+textarea {
+  resize: vertical;
+}
