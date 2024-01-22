@@ -1,5 +1,50 @@
 button,
 input[type=button],
+input[type=submit], textarea,
+input {
+  outline: none;
+  transition: 150ms, box-shadow 150ms ease-in-out;
+}
+
+button:focus, textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
+}
+
+textarea,
+input {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(210, 30%, 15%);
+  font-size: medium;
+  border-radius: 0.5em;
+  border: solid 2px hsl(210, 30%, 20%);
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.75em 0 0.75em 0.75em;
+  resize: none;
+}
+
+textarea:disabled,
+input:disabled {
+  color: hsl(210, 30%, 60%);
+}
+
+button,
+input[type=button],
+input[type=submit], textarea,
+input {
+  outline: none;
+  transition: 150ms, box-shadow 150ms ease-in-out;
+}
+
+button:focus, textarea:focus,
+input:focus {
+  box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
+}
+
+button,
+input[type=button],
 input[type=submit] {
   background-color: hsl(210, 90%, 30%);
   color: hsl(0, 0%, 75%);
@@ -14,9 +59,7 @@ input[type=button]:hover,
 input[type=submit]:hover {
   background-color: hsl(210, 90%, 20%);
   border-color: hsl(210, 90%, 20%);
-  color: hsl(0, 0%, 95%);
   cursor: pointer;
-  transition: 200ms ease-in-out;
 }
 
 button:active,
@@ -24,7 +67,6 @@ input[type=button]:active,
 input[type=submit]:active {
   border-color: hsl(210, 90%, 10%);
   background-color: hsl(210, 90%, 10%);
-  transition: 200ms ease-in-out;
 }
 
 button:disabled,
@@ -32,12 +74,6 @@ input[type=button]:disabled,
 input[type=submit]:disabled {
   border-color: hsl(210, 90%, 10%);
   background-color: hsl(210, 90%, 10%);
-}
-
-button:focus,
-input[type=button]:focus,
-input[type=submit]:focus {
-  outline: hsl(280, 70%, 50%) 1px solid;
 }
 
 blockquote {
@@ -252,32 +288,6 @@ h6 {
 p {
   line-height: 1.5;
   font-weight: 300;
-}
-
-textarea,
-input {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(0, 0%, 95%);
-  background-color: hsl(210, 30%, 15%);
-  font-size: medium;
-  border-radius: 0.5em;
-  border: solid 2px hsl(210, 30%, 20%);
-  outline: none;
-  width: 100%;
-  box-sizing: border-box;
-  margin: 0.5em 0;
-  padding: 0.75em 0 0.75em 0.75em;
-  resize: none;
-}
-
-textarea:disabled,
-input:disabled {
-  color: hsl(210, 30%, 60%);
-}
-
-textarea:focus,
-input:focus {
-  border: solid 2px hsl(280, 70%, 50%);
 }
 
 body {
