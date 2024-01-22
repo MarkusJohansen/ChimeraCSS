@@ -19,3 +19,22 @@ samp {
   padding: 4px 8px;
   line-height: 1.5;
 }
+
+mark {
+  background-color: $Chimera-fill;
+  padding: 0.2em;
+  color: $Chimera-text;
+}
+
+underline {
+  text-decoration: underline;
+}
+
+italic {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+}
