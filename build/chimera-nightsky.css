@@ -15,7 +15,7 @@ textarea,
 input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(0, 0%, 95%);
-  background-color: hsl(210, 30%, 15%);
+  background-color: hsl(210, 30%, 10%);
   font-size: medium;
   border-radius: 0.5em;
   border: solid 2px hsl(210, 30%, 20%);
@@ -28,6 +28,10 @@ input {
 textarea:disabled,
 input:disabled {
   color: hsl(210, 30%, 60%);
+}
+
+textarea {
+  resize: vertical;
 }
 
 button,
@@ -74,11 +78,12 @@ input[type=button]:disabled,
 input[type=submit]:disabled {
   border-color: hsl(210, 90%, 10%);
   background-color: hsl(210, 90%, 10%);
+  cursor: default;
 }
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(210, 20%, 10%);
+  background-color: hsl(210, 20%, 5%);
   width: 100%;
   box-sizing: border-box;
   border-left: 0.25em solid hsl(210, 90%, 30%);
@@ -91,7 +96,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(210, 20%, 10%);
+  background-color: hsl(210, 20%, 5%);
   border-radius: 8px;
   font-family: monospace;
 }
@@ -110,9 +115,28 @@ samp {
   line-height: 1.5;
 }
 
+mark {
+  background-color: hsla(210, 90%, 30%, 0.1);
+  padding: 0.2em;
+  color: hsl(0, 0%, 95%);
+}
+
+underline {
+  text-decoration: underline;
+}
+
+italic {
+  font-style: italic;
+}
+
+abbr {
+  text-decoration: underline dotted;
+  cursor: help;
+}
+
 hr {
   background-color: hsl(210, 90%, 30%);
-  height: 0.2em;
+  height: 0.1em;
   width: 100%;
   border: 0;
   margin: 1em 0;
@@ -128,7 +152,7 @@ label {
 }
 
 a {
-  color: hsl(210, 90%, 40%);
+  color: hsl(210, 90%, 50%);
   text-decoration: none;
 }
 
@@ -159,72 +183,6 @@ li {
   list-style: inherit;
 }
 
-input[type=checkbox] {
-  /*remove default checkboxes, and reset style*/
-  appearance: none;
-  margin: 0;
-  padding: 0;
-  /*style*/
-  width: 1em;
-  height: 1em;
-  border-radius: 1em;
-  border: 2px solid hsl(210, 30%, 20%);
-  border-radius: 0.2em;
-  display: grid;
-  place-content: center;
-}
-
-input[type=checkbox]:hover {
-  border: 2px solid hsl(210, 90%, 30%);
-}
-
-input[type=checkbox]::before {
-  transition: 200ms transform ease-in-out;
-  transform: scale(0);
-  width: 0.5em;
-  height: 0.5em;
-  background-color: hsl(210, 90%, 30%);
-  content: "";
-  border-radius: 0.05em;
-}
-
-input[type=checkbox]:checked::before {
-  transform: scale(1);
-}
-
-input[type=radio] {
-  /*remove default radio-buttons, and reset style*/
-  appearance: none;
-  margin: 0;
-  padding: 0;
-  /*style*/
-  width: 1em;
-  height: 1em;
-  border-radius: 1em;
-  border: 2px solid hsl(210, 30%, 20%);
-  /*Place fill*/
-  display: grid;
-  place-content: center;
-}
-
-input[type=radio]:hover {
-  border: 2px solid hsl(210, 90%, 30%);
-}
-
-input[type=radio]::before {
-  transition: 200ms transform ease-in-out;
-  transform: scale(0);
-  width: 0.5em;
-  height: 0.5em;
-  background-color: hsl(210, 90%, 30%);
-  content: "";
-  border-radius: 50%;
-}
-
-input[type=radio]:checked::before {
-  transform: scale(1);
-}
-
 radio,
 checkbox {
   line-height: 1.1;
@@ -232,7 +190,53 @@ checkbox {
   grid-template-columns: 1em auto;
   gap: 0.5em;
   align-items: center;
-  margin: 1em 0em;
+}
+
+input[type=radio], input[type=checkbox] {
+  appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 1em;
+  height: 1em;
+  border: 2px solid hsl(210, 30%, 20%);
+  display: grid;
+  place-content: center;
+}
+
+input[type=checkbox] {
+  border-radius: 0.05em;
+}
+
+input[type=radio] {
+  border-radius: 1em;
+}
+
+input[type=checkbox]:hover,
+input[type=radio]:hover {
+  border: 2px solid hsl(210, 90%, 30%);
+  cursor: pointer;
+}
+
+input[type=radio]::before, input[type=checkbox]::before {
+  transition: 200ms transform ease-in-out;
+  transform: scale(0);
+  width: 0.5em;
+  height: 0.5em;
+  background-color: hsl(210, 90%, 30%);
+  content: "";
+}
+
+input[type=checkbox]::before {
+  border-radius: 0.05em;
+}
+
+input[type=radio]::before {
+  border-radius: 0.2em;
+}
+
+input[type=checkbox]:checked::before,
+input[type=radio]:checked::before {
+  transform: scale(1);
 }
 
 td, th {
@@ -293,7 +297,7 @@ p {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(0, 0%, 95%);
-  background: hsl(210, 30%, 15%);
+  background: hsl(210, 30%, 10%);
 }
 
 /*# sourceMappingURL=chimera-nightsky.css.map */
