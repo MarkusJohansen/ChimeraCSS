@@ -18,11 +18,11 @@
 
 # 🦁🐍 ChimeraCSS
 
-Classless CSS framework with a clean, soft and modern design inspired By SakuraCSS and Marx.
+Classless CSS framework with a clean, soft and modern design inspired by [SakuraCSS](https://github.com/oxalorg/sakura) and [Marx](https://github.com/mblode/marx).
 
 ## 🤓 Why use Chimera?
 
-Classless css frameworks is great for building beautiful UI, without worrying about unresponsive and unacessible elements. Chimera does the element styling for you, which only leaves the layout to you. For building MVPs fast and building UI without a designsystem; Chimera is a great framework.
+Classless CSS frameworks is great for building a beautiful UI, without worrying about unresponsive and unaccessible elements. Chimera does the element-styling for you, which only leaves the layout to you. For building MVPs fast and building UIs without a designsystem; Chimera is a great framework.
 
 ### Roadmap
 
@@ -39,20 +39,21 @@ What we want to achieve with this framework is as following:
 - 🔥 Easy to implement
 - 👨‍🎨 Clean, soft and modern design
 - 📱 Responsive by default
-- ♿️ Acessible elements
-- 🤝 Class overideable styles
+- ♿️ Accessible elements
+- 🤝 Class overridable styles
 - 🪽 Fast and lightweight
 - 🎨 Theme based - Easy to customize
 
 ## ➕ Implement Chimera
 
-You can implement chimera into your private project by downloading the ChimeraCSS package and directly link to the Chimera.css file:
+You can implement Chimera into your private project by downloading the ChimeraCSS package and directly link to the Chimera.css file:
 
 ```bash
 npm install chimeracss
 yarn add chimeracss
 pnpm add chimeracss
 ```
+
 ```javascript
 import "~/node_modules/chimeracss/build/chimera.css";
 ```
@@ -67,7 +68,8 @@ or by including this tag in your HTML header.
 ```
 
 ### Responsiveness
-ChimeraCSS is built with responsiveness in mind. All you have to do is to ensure that your application is responsive when using chimera, is to include the ``Responsiveness tag`` in your ``<header>``:
+
+ChimeraCSS is built with responsiveness in mind. All you have to do is to ensure that your application is responsive when using Chimera, and to include the ``Responsiveness tag`` in your ``<header>``:
 
 ```HTML
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -76,6 +78,7 @@ ChimeraCSS is built with responsiveness in mind. All you have to do is to ensure
 ### Themes
 
 Chimera has multiple themes: 
+
 - chimera
 - chimera-dark
 - chimera-golden
@@ -83,7 +86,7 @@ Chimera has multiple themes:
 - chimera-blues
 - chimera-plain
 
-to use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark using the `node_modules` import method:
+To use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark using the `node_modules` import method:
 
 ```javascript
 import "~/node_modules/chimeracss/build/chimera-dark.css";
@@ -91,19 +94,19 @@ import "~/node_modules/chimeracss/build/chimera-dark.css";
 
 ## 🧑‍⚖️ License
 
-You can check out the full license [here](https://github.com/J0hans1/Chimera/blob/master/LICENSE)
-This project is licensed under the terms of the **Apache License 2.0** license.
+You can check out the full license [here](https://github.com/J0hans1/Chimera/blob/master/LICENSE). This project is licensed under the terms of the **Apache License 2.0** license.
 
 ## 🤩 Contribute
 
 You can contribute to the project in multiple ways!
+
 - You can report issues
 - Create pull requests
 - Review pull requests
 - And much more!
 
-If you are interested in contributing with code to the project you can read more about that [here](./CONTRIBUTING.md), and about how Chimera works [here](./GUIDE.md)
+If you are interested in contributing with code to the project you can read more about that [here](./CONTRIBUTING.md), and about how Chimera works [here](./GUIDE.md).
 
-Financial contributions are also very welcome, and can be made through buy me a coffee:
+Financial contributions are also very welcome, and can be made through a [**GitHub sponsors**](https://github.com/sponsors/MarkusJohansen) or via buy me a coffee:
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/markusjohansen)
