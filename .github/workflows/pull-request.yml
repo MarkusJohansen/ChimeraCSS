@@ -29,6 +29,4 @@ jobs:
           run: |
             git config --global user.name "MarkusJohansen"
             git config --global user.email "markusarj@gmail.com"
-            git status
-            git add build/*.css
-            git commit -m "🤖 Automatic compilation of Sass files"
+            git add build/*.css && git diff --quiet --cached || git commit -am "🤖 Automatic compilation of Sass files"
