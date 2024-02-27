@@ -8,17 +8,17 @@ input {
 
 button:focus, textarea:focus,
 input:focus {
-  box-shadow: 0 0 0 3px rgba(214, 92, 92, 0.75);
+  box-shadow: 0 0 0 3px rgba(224, 82, 82, 0.75);
 }
 
 textarea,
 input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(22, 80%, 90%);
+  color: hsl(22, 80%, 80%);
   background-color: hsl(0, 0%, 0%);
   font-size: medium;
   border-radius: 0.5em;
-  border: solid 2px hsl(0, 0%, 90%);
+  border: solid 2px hsl(22, 80%, 80%);
   width: 100%;
   margin: 0.5em 0;
   padding: 0.5em 0 0.5em 0.75em;
@@ -44,13 +44,13 @@ input {
 
 button:focus, textarea:focus,
 input:focus {
-  box-shadow: 0 0 0 3px rgba(214, 92, 92, 0.75);
+  box-shadow: 0 0 0 3px rgba(224, 82, 82, 0.75);
 }
 
 button,
 input[type=button],
 input[type=submit] {
-  background-color: #fae0d1;
+  background-color: hsl(22, 80%, 80%);
   color: #333333;
   font-size: medium;
   padding: 0.5em 0.75em;
@@ -69,15 +69,15 @@ input[type=submit]:hover {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  border-color: hsl(22, 80%, 40%);
-  background-color: hsl(22, 80%, 40%);
+  border-color: hsl(22, 80%, 50%);
+  background-color: hsl(22, 80%, 50%);
 }
 
 button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled {
-  border-color: hsl(22, 80%, 40%);
-  background-color: hsl(22, 80%, 40%);
+  border-color: hsl(22, 80%, 50%);
+  background-color: hsl(22, 80%, 50%);
   cursor: default;
 }
 
@@ -86,7 +86,7 @@ blockquote {
   background-color: hsl(0, 0%, 10%);
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid #fae0d1;
+  border-left: 0.25em solid hsl(22, 80%, 80%);
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;
@@ -118,7 +118,7 @@ samp {
 mark {
   background-color: hsla(22, 100%, 33%, 0.2);
   padding: 0.2em;
-  color: hsl(22, 80%, 90%);
+  color: hsl(22, 80%, 80%);
 }
 
 underline {
@@ -135,7 +135,7 @@ abbr {
 }
 
 hr {
-  background-color: #fae0d1;
+  background-color: hsl(22, 80%, 80%);
   height: 0.1em;
   width: 100%;
   border: 0;
@@ -152,21 +152,21 @@ label {
 }
 
 a {
-  color: hsl(22, 80%, 70%);
+  color: hsl(22, 80%, 60%);
   text-decoration: none;
 }
 
 a:hover {
-  color: hsl(0, 60%, 60%);
+  color: hsl(0, 70%, 60%);
   cursor: pointer;
 }
 
 a:active {
-  color: hsl(22, 80%, 40%);
+  color: hsl(22, 80%, 50%);
 }
 
 a:focus {
-  color: hsl(0, 60%, 60%);
+  color: hsl(0, 70%, 60%);
 }
 
 li, ul {
@@ -198,7 +198,7 @@ input[type=radio], input[type=checkbox] {
   padding: 0;
   width: 1em;
   height: 1em;
-  border: 2px solid hsl(0, 0%, 90%);
+  border: 2px solid hsl(22, 80%, 80%);
   display: grid;
   place-content: center;
 }
@@ -213,7 +213,7 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  border: 2px solid #fae0d1;
+  border: 2px solid hsl(22, 80%, 80%);
   cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ input[type=radio]::before, input[type=checkbox]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: #fae0d1;
+  background-color: hsl(22, 80%, 80%);
   content: "";
 }
 
@@ -240,7 +240,7 @@ input[type=radio]:checked::before {
 }
 
 td, th {
-  border: 0.1em solid hsl(0, 0%, 90%);
+  border: 0.1em solid hsl(22, 80%, 80%);
   padding: 0.5em;
   text-align: left;
 }
@@ -296,7 +296,7 @@ p {
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(22, 80%, 90%);
+  color: hsl(22, 80%, 80%);
   background: hsl(0, 0%, 0%);
 }
 

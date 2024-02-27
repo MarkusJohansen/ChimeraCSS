@@ -3,20 +3,20 @@ $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
   "Helvetica Neue", Arial, "Noto Sans", sans-serif;
 
 //Color palette
-$Chimera: #fae0d1;
+$Chimera: hsl(22, 80%, 80%);
 $Chimera-dark: hsl(22, 80%, 60%);
-$Chimera-darker: hsl(22, 80%, 40%);
+$Chimera-darker: hsl(22, 80%, 50%);
 $Chimera-input-border: hsl(0, 0%, 51%);
-$Chimera-text: hsl(22, 80%, 90%);
+$Chimera-text: hsl(22, 80%, 80%);
 $Chimera-text-secondary: #333333;
 $Chimera-text-disabled:  hsl(0, 0%, 30%);
 $Chimera-bg: hsl(0, 0%, 0%);
 $Chimera-bg-secondary: hsl(0, 0%, 10%);
 $Chimera-bg-disabled: hsl(0, 0%, 30%);
-$Chimera-link: hsl(22, 80%, 70%);
-$Chimera-focus: hsl(0, 60%, 60%);
+$Chimera-link: hsl(22, 80%, 60%);
+$Chimera-focus: hsl(0, 70%, 60%);
 $Chimera-fill: hsla(22, 100%, 33%, 20%);
-$Chimera-border: hsl(0, 0%, 90%);
+$Chimera-border: hsl(22, 80%, 80%);
 
 // @use "main";
 
