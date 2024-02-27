@@ -30,4 +30,4 @@ jobs:
             git config --global user.name "MarkusJohansen"
             git config --global user.email "markusarj@gmail.com"
             git add build/*.css
-            git commit -m "Automatic compilation of Sass files"
+            git commit -m "🤖 Automatic compilation of Sass files"
