@@ -3,6 +3,13 @@ on:
     pull_request:
         branches:
             - main
+        paths-ignore:
+            - 'README.md'
+            - 'SECURITY.md'
+            - 'LICENCE'
+            - 'GUIDE.md'
+            - 'CONTRIBUTING.md'
+            - 'CODE_OF_CONDUCT.md'
 
 jobs:
     compile-themes:
