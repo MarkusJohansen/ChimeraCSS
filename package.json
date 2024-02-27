@@ -5,7 +5,7 @@
   "main": "Chimera.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "sass src/themes/*.scss build/*.css"
+    "compile:sass": "sass src/themes/*.scss build/"
     },
   "repository": {
     "type": "git",
