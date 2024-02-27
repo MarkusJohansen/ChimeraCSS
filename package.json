@@ -4,8 +4,9 @@
   "description": "A classless CSS-framework for clean, soft and modern design!",
   "main": "Chimera.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass src/themes/*.scss build/*.css"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ChimeraCSS/ChimeraCSS.git"

@@ -20,13 +20,3 @@ jobs:
               node-version: 16
           - run: npm ci
           - run: npx prettier . --write
-
-    compile-themes:
-        runs-on: ubuntu-latest
-        name: Compile themes
-        steps:
-        - name: Checkout code
-          uses: actions/checkout@v4
-
-        - name: compile sass
-          uses: ./.github/actions/compile-themes

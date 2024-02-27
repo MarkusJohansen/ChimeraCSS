@@ -17,7 +17,17 @@ jobs:
         name: compile themes
         steps:
         - name: Checkout code
-          uses: actions/checkout@v4
-          
-        - name: compile sass
-          uses: ./.github/actions/compile-themes
+          uses: actions/checkout@v3
+
+        - name: Install dependencies
+          run: npm install
+  
+        - name: Compile Sass
+          run: npm run compile:sass
+        
+        - name: Add and commit changes
+          run: |
+            git config --global user.name "MarkusJohansen"
+            git config --global user.email "markusarj@gmail.com"
+            git add build/*.css
+            git commit -m "Automatic compilation of Sass files"
