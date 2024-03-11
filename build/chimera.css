@@ -50,7 +50,7 @@ input:focus {
 button,
 input[type=button],
 input[type=submit] {
-  background-color: hsl(173, 100%, 33%);
+  background-color: hsl(173, 100%, 25%);
   color: white;
   font-size: medium;
   padding: 0.5em 0.75em;
@@ -61,32 +61,32 @@ input[type=submit] {
 button:hover,
 input[type=button]:hover,
 input[type=submit]:hover {
-  background-color: hsl(173, 100%, 23%);
-  border-color: hsl(173, 100%, 23%);
+  background-color: hsl(173, 100%, 20%);
+  border-color: hsl(173, 100%, 20%);
   cursor: pointer;
 }
 
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  border-color: hsl(173, 100%, 13%);
-  background-color: hsl(173, 100%, 13%);
+  border-color: hsl(173, 100%, 15%);
+  background-color: hsl(173, 100%, 15%);
 }
 
 button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled {
-  border-color: hsl(173, 100%, 13%);
-  background-color: hsl(173, 100%, 13%);
+  border-color: hsl(173, 100%, 15%);
+  background-color: hsl(173, 100%, 15%);
   cursor: default;
 }
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(60, 5%, 95%);
+  background-color: hsl(60, 5%, 97%);
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid hsl(173, 100%, 33%);
+  border-left: 0.25em solid hsl(173, 100%, 25%);
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;
@@ -96,7 +96,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(60, 5%, 95%);
+  background-color: hsl(60, 5%, 97%);
   border-radius: 8px;
   font-family: monospace;
 }
@@ -135,7 +135,7 @@ abbr {
 }
 
 hr {
-  background-color: hsl(173, 100%, 33%);
+  background-color: hsl(173, 100%, 25%);
   height: 0.1em;
   width: 100%;
   border: 0;
@@ -152,7 +152,7 @@ label {
 }
 
 a {
-  color: hsl(173, 100%, 33%);
+  color: hsl(173, 100%, 25%);
   text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ a:hover {
 }
 
 a:active {
-  color: hsl(173, 100%, 13%);
+  color: hsl(173, 100%, 15%);
 }
 
 a:focus {
@@ -213,7 +213,7 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  border: 2px solid hsl(173, 100%, 33%);
+  border: 2px solid hsl(173, 100%, 25%);
   cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ input[type=radio]::before, input[type=checkbox]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: hsl(173, 100%, 33%);
+  background-color: hsl(173, 100%, 25%);
   content: "";
 }
 

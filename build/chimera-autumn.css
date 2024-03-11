@@ -15,7 +15,7 @@ textarea,
 input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(25, 50%, 20%);
-  background-color: hsl(30, 45%, 95%);
+  background-color: hsl(30, 45%, 97%);
   font-size: medium;
   border-radius: 0.5em;
   border: solid 2px hsl(25, 25%, 80%);
@@ -50,7 +50,7 @@ input:focus {
 button,
 input[type=button],
 input[type=submit] {
-  background-color: hsl(25, 80%, 55%);
+  background-color: hsl(25, 80%, 37%);
   color: #fff;
   font-size: medium;
   padding: 0.5em 0.75em;
@@ -61,32 +61,32 @@ input[type=submit] {
 button:hover,
 input[type=button]:hover,
 input[type=submit]:hover {
-  background-color: hsl(25, 80%, 40%);
-  border-color: hsl(25, 80%, 40%);
+  background-color: hsl(25, 80%, 32%);
+  border-color: hsl(25, 80%, 32%);
   cursor: pointer;
 }
 
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  border-color: hsl(25, 80%, 25%);
-  background-color: hsl(25, 80%, 25%);
+  border-color: hsl(25, 80%, 27%);
+  background-color: hsl(25, 80%, 27%);
 }
 
 button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled {
-  border-color: hsl(25, 80%, 25%);
-  background-color: hsl(25, 80%, 25%);
+  border-color: hsl(25, 80%, 27%);
+  background-color: hsl(25, 80%, 27%);
   cursor: default;
 }
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(30, 30%, 90%);
+  background-color: hsl(30, 45%, 90%);
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid hsl(25, 80%, 55%);
+  border-left: 0.25em solid hsl(25, 80%, 37%);
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;
@@ -96,7 +96,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(30, 30%, 90%);
+  background-color: hsl(30, 45%, 90%);
   border-radius: 8px;
   font-family: monospace;
 }
@@ -135,7 +135,7 @@ abbr {
 }
 
 hr {
-  background-color: hsl(25, 80%, 55%);
+  background-color: hsl(25, 80%, 37%);
   height: 0.1em;
   width: 100%;
   border: 0;
@@ -152,7 +152,7 @@ label {
 }
 
 a {
-  color: hsl(25, 80%, 55%);
+  color: hsl(25, 80%, 37%);
   text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ a:hover {
 }
 
 a:active {
-  color: hsl(25, 80%, 25%);
+  color: hsl(25, 80%, 27%);
 }
 
 a:focus {
@@ -213,7 +213,7 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  border: 2px solid hsl(25, 80%, 55%);
+  border: 2px solid hsl(25, 80%, 37%);
   cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ input[type=radio]::before, input[type=checkbox]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: hsl(25, 80%, 55%);
+  background-color: hsl(25, 80%, 37%);
   content: "";
 }
 
@@ -297,7 +297,7 @@ p {
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(25, 50%, 20%);
-  background: hsl(30, 45%, 95%);
+  background: hsl(30, 45%, 97%);
 }
 
 /*# sourceMappingURL=chimera-autumn.css.map */

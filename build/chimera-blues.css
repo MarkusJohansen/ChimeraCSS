@@ -50,7 +50,7 @@ input:focus {
 button,
 input[type=button],
 input[type=submit] {
-  background-color: hsl(210, 100%, 55%);
+  background-color: hsl(210, 100%, 45%);
   color: #fff;
   font-size: medium;
   padding: 0.5em 0.75em;
@@ -69,24 +69,24 @@ input[type=submit]:hover {
 button:active,
 input[type=button]:active,
 input[type=submit]:active {
-  border-color: hsl(210, 100%, 30%);
-  background-color: hsl(210, 100%, 30%);
+  border-color: hsl(210, 100%, 35%);
+  background-color: hsl(210, 100%, 35%);
 }
 
 button:disabled,
 input[type=button]:disabled,
 input[type=submit]:disabled {
-  border-color: hsl(210, 100%, 30%);
-  background-color: hsl(210, 100%, 30%);
+  border-color: hsl(210, 100%, 35%);
+  background-color: hsl(210, 100%, 35%);
   cursor: default;
 }
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(209, 91%, 95%);
+  background-color: hsl(209, 91%, 97%);
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid hsl(210, 100%, 55%);
+  border-left: 0.25em solid hsl(210, 100%, 45%);
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;
@@ -96,7 +96,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(209, 91%, 95%);
+  background-color: hsl(209, 91%, 97%);
   border-radius: 8px;
   font-family: monospace;
 }
@@ -135,7 +135,7 @@ abbr {
 }
 
 hr {
-  background-color: hsl(210, 100%, 55%);
+  background-color: hsl(210, 100%, 45%);
   height: 0.1em;
   width: 100%;
   border: 0;
@@ -152,7 +152,7 @@ label {
 }
 
 a {
-  color: hsl(210, 100%, 55%);
+  color: hsl(210, 100%, 45%);
   text-decoration: none;
 }
 
@@ -162,7 +162,7 @@ a:hover {
 }
 
 a:active {
-  color: hsl(210, 100%, 30%);
+  color: hsl(210, 100%, 35%);
 }
 
 a:focus {
@@ -213,7 +213,7 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  border: 2px solid hsl(210, 100%, 55%);
+  border: 2px solid hsl(210, 100%, 45%);
   cursor: pointer;
 }
 
@@ -222,7 +222,7 @@ input[type=radio]::before, input[type=checkbox]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: hsl(210, 100%, 55%);
+  background-color: hsl(210, 100%, 45%);
   content: "";
 }
 
