@@ -1,6 +1,9 @@
 button,
 input[type=button],
-input[type=submit], textarea,
+button[type=submit],
+input[type=submit],
+button[type=reset],
+input[type=reset], textarea,
 input {
   outline: none;
   transition: 150ms, box-shadow 150ms ease-in-out;
@@ -36,7 +39,10 @@ textarea {
 
 button,
 input[type=button],
-input[type=submit], textarea,
+button[type=submit],
+input[type=submit],
+button[type=reset],
+input[type=reset], textarea,
 input {
   outline: none;
   transition: 150ms, box-shadow 150ms ease-in-out;
@@ -49,41 +55,69 @@ input:focus {
 
 button,
 input[type=button],
-input[type=submit] {
+button[type=submit],
+input[type=submit],
+button[type=reset],
+input[type=reset] {
   background-color: hsl(173, 100%, 25%);
   color: white;
   font-size: medium;
   padding: 0.5em 0.75em;
   border: 0;
   border-radius: 0.5em;
+  width: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 2px solid transparent;
+}
+
+button[type=reset],
+input[type=reset] {
+  color: hsl(173, 100%, 25%);
+  background-color: hsl(40, 30%, 100%);
+  border-color: hsl(173, 100%, 25%);
 }
 
 button:hover,
 input[type=button]:hover,
+button[type=submit]:hover,
 input[type=submit]:hover {
   background-color: hsl(173, 100%, 20%);
-  border-color: hsl(173, 100%, 20%);
+  cursor: pointer;
+}
+
+button[type=reset]:hover,
+input[type=reset]:hover {
+  background-color: hsl(173, 100%, 25%);
+  color: white;
   cursor: pointer;
 }
 
 button:active,
 input[type=button]:active,
-input[type=submit]:active {
-  border-color: hsl(173, 100%, 15%);
+button[type=submit]:active,
+input[type=submit]:active,
+button[type=reset]:active,
+input[type=reset]:active {
   background-color: hsl(173, 100%, 15%);
+  border-color: hsl(173, 100%, 15%);
 }
 
 button:disabled,
 input[type=button]:disabled,
-input[type=submit]:disabled {
-  border-color: hsl(173, 100%, 15%);
+button[type=submit]:disabled,
+input[type=submit]:disabled,
+button[type=reset]:disabled,
+input[type=reset]:disabled {
   background-color: hsl(173, 100%, 15%);
+  border-color: hsl(173, 100%, 15%);
   cursor: default;
 }
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(60, 5%, 97%);
+  background-color: hsl(60, 5%, 95%);
   width: 100%;
   box-sizing: border-box;
   border-left: 0.25em solid hsl(173, 100%, 25%);
@@ -96,7 +130,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(60, 5%, 97%);
+  background-color: hsl(60, 5%, 95%);
   border-radius: 8px;
   font-family: monospace;
 }
