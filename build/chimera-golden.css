@@ -30,7 +30,7 @@ input {
 
 textarea:disabled,
 input:disabled {
-  color: hsl(0, 0%, 30%);
+  color: hsl(22, 40%, 50%);
 }
 
 textarea {
