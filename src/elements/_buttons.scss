@@ -14,12 +14,17 @@ input[type="reset"] {
   border: 0;
   border-radius: 0.5em;
   width: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 2px solid transparent;
 }
 
 button[type="reset"],
 input[type="reset"] {
   color: $Chimera;
   background-color: $Chimera-bg;
+  border-color: $Chimera;
 }
 
 button:hover,
@@ -44,6 +49,7 @@ input[type="submit"]:active,
 button[type="reset"]:active,
 input[type="reset"]:active {
   background-color: $Chimera-darker;
+  border-color: $Chimera-darker;
 }
 
 button:disabled,
@@ -53,5 +59,6 @@ input[type="submit"]:disabled,
 button[type="reset"]:disabled,
 input[type="reset"]:disabled {
   background-color: $Chimera-darker;
+  border-color: $Chimera-darker;
   cursor: default;
 }

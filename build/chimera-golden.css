@@ -66,12 +66,17 @@ input[type=reset] {
   border: 0;
   border-radius: 0.5em;
   width: auto;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 2px solid transparent;
 }
 
 button[type=reset],
 input[type=reset] {
   color: hsl(22, 80%, 80%);
   background-color: hsl(0, 0%, 0%);
+  border-color: hsl(22, 80%, 80%);
 }
 
 button:hover,
@@ -96,6 +101,7 @@ input[type=submit]:active,
 button[type=reset]:active,
 input[type=reset]:active {
   background-color: hsl(22, 80%, 50%);
+  border-color: hsl(22, 80%, 50%);
 }
 
 button:disabled,
@@ -105,6 +111,7 @@ input[type=submit]:disabled,
 button[type=reset]:disabled,
 input[type=reset]:disabled {
   background-color: hsl(22, 80%, 50%);
+  border-color: hsl(22, 80%, 50%);
   cursor: default;
 }
 
