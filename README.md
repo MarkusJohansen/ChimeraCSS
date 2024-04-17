@@ -110,3 +110,13 @@ If you are interested in contributing with code to the project you can read more
 Financial contributions are also very welcome, and can be made through a [**GitHub sponsors**](https://github.com/sponsors/MarkusJohansen) or via buy me a coffee:
 
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/markusjohansen)
+
+## Thanks to all contributors ❤
+
+ <a href = "https://github.com/chimeracss/chimeracss/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=chimeracss/chimeracss"/>
+ </a>
+
+## 🌟 Featured Projects
+
+- [CV](https://cv-nine-gilt.vercel.app/) by @MarkusJohansen
