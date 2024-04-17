@@ -50,7 +50,7 @@ input[type="checkbox"]::before {
 
 input[type="radio"]::before {
     @extend %before;
-    border-radius: 0.2em;
+    border-radius: 100%;
 }
 
 input[type="checkbox"]:checked::before,
