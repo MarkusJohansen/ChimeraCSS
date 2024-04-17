@@ -328,6 +328,23 @@ p {
   font-weight: 300;
 }
 
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2.25em;
+  }
+  h2 {
+    font-size: 2em;
+  }
+  h3 {
+    font-size: 1.75em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.1em;
+  }
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(48, 5%, 90%);
