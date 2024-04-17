@@ -65,6 +65,7 @@ input[type=reset] {
   padding: 0.5em 0.75em;
   border: 0;
   border-radius: 0.5em;
+  width: auto;
 }
 
 button[type=reset],
@@ -76,11 +77,15 @@ input[type=reset] {
 button:hover,
 input[type=button]:hover,
 button[type=submit]:hover,
-input[type=submit]:hover,
+input[type=submit]:hover {
+  background-color: hsl(25, 80%, 32%);
+  cursor: pointer;
+}
+
 button[type=reset]:hover,
 input[type=reset]:hover {
-  background-color: hsl(25, 80%, 32%);
-  border-color: hsl(25, 80%, 32%);
+  background-color: hsl(25, 80%, 37%);
+  color: #fff;
   cursor: pointer;
 }
 
@@ -90,7 +95,6 @@ button[type=submit]:active,
 input[type=submit]:active,
 button[type=reset]:active,
 input[type=reset]:active {
-  border-color: hsl(25, 80%, 27%);
   background-color: hsl(25, 80%, 27%);
 }
 
@@ -100,7 +104,6 @@ button[type=submit]:disabled,
 input[type=submit]:disabled,
 button[type=reset]:disabled,
 input[type=reset]:disabled {
-  border-color: hsl(25, 80%, 27%);
   background-color: hsl(25, 80%, 27%);
   cursor: default;
 }
