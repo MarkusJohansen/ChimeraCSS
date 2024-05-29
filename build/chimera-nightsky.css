@@ -1,4 +1,5 @@
-button,
+input[type=range]::-moz-range-thumb,
+input[type=range]::-webkit-slider-thumb, button,
 input[type=button],
 button[type=submit],
 input[type=submit],
@@ -9,7 +10,8 @@ input {
   transition: 150ms, box-shadow 150ms ease-in-out;
 }
 
-button:focus, textarea:focus,
+input[type=range]:focus::-moz-range-thumb,
+input[type=range]:focus::-webkit-slider-thumb, button:focus, textarea:focus,
 input:focus {
   box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
 }
@@ -37,7 +39,8 @@ textarea {
   resize: vertical;
 }
 
-button,
+input[type=range]::-moz-range-thumb,
+input[type=range]::-webkit-slider-thumb, button,
 input[type=button],
 button[type=submit],
 input[type=submit],
@@ -48,7 +51,8 @@ input {
   transition: 150ms, box-shadow 150ms ease-in-out;
 }
 
-button:focus, textarea:focus,
+input[type=range]:focus::-moz-range-thumb,
+input[type=range]:focus::-webkit-slider-thumb, button:focus, textarea:focus,
 input:focus {
   box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
 }
@@ -349,6 +353,46 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
   color: hsl(0, 0%, 95%);
   background: hsl(210, 30%, 10%);
+}
+
+input[type=range]::-moz-range-thumb,
+input[type=range]::-webkit-slider-thumb, textarea,
+input, button,
+input[type=button],
+button[type=submit],
+input[type=submit],
+button[type=reset],
+input[type=reset] {
+  outline: none;
+  transition: 150ms, box-shadow 150ms ease-in-out;
+}
+
+input[type=range]:focus::-moz-range-thumb,
+input[type=range]:focus::-webkit-slider-thumb, textarea:focus,
+input:focus, button:focus {
+  box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
+}
+
+input[type=range],
+input[type=range]:focus {
+  appearance: none;
+  background: hsl(210, 20%, 5%); /* Grey background */
+  transition: opacity 0.2s;
+  height: 0.5em;
+  padding: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+input[type=range]::-moz-range-thumb,
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  width: 1.5em; /* Set a specific slider handle width */
+  height: 1.5em; /* Slider handle height */
+  background: hsl(210, 90%, 30%); /* Green background */
+  cursor: pointer; /* Cursor on hover */
+  border-radius: 100%;
+  border: 0;
 }
 
 /*# sourceMappingURL=chimera-nightsky.css.map */
