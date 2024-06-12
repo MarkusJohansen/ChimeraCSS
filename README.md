@@ -120,3 +120,4 @@ Financial contributions are also very welcome, and can be made through a [**GitH
 ## 🌟 Featured Projects
 
 - [CV](https://cv-nine-gilt.vercel.app/) by @MarkusJohansen
+- [Homepage](https://f-ttok.github.io/) by @f-ttok 
