@@ -55,7 +55,7 @@ pnpm add chimeracss
 ```
 
 ```javascript
-import "~/node_modules/chimeracss/build/chimera.css";
+import "chimeracss/build/chimera.css";
 ```
 or by including this tag in your HTML header.
 
@@ -89,7 +89,7 @@ Chimera has multiple themes:
 To use an alternative theme, change the filename in the import to the same as the theme. Here is an example of how to implement chimera-dark using the `node_modules` import method:
 
 ```javascript
-import "~/node_modules/chimeracss/build/chimera-dark.css";
+import "chimeracss/build/chimera-dark.css";
 ```
 
 ## 🧑‍⚖️ License
