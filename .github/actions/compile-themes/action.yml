@@ -5,14 +5,17 @@ runs:
   using: "composite"
   steps:
     - uses: actions/checkout@v2
+      with: ./chimera-css
     - uses: actions/setup-node@v2
       with:
         node-version: 16
+      working-directory: ./chimera-css
     - name: install npm dependencies
       run: |
         npm ci
         npm install -g sass
       shell: bash
+      working-directory: ./chimera-css
 
     - name: compile chimera themes
       run: |
