@@ -1,0 +1,328 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ChimeraCSS Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preload" as="style"
+      href="https://unpkg.com/chimeracss/build/chimera-dark.css">
+    <link rel="preload" as="style"
+      href="https://unpkg.com/chimeracss/build/chimera-golden.css">
+    <link rel="preload" as="style"
+      href="https://unpkg.com/chimeracss/build/chimera-autumn.css">
+    <link rel="preload" as="style"
+      href="https://unpkg.com/chimeracss/build/chimera-blues.css">
+    <link rel="preload" as="style"
+      href="https://unpkg.com/chimeracss/build/chimera-plain.css">
+    <link rel="preload" as="style"
+      href="https://unpkg.com/chimeracss/build/chimera-nightsky.css">
+    <link rel="preload" as="style"
+    href="https://unpkg.com/chimeracss/build/chimera.css">
+
+    <link 
+      id="stylesheet"
+      rel="stylesheet"
+      type="text/css"
+      href='https://unpkg.com/chimeracss/build/chimera.css'
+    />
+    <script>
+      function changeStylesheet(cssFile) {
+        document.getElementById("stylesheet").href = cssFile;
+      }
+    </script>
+    <style>
+      main {
+        max-width: 50%;
+        margin: auto;
+        padding: 1em;
+      }
+
+      @media screen and (max-width: 800px) {
+        main {
+          max-width: 90%;
+        }
+      }
+
+      #unimplemented-container {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <a>
+        <h1>ChimeraCSS</h1>
+      </a>
+      <hr />
+      <p>
+        Welcome to the ChimeraCSS demo page! You can use this page to discover
+        the different themes and styles that chimera has to offer. When
+        contributing to the project, you can use this page to test your changes.
+      </p>
+      <blockquote>
+        <p>
+          <strong>NOTE:</strong> This page is just a demo, and will not contain
+          any framework documentation. For documentation, please visit the
+          github repository 
+          <a href="https://github.com/MarkusJohansen/ChimeraCSS/">Github repository</a> or the <a href=https://www.npmjs.com/package/chimeracss>NPM page</a>.
+        </p>
+      </blockquote>
+      <h2>Change Theme</h2>
+      <p>
+        Click on one of the links below to change the theme of this page. 
+        The only thing that will change is the stylesheet, so you can see how the different themes look.
+        It is also possble to create your own theme, and use it on this page, or on your own website. 
+        <a href="https://github.com/MarkusJohansen/ChimeraCSS/blob/main/GUIDE.md">Here</a> is a guide on
+        how chimera works as well as how to create your own themes.
+      </p>
+      <ul>
+        <li>
+          <a href="#" onclick="changeStylesheet('')">No CSS</a>
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera.css')"
+            >Chimera</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera-dark.css')"
+            >Chimera Dark</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera-golden.css')"
+            >Chimera Golden</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera-autumn.css')"
+            >Chimera Autumn</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera-blues.css')"
+            >Chimera Blues</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera-plain.css')"
+            >Chimera plain</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            onclick="changeStylesheet('https://unpkg.com/chimeracss/build/chimera-nightsky.css')"
+            >Chimera nightsky</a
+          >
+        </li>
+      </ul>
+      <hr>
+      <h1>Typography</h1>
+      <h1>h1
+        <small>small h1</small>
+      </h1>
+
+      <h2>h2
+        <small>small h2</small>
+      </h2>
+
+      <h3>h3
+        <small>small h3</small>
+      </h3>
+
+      <h4>h4
+        <small>small h4</small>
+      </h4>
+
+      <h5>h5
+        <small>small h5</small>
+      </h5>
+
+      <h6>h6
+        <small>small h6</small>
+      </h6>
+      <h1>
+        Forms
+      </h1>
+      <p><em>Forms</em> is a really important aspect of html. We offer accesible yet and good looking forms with support for <code>:focus</code> css-selectors which allows for great keyboard navigation.</p>
+      <form action="/submit" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+
+        <label>disabled:</label><br>
+        <input disabled type="email" id="email" name="email" value="example@example.com"><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="phone">Enter your phone number:</label>
+<input type="tel" id="phone" name="phone">
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br>
+
+        <label for="birthdate">Birthdate:</label><br>
+        <input type="date" id="birthdate" name="birthdate"><br>
+
+        <label for="website">Website:</label><br>
+        <input type="url" id="website" name="website"><br>
+
+        <label for="quantity">Quantity (between 1 and 5):</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="5"><br>
+
+
+        <label for="bio">Bio:</label><br>
+        <textarea id="bio" name="bio"></textarea><br>
+
+        <radio>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+        </radio>
+
+        <radio>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+        </radio>
+
+        <checkbox>
+            <input type="checkbox" id="terms" name="terms" value="agree">
+            <label for="terms">I agree to the terms and conditions</label><br>
+        </checkbox>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <button disabled>Disabled button</button>
+      </form>
+
+    <h1>Code and formatted text</h1>
+    <p>Below is some code, you can copy it with <kbd>Ctrl-C</kbd>. Did you know, <code>alert(1)</code> can show an alert in JavaScript!</p>
+    <pre><code>function changeStylesheet(cssFile) {
+        document.getElementById("stylesheet").href = cssFile;
+      }</code></pre>
+
+    <h1>Tables</h1>
+    <p>Tables are a great way to display data which is why chimera provides you with beautiful table styles. Below is an example of a table with some data.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td>Jane</td>
+                <td>Doe</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Johnny</td>
+                <td>Doe</td>
+                <td>15</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Inline formatted text</h1>
+    <p>
+      You can use many different elements to format your text.
+      You can make your text <small>small</small> or you can make it <strong>strong</strong> or <b>bold</b>.
+      You can also make it <em>emphasized</em> or <strike>striked</strike>.
+      You can also make it <del>deleted</del> or <s>simple striked</s>.
+      You can also make it <ins>inserted</ins> or <sub>subscripted</sub> or <sup>superscripted</sup>.
+      You can also make it <cite>cited</cite> or <q>quoted</q>. 
+      You can also make it <dfn>defined</dfn> as well as 
+      <italic>italic</italic>
+      <underline>underline</underline>
+      <mark>Highlighting</mark>
+      <abbr>abbreviation</abbr> and lastly <address>addressed</address>
+    </p>
+
+    <h1>Unimplemented elements</h1>
+    <p>
+        There are some elements that are not implemented yet, but will be in the future.
+        This section can be very useful for testing when contributing to chimera!
+        At the same time this means that the demo of the implemented framework is finished and you can stop reading if you want.
+    </p>
+    <input type="range" id="volume" name="volume" min="0" max="10">
+    <button onclick="window.scrollTo(0, 0);">Scroll to top</button>
+    <button onclick="var x = document.getElementById('unimplemented-container'); if (x.style.display === 'none') { x.style.display = 'block'; } else { x.style.display = 'none'; }">Toggle unimplemented elements</button>
+    <div id="unimplemented-container">
+        <hr>
+        <p>
+            <bdi>bdi</bdi>
+            <bdo>bdo</bdo>
+        </p>
+          <figcaption>Hello, world!</figcaption>
+          <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor">
+            <label for="myfile">Select a file:</label>
+            <input type="file" id="myfile" name="myfile">
+            <label for="volume">Volume control:</label>
+            <label for="week">Select a week:</label>
+            <input type="week" id="week" name="week">
+    ´        <label for="birthmonth">Enter your birth month and year:</label>
+            <input type="month" id="birthmonth" name="birthmonth">
+            <input type="hidden" id="userid" name="userid" value="123456">
+            <input type="image" src="submit.png" alt="Submit" width="48" height="48">
+            <select>
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                </optgroup>
+                <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                </optgroup>
+            </select>
+            <datalist>
+                <option value="Volvo">
+                <option value="Saab">
+                <option value="Mercedes">
+                <option value="Audi">
+            </datalist>
+            <fieldset>
+                <legend>Personalia:</legend>
+                Name: <input type="text"><br>
+                Email: <input type="text"><br>
+                Date of birth: <input type="text">
+            </fieldset>
+            <output>2048</output>
+            <progress></progress>
+            <meter></meter>
+            <details>
+                <summary>Click me to see more</summary>
+                <p>Here is some more text</p>
+            </details>
+            <dialog>
+                <p>Hello world</p>
+                <p>Hi coder</p>
+            </dialog>
+            <menu>
+                <menuitem label="HTML"></menuitem>
+                <menuitem label="CSS"></menuitem>
+                <menuitem label="JavaScript"></menuitem>
+            </menu>
+    </div>
+  </body>
+</html>
