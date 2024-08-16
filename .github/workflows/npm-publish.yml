@@ -24,6 +24,7 @@ jobs:
           git config --global user.name "J0hans1"
       - name: Set package version
         run: npm version ${{ github.event.release.tag_name }}
+        working-directory: ./chimera-css
       - name: Publish package
         run: npm publish
         env:

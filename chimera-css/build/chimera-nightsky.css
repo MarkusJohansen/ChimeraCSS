@@ -13,17 +13,17 @@ input {
 input[type=range]:focus::-moz-range-thumb,
 input[type=range]:focus::-webkit-slider-thumb, button:focus, textarea:focus,
 input:focus {
-  box-shadow: 0 0 0 3px rgba(26, 155, 230, 0.75);
+  box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
 }
 
 textarea,
 input {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(25, 50%, 20%);
-  background-color: hsl(30, 45%, 97%);
+  color: hsl(0, 0%, 95%);
+  background-color: hsl(210, 30%, 10%);
   font-size: medium;
   border-radius: 0.5em;
-  border: solid 2px hsl(25, 25%, 80%);
+  border: solid 2px hsl(210, 30%, 20%);
   width: 100%;
   margin: 0.5em 0;
   padding: 0.5em 0 0.5em 0.75em;
@@ -32,7 +32,7 @@ input {
 
 textarea:disabled,
 input:disabled {
-  color: hsl(25, 50%, 40%);
+  color: hsl(210, 30%, 60%);
 }
 
 textarea {
@@ -54,7 +54,7 @@ input {
 input[type=range]:focus::-moz-range-thumb,
 input[type=range]:focus::-webkit-slider-thumb, button:focus, textarea:focus,
 input:focus {
-  box-shadow: 0 0 0 3px rgba(26, 155, 230, 0.75);
+  box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
 }
 
 button,
@@ -63,8 +63,8 @@ button[type=submit],
 input[type=submit],
 button[type=reset],
 input[type=reset] {
-  background-color: hsl(25, 80%, 37%);
-  color: #fff;
+  background-color: hsl(210, 90%, 30%);
+  color: hsl(0, 0%, 75%);
   font-size: medium;
   padding: 0.5em 0.75em;
   border: 0;
@@ -74,38 +74,80 @@ input[type=reset] {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+  outline: none;
+}
+
+button::after,
+input[type=button]::after,
+button[type=submit]::after,
+input[type=submit]::after,
+button[type=reset]::after,
+input[type=reset]::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: none;
+}
+
+button:focus-within::after,
+input[type=button]:focus-within::after,
+button[type=submit]:focus-within::after,
+input[type=submit]:focus-within::after,
+button[type=reset]:focus-within::after,
+input[type=reset]:focus-within::after {
+  animation: ripple 1s ease-out;
+}
+
+@keyframes ripple {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(100);
+    opacity: 0;
+  }
+}
+button:focus-within:not(:focus)::after,
+input[type=button]:focus-within:not(:focus)::after,
+button[type=submit]:focus-within:not(:focus)::after,
+input[type=submit]:focus-within:not(:focus)::after,
+button[type=reset]:focus-within:not(:focus)::after,
+input[type=reset]:focus-within:not(:focus)::after {
+  opacity: 0;
+  transition: none;
 }
 
 button[type=reset],
 input[type=reset] {
-  color: hsl(25, 80%, 37%);
-  background-color: hsl(30, 45%, 97%);
-  border-color: hsl(25, 80%, 37%);
+  color: hsl(210, 90%, 30%);
+  background-color: hsl(210, 30%, 10%);
+  border-color: hsl(210, 90%, 30%);
 }
 
 button:hover,
 input[type=button]:hover,
 button[type=submit]:hover,
 input[type=submit]:hover {
-  background-color: hsl(25, 80%, 32%);
+  background-color: hsl(210, 90%, 20%);
   cursor: pointer;
 }
 
 button[type=reset]:hover,
 input[type=reset]:hover {
-  background-color: hsl(25, 80%, 37%);
-  color: #fff;
+  background-color: hsl(210, 90%, 30%);
+  color: hsl(0, 0%, 75%);
   cursor: pointer;
-}
-
-button:active,
-input[type=button]:active,
-button[type=submit]:active,
-input[type=submit]:active,
-button[type=reset]:active,
-input[type=reset]:active {
-  background-color: hsl(25, 80%, 27%);
-  border-color: hsl(25, 80%, 27%);
 }
 
 button:disabled,
@@ -114,17 +156,17 @@ button[type=submit]:disabled,
 input[type=submit]:disabled,
 button[type=reset]:disabled,
 input[type=reset]:disabled {
-  background-color: hsl(25, 80%, 27%);
-  border-color: hsl(25, 80%, 27%);
+  background-color: hsl(210, 90%, 10%);
+  border-color: hsl(210, 90%, 10%);
   cursor: default;
 }
 
 blockquote {
   line-height: 2em;
-  background-color: hsl(30, 45%, 90%);
+  background-color: hsl(210, 20%, 5%);
   width: 100%;
   box-sizing: border-box;
-  border-left: 0.25em solid hsl(25, 80%, 37%);
+  border-left: 0.25em solid hsl(210, 90%, 30%);
   border-radius: 0 0.5em 0.5em 0;
   padding: 1em;
   margin: 0;
@@ -134,7 +176,7 @@ code,
 kbd,
 var,
 samp, pre {
-  background-color: hsl(30, 45%, 90%);
+  background-color: hsl(210, 20%, 5%);
   border-radius: 8px;
   font-family: monospace;
 }
@@ -154,9 +196,9 @@ samp {
 }
 
 mark {
-  background-color: hsla(25, 80%, 55%, 0.1);
+  background-color: hsla(210, 90%, 30%, 0.1);
   padding: 0.2em;
-  color: hsl(25, 50%, 20%);
+  color: hsl(0, 0%, 95%);
 }
 
 underline {
@@ -173,7 +215,7 @@ abbr {
 }
 
 hr {
-  background-color: hsl(25, 80%, 37%);
+  background-color: hsl(210, 90%, 30%);
   height: 0.1em;
   width: 100%;
   border: 0;
@@ -190,21 +232,21 @@ label {
 }
 
 a {
-  color: hsl(25, 80%, 37%);
+  color: hsl(210, 90%, 50%);
   text-decoration: none;
 }
 
 a:hover {
-  color: hsl(202, 80%, 50%);
+  color: hsl(280, 70%, 50%);
   cursor: pointer;
 }
 
 a:active {
-  color: hsl(25, 80%, 27%);
+  color: hsl(210, 90%, 10%);
 }
 
 a:focus {
-  color: hsl(202, 80%, 50%);
+  color: hsl(280, 70%, 50%);
 }
 
 li, ul {
@@ -236,7 +278,7 @@ input[type=radio], input[type=checkbox] {
   padding: 0;
   width: 1em;
   height: 1em;
-  border: 2px solid hsl(25, 25%, 80%);
+  border: 2px solid hsl(210, 30%, 20%);
   display: grid;
   place-content: center;
 }
@@ -251,7 +293,7 @@ input[type=radio] {
 
 input[type=checkbox]:hover,
 input[type=radio]:hover {
-  border: 2px solid hsl(25, 80%, 37%);
+  border: 2px solid hsl(210, 90%, 30%);
   cursor: pointer;
 }
 
@@ -260,7 +302,7 @@ input[type=radio]::before, input[type=checkbox]::before {
   transform: scale(0);
   width: 0.5em;
   height: 0.5em;
-  background-color: hsl(25, 80%, 37%);
+  background-color: hsl(210, 90%, 30%);
   content: "";
 }
 
@@ -278,7 +320,7 @@ input[type=radio]:checked::before {
 }
 
 td, th {
-  border: 0.1em solid hsl(25, 25%, 80%);
+  border: 0.1em solid hsl(210, 30%, 20%);
   padding: 0.5em;
   text-align: left;
 }
@@ -290,7 +332,7 @@ table {
 
 th {
   font-weight: 600;
-  background-color: hsla(25, 80%, 55%, 0.1);
+  background-color: hsla(210, 90%, 30%, 0.1);
 }
 
 td {
@@ -351,8 +393,8 @@ p {
 }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
-  color: hsl(25, 50%, 20%);
-  background: hsl(30, 45%, 97%);
+  color: hsl(0, 0%, 95%);
+  background: hsl(210, 30%, 10%);
 }
 
 input[type=range]::-moz-range-thumb,
@@ -370,13 +412,13 @@ input[type=reset] {
 input[type=range]:focus::-moz-range-thumb,
 input[type=range]:focus::-webkit-slider-thumb, textarea:focus,
 input:focus, button:focus {
-  box-shadow: 0 0 0 3px rgba(26, 155, 230, 0.75);
+  box-shadow: 0 0 0 3px rgba(157, 38, 217, 0.75);
 }
 
 input[type=range],
 input[type=range]:focus {
   appearance: none;
-  background: hsl(30, 45%, 90%); /* Grey background */
+  background: hsl(210, 20%, 5%); /* Grey background */
   transition: opacity 0.2s;
   height: 0.5em;
   padding: 0;
@@ -389,10 +431,10 @@ input[type=range]::-webkit-slider-thumb {
   appearance: none;
   width: 1.5em; /* Set a specific slider handle width */
   height: 1.5em; /* Slider handle height */
-  background: hsl(25, 80%, 37%); /* Green background */
+  background: hsl(210, 90%, 30%); /* Green background */
   cursor: pointer; /* Cursor on hover */
   border-radius: 100%;
   border: 0;
 }
 
-/*# sourceMappingURL=chimera-autumn.css.map */
+/*# sourceMappingURL=chimera-nightsky.css.map */
