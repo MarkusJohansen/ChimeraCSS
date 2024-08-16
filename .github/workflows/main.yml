@@ -26,7 +26,30 @@ jobs:
     name: Compile themes
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
+        with:
+          path: ./chimera-css
 
-      - name: compile sass
-        uses: ./.github/actions/compile-themes
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+
+      - name: Install npm dependencies
+        run: |
+          npm ci
+          npm install -g sass
+        shell: bash
+        working-directory: ./chimera-css
+
+      - name: Compile sass
+        run: |
+          sass src/themes/chimera.scss build/chimera.css
+          sass src/themes/chimera-dark.scss build/chimera-dark.css
+          sass src/themes/chimera-golden.scss build/chimera-golden.css
+          sass src/themes/chimera-autumn.scss build/chimera-autumn.css
+          sass src/themes/chimera-plain.scss build/chimera-plain.css
+          sass src/themes/chimera-blues.scss build/chimera-blues.css
+          sass src/themes/chimera-nightsky.scss build/chimera-nightsky.css
+        shell: bash
+        working-directory: ./chimera-css
