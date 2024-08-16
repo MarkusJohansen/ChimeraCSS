@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - main
+      - pull-request
     paths-ignore:
       - "README.md"
       - "SECURITY.md"
@@ -19,7 +19,9 @@ jobs:
         with:
           node-version: 16
       - run: npm ci
+        working-directory: ./chimera-css
       - run: npx prettier . --write
+        working-directory: ./chimera-css
 
   compile-themes:
     runs-on: ubuntu-latest
