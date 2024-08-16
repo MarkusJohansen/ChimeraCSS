@@ -1,7 +1,7 @@
 on:
   push:
     branches:
-      - pull-request
+      - main
     paths-ignore:
       - "README.md"
       - "SECURITY.md"
