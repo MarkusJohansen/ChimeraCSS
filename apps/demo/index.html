@@ -163,9 +163,9 @@
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name"><br>
 
-        <label>disabled:</label><br>
-        <input disabled type="email" id="email" name="email" value="example@example.com"><br>
-
+        <label for="disabled-email">Disabled Email:</label><br>
+        <input disabled type="email" id="disabled-email" name="disabled-email" value="example@example.com"><br>
+    
         <label for="email">Email:</label><br>
         <input type="email" id="email" name="email"><br>
 
@@ -247,8 +247,8 @@
     <p>
       You can use many different elements to format your text.
       You can make your text <small>small</small> or you can make it <strong>strong</strong> or <b>bold</b>.
-      You can also make it <em>emphasized</em> or <strike>striked</strike>.
-      You can also make it <del>deleted</del> or <s>simple striked</s>.
+      You can also make it <em>emphasized</em>.
+      You can also make it <del>deleted</del> or <s>striked</s>.
       You can also make it <ins>inserted</ins> or <sub>subscripted</sub> or <sup>superscripted</sup>.
       You can also make it <cite>cited</cite> or <q>quoted</q>. 
       You can also make it <dfn>defined</dfn> as well as 
@@ -281,11 +281,12 @@
             <label for="volume">Volume control:</label>
             <label for="week">Select a week:</label>
             <input type="week" id="week" name="week">
-    ´        <label for="birthmonth">Enter your birth month and year:</label>
+    ´       <label for="birthmonth">Enter your birth month and year:</label>
             <input type="month" id="birthmonth" name="birthmonth">
             <input type="hidden" id="userid" name="userid" value="123456">
             <input type="image" src="submit.png" alt="Submit" width="48" height="48">
-            <select>
+            <label for="car-select">Choose a car:</label>
+            <select id="car-select" name="car">
                 <optgroup label="Swedish Cars">
                     <option value="volvo">Volvo</option>
                     <option value="saab">Saab</option>
@@ -294,7 +295,7 @@
                     <option value="mercedes">Mercedes</option>
                     <option value="audi">Audi</option>
                 </optgroup>
-            </select>
+            </select>            
             <datalist>
                 <option value="Volvo">
                 <option value="Saab">
@@ -302,11 +303,14 @@
                 <option value="Audi">
             </datalist>
             <fieldset>
-                <legend>Personalia:</legend>
-                Name: <input type="text"><br>
-                Email: <input type="text"><br>
-                Date of birth: <input type="text">
-            </fieldset>
+              <legend>Personalia:</legend>
+              <label for="name-input">Name:</label>
+              <input type="text" id="name-input" name="name"><br>
+              <label for="email-input">Email:</label>
+              <input type="text" id="email-input" name="email"><br>
+              <label for="dob-input">Date of birth:</label>
+              <input type="text" id="dob-input" name="dob">
+          </fieldset>          
             <output>2048</output>
             <progress></progress>
             <meter></meter>
