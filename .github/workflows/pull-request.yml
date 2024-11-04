@@ -64,5 +64,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pa11y-ci --config ./pa11yci.json | gh pr comment ${{ github.event.pull_request.number }} --body -
+          pa11y-ci --config ../../pa11yci.json | gh pr comment ${{ github.event.pull_request.number }} --body -
         shell: bash
+        working-directory: ./apps/demo
