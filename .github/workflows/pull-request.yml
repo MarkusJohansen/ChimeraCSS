@@ -59,15 +59,11 @@ jobs:
       - name: Install GitHub CLI
         run: sudo apt-get install -y gh
 
-      - name: Run Pa11y accessibility tests and capture output
-        id: pa11y
-        run: |
-          pa11y-ci --config ./pa11yci.json > pa11y-output.txt
-          cat pa11y-output.txt
-
-      - name: Post Pa11y results to PR
+      - name: Run Pa11y accessibility tests and post results to PR
         if: success() || failure()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          gh pr comment ${{ github.event.pull_request.number }} --body "$(cat pa11y-output.txt)"
+          pa11y-ci --config ./pa11yci.json | gh pr comment ${{ github.event.pull_request.number }} --body -
+        shell: bash
+        working-directory: ./apps/demo
