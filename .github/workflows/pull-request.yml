@@ -50,20 +50,24 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
       
-      - name: Intall Pa11y-CI
+      - name: Install Pa11y-CI and HTTP Server
         run: |
-          npm install -g pa11y-ci
+          npm install -g pa11y-ci http-server
         shell: bash
         working-directory: ./apps/demo
 
       - name: Install GitHub CLI
         run: sudo apt-get install -y gh
 
+      - name: Start HTTP Server
+        run: |
+          http-server ./apps/demo -p 8080 &
+        shell: bash
+
       - name: Run Pa11y accessibility tests and post results to PR
         if: success() || failure()
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          pa11y-ci --config ../../pa11yci.json | gh pr comment ${{ github.event.pull_request.number }} --body -
+          pa11y-ci --config ./pa11yci.json | gh pr comment ${{ github.event.pull_request.number }} --body -
         shell: bash
-        working-directory: ./apps/demo

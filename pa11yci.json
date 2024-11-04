@@ -4,6 +4,6 @@
       "timeout": 30000
     },
     "urls": [
-      "file://./apps/demo/index.html"
+      "http://localhost:8080/index.html"
     ]
 }
