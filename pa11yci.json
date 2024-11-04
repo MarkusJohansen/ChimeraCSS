@@ -1,0 +1,9 @@
+{
+    "defaults": {
+      "standard": "WCAG2AA",
+      "timeout": 30000
+    },
+    "urls": [
+      "file://./apps/demo/index.html"
+    ]
+}
