@@ -48,7 +48,6 @@ jobs:
       
       - name: Intall npm dependencies
         run: |
-          npm ci
           npm install -g sass
         shell: bash
         working-directory: ./apps/demo
