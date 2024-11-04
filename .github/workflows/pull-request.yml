@@ -46,9 +46,9 @@ jobs:
       - name: Checkout source
         uses: actions/checkout@v3
       
-      - name: Intall npm dependencies
+      - name: Intall Pa11y-CI
         run: |
-          npm install -g sass
+          npm install -g pa11y-ci
         shell: bash
         working-directory: ./apps/demo
 
