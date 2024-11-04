@@ -46,7 +46,6 @@ jobs:
   accessibility-testing:
     runs-on: ubuntu-latest
     name: Running pa11y-ci tests on HTML file
-    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout source
