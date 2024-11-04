@@ -66,4 +66,3 @@ jobs:
         run: |
           pa11y-ci --config ./pa11yci.json | gh pr comment ${{ github.event.pull_request.number }} --body -
         shell: bash
-        working-directory: ./apps/demo
