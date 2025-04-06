@@ -1,0 +1,7 @@
+services:
+  static-site:
+    build: .
+    container_name: chimeracss-html-demo
+    ports:
+      - "3001:80"
+    restart: always
