@@ -1,3 +1,6 @@
+@use '../tokens/chimera' as *;
+@use 'focus' as *;
+
 %tablerow {
   border: 0.1em solid $Chimera-border;
   padding: 0.5em;

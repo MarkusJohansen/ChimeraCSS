@@ -1,3 +1,5 @@
+@use '../tokens/chimera' as *;
+
 body {
   font-family: $font-stack;
   color: $Chimera-text;

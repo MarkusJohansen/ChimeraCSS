@@ -1,3 +1,5 @@
+@use '../tokens/chimera' as *;
+
 %formatted-text {
   background-color: $Chimera-bg-secondary;
   border-radius: 8px;
