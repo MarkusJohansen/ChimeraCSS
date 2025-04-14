@@ -1,4 +1,5 @@
-@import "focus";
+@use '../tokens/chimera' as *;
+@use 'focus' as *;
 
 input[type="range"],
 input[type="range"]:focus {
