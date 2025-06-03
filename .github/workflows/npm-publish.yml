@@ -28,8 +28,8 @@ jobs:
           git config --global user.email "markusarj@gmail.com"
           git config --global user.name "J0hans1"
       - name: Publish package
+        working-directory: ./chimera-css
         run: |
-          cd chimera-css
           npm version ${{ github.event.release.tag_name }}
           npm publish
         env:
