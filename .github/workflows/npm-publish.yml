@@ -34,7 +34,7 @@ jobs:
       - name: Publish package
         working-directory: ./chimera-css
         run: |
-          npm version ${{ github.event.release.tag_name }}
+          npm version 1.6.1 --allow-same-version
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
