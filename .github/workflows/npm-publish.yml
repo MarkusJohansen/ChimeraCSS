@@ -4,9 +4,8 @@
 name: Node.js Package
 
 on:
-  push:
-    branches:
-      - npm-publish-fix
+  release:
+    types: [created]
 
 jobs:
   publish-npm:
@@ -34,7 +33,7 @@ jobs:
       - name: Publish package
         working-directory: ./chimera-css
         run: |
-          npm version 1.6.1 --allow-same-version
+          npm version ${{ github.event.release.tag_name }}
           npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
