@@ -1,3 +1,5 @@
+@use '../tokens/chimera' as *;
+
 hr {
   background-color: $Chimera;
   height: 0.1em;

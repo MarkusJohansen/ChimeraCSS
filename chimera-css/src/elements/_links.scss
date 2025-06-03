@@ -1,3 +1,5 @@
+@use '../tokens/chimera' as *;
+
 a {
   color: $Chimera-link;
   text-decoration: none;

@@ -1,23 +1,20 @@
-// fonts
-$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-  "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+@use '../tokens/chimera' with (
+  //fonts
+  $font-stack: (-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif),
 
-//Color palette
-$Chimera: hsl(22, 80%, 80%);
-$Chimera-dark: hsl(22, 80%, 60%);
-$Chimera-darker: hsl(22, 80%, 50%);
-$Chimera-input-border: hsl(0, 0%, 51%);
-$Chimera-text: hsl(22, 80%, 80%);
-$Chimera-text-secondary: #333333;
-$Chimera-text-disabled:  hsl(22, 40%, 50%);
-$Chimera-bg: hsl(0, 0%, 0%);
-$Chimera-bg-secondary: hsl(0, 0%, 10%);
-$Chimera-bg-disabled: hsl(0, 0%, 30%);
-$Chimera-link: hsl(22, 80%, 60%);
-$Chimera-focus: hsl(0, 70%, 60%);
-$Chimera-fill: hsla(22, 100%, 33%, 20%);
-$Chimera-border: hsl(22, 80%, 80%);
+  //Color palette
+  $Chimera: hsl(22, 80%, 80%),
+  $Chimera-dark: hsl(22, 80%, 60%),
+  $Chimera-darker: hsl(22, 80%, 50%),
+  $Chimera-text: hsl(22, 80%, 80%),
+  $Chimera-text-secondary: #333333,
+  $Chimera-text-disabled:  hsl(22, 40%, 50%),
+  $Chimera-bg: hsl(0, 0%, 0%),
+  $Chimera-bg-secondary: hsl(0, 0%, 10%),
+  $Chimera-link: hsl(22, 80%, 60%),
+  $Chimera-focus: hsl(0, 70%, 60%),
+  $Chimera-fill: hsla(22, 100%, 33%, 20%),
+  $Chimera-border: hsl(22, 80%, 80%)
+);
 
-// @use "main";
-
-@import "../elements/main";
+@use '../elements/main';
