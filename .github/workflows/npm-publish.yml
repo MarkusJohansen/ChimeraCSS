@@ -27,6 +27,9 @@ jobs:
         run: |
           git config --global user.email "markusarj@gmail.com"
           git config --global user.name "J0hans1"
+      - name: Install dependencies
+        working-directory: ./chimera-css
+        run: npm ci
       - name: Publish package
         working-directory: ./chimera-css
         run: |
